@@ -1,0 +1,132 @@
+.tokenomics{
+    padding-top: 120px;
+    padding-bottom: 108px;
+}
+
+.tokenomics__wrap{
+    flex-direction: column;
+}
+
+.tokenomics__title{
+    font-size: 96px;
+}
+
+.tokenomics__subtitle{
+    font-size: 36px;
+    background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    line-height: 53px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    font-family: 'Oswald Regular';
+    margin-bottom: 29px;
+}
+
+.tokenomics-car{
+    display: inline-block;
+    position: relative;
+}
+
+.tokenomics-car__img{
+    width: auto;
+}
+
+.tokenomics-car__target{
+    position: absolute;
+    z-index: 2;
+}
+
+.tokenomics-car__target--1{
+    left: 256px;
+    top: 129px;
+}   
+
+.tokenomics-car__target--2{
+    right: 529px;
+    top: 129px;
+}
+
+.tokenomics-car__target--3{
+    right: 284px;
+    top: 176px;
+}
+
+.tokenomics-car__target--4{
+    left: 273px;
+    bottom: 179px;
+}
+
+.tokenomics-car__target--5{
+    right: 748px;
+    bottom: 74px;
+}
+
+.tokenomics-car__target--6{
+    right: 243px;
+    bottom: 106px;
+}
+
+.tokenomics-car__target-circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 50%;
+        opacity: 0.3;
+        z-index: 0;
+        position: absolute;
+        top: -50%;
+        left: -50%;
+    }
+}
+
+
+.tokenomics-car__target-info{
+    background-color: rgba(18, 20, 26, 0.8);
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px 20px 20px 20px;
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+    transition: all 0.2s;
+    transform: translateY(20px);
+    pointer-events: none !important;
+}
+
+.tokenomics-car__target-percent{
+    background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    display: table;
+    font-size: 64px;
+    font-family: 'Montserrat-bold';
+    line-height: 78px;
+    letter-spacing: 0em;
+}
+
+.tokenomics-car__target-descr{
+    font-size: 22px;
+    font-family: 'Montserrat-bold';
+    text-transform: uppercase;
+}
+
+.tokenomics-car__target:hover{
+    cursor: pointer;
+    z-index: 4;
+    .tokenomics-car__target-info{
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+

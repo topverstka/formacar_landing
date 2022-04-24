@@ -1,0 +1,38 @@
+.first-pilot{
+    padding-top: 40px;
+    padding-bottom: 86px;
+}
+
+.first-pilot__box{
+    background-color: #23252D;
+    border-radius: 10px;
+    width: 100%;
+    padding: 134px 50px;
+    position: relative;
+    background-image: url(../../img/first-pilot/bg.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.first-pilot__box-text{
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Montserrat-bold';
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    a{
+        background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: table;
+    }
+}
+
+.first-pilot__box-img{
+    position: absolute;
+    right: -105px;
+    top: -40px;
+    width: 744px;
+    height: 503px;
+}

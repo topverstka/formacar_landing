@@ -1,0 +1,40 @@
+.gallary{
+    padding-top: 120px;
+    padding-bottom: 182px;
+}
+
+.gallary__slide{
+    width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gallary__swiper-pagination{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 0.3;
+    transition: all 0.2s;
+    margin-right: 12px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.swiper-pagination-bullet-active{
+    width: 40px;
+    background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+    border-radius: 20px;
+    opacity: 1;
+}

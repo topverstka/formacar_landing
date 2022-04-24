@@ -1,0 +1,67 @@
+.congratulations{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(../../img/congratulations/bg.png);
+    background-size: cover;
+    height: 1044px;
+}
+
+.congratulations__wrap{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.congratulations__title{
+    font-size: 96px;
+}
+
+.congratulations__subtitle{
+    background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    display: table;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.015em;
+    font-family: 'Oswald Regular';
+    margin-bottom: 124px;
+}
+
+.congratulations__wrap2{
+    gap: 50px;
+}
+
+
+.congratulations__box{
+    background: rgba(35, 37, 45, 1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 150px;
+    position: relative;
+    border-radius: 10px;
+    width: 595px;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.congratulations__box-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.congratulations__box-title{
+    font-size: 22px;
+}
+
+.congratulations__box-descr{
+    margin-top: 10px;
+}
+

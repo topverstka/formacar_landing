@@ -1,0 +1,82 @@
+.header{
+    padding-top: 81px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__wrap{
+    justify-content: space-between;
+}
+
+.header__logo{
+    width: 200px;
+    display: inline-block;
+}
+
+.header__nav-list{
+    display: flex;
+}
+
+.header__nav-elem{
+    color: #fff;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat-bold';
+    opacity: 0.8;
+    transition: all 0.2s;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.header__nav-elem--has-sub{
+    position: relative;
+    margin-right: 75px;
+    &::after{
+        content: '';
+        display: block;
+        width: 10px;
+        height: 7px;
+        background-image: url(../img/arrow-nav.png);
+        position: absolute;
+        right: -20px;
+        top: 6px;
+        transition: all 0.5s;
+    }
+}
+
+.header__nav-sub-list{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    position: absolute;
+    top: 0px;
+    padding-top: 40px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+}
+
+.header__nav-sub-elem{
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-transform: none;
+}
+
+.header__nav-elem--has-sub:hover{
+    cursor: pointer;
+    &::after{
+        top: 5px;
+        transform: rotate(180deg);
+    }
+    .header__nav-sub-list{
+        max-height: none;
+        opacity: 1;
+    }
+}
