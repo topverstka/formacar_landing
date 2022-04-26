@@ -27,6 +27,7 @@
 
 .faq__questions-list{
     width: 800px;
+    height: 956px;
 }
 
 .faq__questions-item{
@@ -41,7 +42,7 @@
     backdrop-filter: blur(25px);
     transition: all 0.2s;
     &:last-child{
-        margin-bottom: 200px;
+        margin-bottom: 0px;
     }
     &:hover{
         cursor: pointer;
@@ -94,7 +95,7 @@
     line-height: 32px;
     letter-spacing: 0em;
     color: #fff;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
     opacity: 0;
     transition: all 0.2s;
@@ -113,7 +114,7 @@
     }
     .faq__questions-text{
         overflow: auto;
-        max-height: none;
+        height: 96px;
         opacity: 1;
     }
     .faq__questions-line:nth-child(2){
