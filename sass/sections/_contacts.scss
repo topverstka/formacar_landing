@@ -1,11 +1,16 @@
 .contacts{
     padding-bottom: 120px;
     padding-top: 120px;
+    position: relative;
+}
 
-    background-image: url(../../img/contacts/bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: -310px;
+.contacts__bg{
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
 }
 
 .contacts__wrap{
@@ -56,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     svg{
         width: auto;
         height: auto;

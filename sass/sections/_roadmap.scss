@@ -1,12 +1,16 @@
 .roadmap{
     padding-top: 120px;
     padding-bottom: 120px;
+    position: relative;
+}
 
-    background-image: url(../../img/roadmap/bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: -335px;
-    background-size: cover;
+.roadmap__bg{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
 }
 
 .roadmap__wrap{

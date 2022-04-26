@@ -1,9 +1,17 @@
 .nft{
-    background-image: url(../img/nft/bg.png);
-    background-position-y: -398px;
-    background-repeat: no-repeat;
     padding-top: 120px;
     padding-bottom: 120px;
+    position: relative;
+}
+
+.nft__bg{
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
 }
 
 .nft__wrap{
