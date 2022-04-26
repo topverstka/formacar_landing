@@ -27,7 +27,9 @@
 
 .faq__questions-list{
     width: 800px;
-    height: 956px;
+    height: 1028px;
+    position: relative;
+    top: 10px;
 }
 
 .faq__questions-item{
@@ -87,6 +89,7 @@
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 0px;
+    text-transform: uppercase;
 }
 
 .faq__questions-text{

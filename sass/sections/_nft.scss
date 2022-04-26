@@ -1,5 +1,5 @@
 .nft{
-    padding-top: 120px;
+    padding-top: 90px;
     padding-bottom: 120px;
     position: relative;
 }
@@ -9,7 +9,6 @@
     top: 115px;
     left: 0;
     width: 100%;
-    height: 100%;
     z-index: -1;
     opacity: 0.2;
 }
@@ -84,10 +83,18 @@
 .nft__card-title{
     font-size: 22px;
     line-height: 32px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-bold';
+    line-height: 32px;
+    letter-spacing: 0em;
+
 }
 
 .nft__card-creator{
+    color: #fff;
+    font-family: 'Montserrat-medium';
     font-size: 20px;
     line-height: 32px;
-    color: #fff;
+    letter-spacing: 0em;
+
 }

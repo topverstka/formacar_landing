@@ -1,6 +1,6 @@
 .roadmap{
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 140px;
     position: relative;
 }
 
@@ -22,7 +22,7 @@
     font-size: 96px;
     line-height: 117px;
     letter-spacing: -0.03em;
-    margin-bottom: 42px;
+    margin-bottom: 72px;
 }
 
 .roadmap-list{
@@ -33,7 +33,6 @@
 
 .roadmap-list__item{
     height: 207px;
-    border-left: 2px solid white;
     padding-left: 74px;
     position: relative;
     &:after{
@@ -60,6 +59,27 @@
         position: absolute;
         left: -25px;
         top: -15px;
+        animation: 2s pulse infinite;
+        animation-direction: alternate;
+    }
+}
+
+.roadmap-list__item-border{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    background-color: #fff;
+    opacity: 0.2;
+}
+
+.roadmap-list__item--1{
+    .roadmap-list__item-border{
+        width: 4px;
+        background: #00F2FB;
+        opacity: 1;
+        left: -2px;
     }
 }
 

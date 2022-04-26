@@ -7,6 +7,7 @@
 .meta__bg{
     position: absolute;
     top: 0;
+    right: 0;
 }
 
 .meta__bg-img{
@@ -17,39 +18,40 @@
     position: absolute;
     display: flex;
     align-items: center;
-    transform: scale(0.5);
+    transform: scale(0.6);
 }
 
 .meta__point--1{
     top: 557px;
-    right: 184px;
+    right: 170px;
     transform: scale(1);
+    font-size: 22px;
 }
 
 .meta__point--2{
-    top: 433px;
-    right: 71px;
+    top: 423px;
+    right: 100px;
 }
 
 
 .meta__point--3{
-    top: 377px;
-    right: 424px;
+    top: 367px;
+    right: 410px;
 }
 
 .meta__point--4{
     top: 272px;
-    right: 275px;
+    right: 255px;
 }
 
 .meta__point--5{
-    top: 251px;
-    right: 603px;
+    top: 255px;
+    right: 580px;
 }
 
 .meta__point-title{
     font-family:'Montserrat-bold';
-    font-size: 22px;
+    font-size: 26px;
     line-height: 32px;
     letter-spacing: 0em;
     color: #fff;

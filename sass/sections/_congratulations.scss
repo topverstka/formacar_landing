@@ -1,5 +1,5 @@
 .congratulations{
-    padding-top: 120px;
+    padding-top: 180px;
     padding-bottom: 120px;
     height: 1044px;
     position: relative;
@@ -7,10 +7,9 @@
 
 .congratulations__bg{
     position: absolute;
-    top: 0;
+    top: 75px;
     left: 0;
     width: 100%;
-    height: 100%;
     z-index: -1;
     opacity: 0.3;
 }
@@ -21,7 +20,11 @@
 }
 
 .congratulations__title{
+    font-family: 'Montserrat-bold';
     font-size: 96px;
+    line-height: 117px;
+    letter-spacing: -0.03em;
+
 }
 
 .congratulations__subtitle{
@@ -38,7 +41,7 @@
 }
 
 .congratulations__wrap2{
-    gap: 50px;
+    gap: 30px 50px;
 }
 
 
@@ -47,7 +50,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 50px;
-    padding-left: 150px;
+    padding-left: 160px;
     position: relative;
     border-radius: 10px;
     width: 595px;
@@ -67,10 +70,19 @@
 }
 
 .congratulations__box-title{
+    text-transform: uppercase;
+    font-family: 'Montserrat-bold';
     font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0em;
+
 }
 
 .congratulations__box-descr{
     margin-top: 10px;
+    font-family: 'Steppe';
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0em;
 }
 

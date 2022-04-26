@@ -1,14 +1,38 @@
 .first-screen{
-    background-image: url(../img/first-screen/bg.png);
-    background-size: cover;
-    padding-top: 621px;
+    padding-top: 620px;
     padding-bottom: 60px;
+    position: relative;
+    :before {
+        content: '';
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(5%,#000),color-stop(99.9%,rgba(0,0,0,0)));
+        background: -webkit-linear-gradient(bottom,#000 5%,rgba(0,0,0,0) 99.9%);
+        background: -o-linear-gradient(bottom,#000 5%,rgba(0,0,0,0) 99.9%);
+        background: linear-gradient(0deg,#000 5%,rgba(0,0,0,0) 99.9%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        min-height: 20%;
+        z-index: -1;
+    }
 }
+
+.first-screen__bg{
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
+}
+
 
 
 .first-screen__title{
     font-size: 96px;
     margin-bottom: 0;
     font-family: 'Montserrat-bold';
+    line-height: 117px;
+    letter-spacing: -0.03em;
 
 }

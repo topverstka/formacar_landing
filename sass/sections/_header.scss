@@ -1,9 +1,33 @@
 .header{
-    padding-top: 81px;
+    padding-top: 32px;
     position: absolute;
-    top: 0;
+    top: 49px;
     left: 0;
     width: 100%;
+    transition: all 0.2s;
+    z-index: 9;
+    &:after {
+        opacity: 0;
+        transition: all 0.2s;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.header.sticky{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    &:after {
+        content: "";
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #12141A 0%, rgba(18, 20, 26, 0) 100%);
+        opacity: 1;
+        width: 100%;
+        height: 100px; 
+        z-index: -1;
+    }
 }
 
 .header__wrap{
