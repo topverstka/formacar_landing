@@ -1,0 +1,100 @@
+.roadmap{
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    background-image: url(../../img/roadmap/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -335px;
+    background-size: cover;
+}
+
+.roadmap__wrap{
+    justify-content: center;
+}
+
+.roadmap__title{
+    font-family: 'Montserrat-bold';
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: -0.03em;
+    margin-bottom: 42px;
+}
+
+.roadmap-list{
+    width: 750px;
+    display: block;
+}
+
+
+.roadmap-list__item{
+    height: 207px;
+    border-left: 2px solid white;
+    padding-left: 74px;
+    position: relative;
+    &:after{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        left: -10px;
+        top: 0px;
+        z-index: 1;
+    }
+
+    &:before{
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.2;
+        position: absolute;
+        left: -25px;
+        top: -15px;
+    }
+}
+
+.roadmap-list__item--1, .roadmap-list__item--2{
+    .roadmap-list__item-data{
+        background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: table;
+    }
+}
+
+.roadmap-list__item--3{
+    height: 146px;
+    &:before{
+        width: 40px;
+        height: 40px;
+        left: -20px;
+        top: -10px;
+    }
+}
+
+.roadmap-list__item-data{
+    margin-bottom: 20px;
+    font-family: 'Montserrat-bold';
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 12px;
+}
+
+.roadmap-list__item-text{
+    font-family: 'Montserrat-medium';
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #fff;
+    position: relative;
+    bottom: 12px;
+}

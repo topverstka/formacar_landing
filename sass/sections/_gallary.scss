@@ -1,6 +1,14 @@
 .gallary{
     padding-top: 120px;
     padding-bottom: 182px;
+    position: relative;
+}
+
+.gallary__shadows{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -300px;
 }
 
 .gallary__slide{

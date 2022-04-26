@@ -1,0 +1,85 @@
+.nft{
+    background-image: url(../img/nft/bg.png);
+    background-position-y: -398px;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.nft__wrap{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nft__title{
+    font-family: 'Montserrat-bold';
+    font-size: 96px;
+    line-height: 117px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nft__subtitle{
+    font-family: 'Montserrat-bold';
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.nft__attention{
+    font-family: 'Oswald Regular';
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.015em;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    margin-bottom: 100px;
+}
+
+
+.nft__wrap2{
+    gap: 50px;
+}
+
+.nft__card{
+    max-width: 380px;
+    width: 100%;
+    
+}
+
+.nft__card-img{
+    border-radius: 20px 20px 0px 0px;
+    height: 270px;
+    background: rgba(35, 37, 45, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: auto;
+    }
+}
+
+.nft__card-footer{
+    background: rgba(18, 20, 26, 1);
+    padding: 20px;
+}
+
+.nft__card-title{
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.nft__card-creator{
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}

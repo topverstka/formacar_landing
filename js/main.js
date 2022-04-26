@@ -41,6 +41,25 @@ function bodyLock(con) {
 	}
 }
 
+function faq(){
+    let faqElements = d.querySelectorAll('.faq__questions-item');
+
+    for( let i = 0; i < faqElements.length; i++){
+        faqElements[i].addEventListener('click', function(){
+            if(this.classList.contains('active')){
+                this.classList.remove('active')
+            }else{
+                if(d.querySelector('.faq__questions-item.active')){
+                    d.querySelector('.faq__questions-item.active').classList.remove('active');
+                }
+                this.classList.add('active');
+            }
+        });
+    }
+}
+
+faq();
+
 // Валидация формы
 function validationForm() {
     const name = find('#user_name')

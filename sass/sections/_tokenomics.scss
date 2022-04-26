@@ -1,6 +1,7 @@
 .tokenomics{
     padding-top: 120px;
     padding-bottom: 108px;
+    position: relative;
 }
 
 .tokenomics__wrap{
@@ -27,6 +28,13 @@
 .tokenomics-car{
     display: inline-block;
     position: relative;
+}
+
+.tokenomics-car__shadows{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -103px;
 }
 
 .tokenomics-car__img{
