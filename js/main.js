@@ -107,52 +107,6 @@ function validationForm() {
     return con
 }
 
-// Отправка формы
-// sumbitForm()
-// function sumbitForm() {
-//     const form = find('.modal__form')
-
-//     form.addEventListener('submit', async e => {
-//         const modal = find('.modal._show')
-//         const btnSend = form.querySelector('[type=submit]')
-//         btnSend.classList.add('send-preloader')
-
-//         e.preventDefault()
-        
-//         let con = validationForm()
-
-//         if (con === true) {
-//             const formData = new FormData()
-//             const action = form.getAttribute('action')
-    
-//             let response = await fetch(action, {
-//                 method: 'POST',
-//                 body: formData
-//             })
-            
-//             // settimeout здесь для того, чтобы показать работу отправки формы. В дальнейшем это нужно убрать
-//             setTimeout(() => {
-//                 if (response.ok) {
-//                     console.log('Successful')
-//                     form.reset()
-    
-//                     modal.classList.remove('_show')
-//                     find('#send-done').classList.add('_show')
-//                     btnSend.classList.remove('send-preloader')
-//                 }
-//                 else {
-//                     console.log('Error')
-//                     form.reset()
-    
-//                     modal.classList.remove('_show')
-//                     find('#send-error').classList.add('_show')
-//                     btnSend.classList.remove('send-preloader')
-//                 }
-//             }, 2000)
-
-//         }
-//     })
-// }
 
 // Мобильное меню
 // menu()
@@ -168,6 +122,74 @@ function menu() {
 }
 
 menu();
+
+
+
+
+
+// Плавная прокрутка
+
+function currentYPosition() {
+    // Firefox, Chrome, Opera, Safari
+    if (self.pageYOffset) return self.pageYOffset;
+    // Internet Explorer 6 - standards mode
+    if (document.documentElement && document.documentElement.scrollTop)
+        return document.documentElement.scrollTop;
+    // Internet Explorer 6, 7 and 8
+    if (document.body.scrollTop) return document.body.scrollTop;
+    return 0;
+}
+
+
+function elmYPosition(eID) {
+    var elm = document.querySelector(eID);
+    var y = elm.offsetTop;
+    var node = elm;
+    while (node.offsetParent && node.offsetParent != document.body) {
+        node = node.offsetParent;
+        y += node.offsetTop;
+    } return y;
+}
+
+
+function smoothScroll(eID) {
+    var startY = currentYPosition();
+    var stopY = elmYPosition(eID);
+    var distance = stopY > startY ? stopY - startY : startY - stopY;
+    if (distance < 100) {
+        scrollTo(0, stopY); return;
+    }
+    var speed = Math.round(distance / 100);
+    if (speed >= 20) speed = 20;
+    var step = Math.round(distance / 25);
+    var leapY = stopY > startY ? startY + step : startY - step;
+    var timer = 0;
+    if (stopY > startY) {
+        for ( var i=startY; i<stopY; i+=step ) {
+            setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+            leapY += step; if (leapY > stopY) leapY = stopY; timer++;
+        } return;
+    }
+    for ( var i=startY; i>stopY; i-=step ) {
+        setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+        leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
+    }
+}
+
+
+
+let anchors = d.querySelectorAll('.anchor');
+for(let i = 0; i < anchors.length; i++){
+    anchors[i].addEventListener('click', function(){
+        let anchor = this.getAttribute('href');
+        console.log(anchor)
+        smoothScroll(anchor);
+        if(this.closest('.header__nav--mobile')){
+            d.querySelector('.header__nav-burger').click();
+        }
+    });
+}
+
 
 
 // Функции для модальных окон
