@@ -174,10 +174,30 @@
     text-align: right;
 }
 
+@media (max-width: 1080px){
+    .faq{
+        padding-top: 70px;
+    }
+
+    .faq__h2{
+        font-size: 60px;
+        line-height: 66px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .faq__questions-list{
+        height: 900px;
+    }
+
+    .faq__rights{
+        line-height: 22px;
+    }
+}
+
 @media (max-width: 767px){
     .faq{
         padding-top: 50px;
-        padding-bottom: 50px;
     }
 
     .faq__bg{

@@ -148,6 +148,117 @@
     }
 }
 
+@media (max-width: 1440px){
+    .tokenomics{
+        position: relative;
+        
+    }
+}
+
+@media (max-width: 1300px){
+    .tokenomics-car__target--1{
+        left: 188px;
+        top: 68px;
+    }   
+    
+    .tokenomics-car__target--2{
+        right: 414px;
+        top: 71px;    
+    }
+    
+    .tokenomics-car__target--3{
+        right: 157px;
+        top: 136px;
+    }
+    
+    .tokenomics-car__target--4{
+        left: 182px;
+        bottom: 174px;
+    }
+    
+    .tokenomics-car__target--5{
+        right: 615px;
+        bottom: 73px;    
+    }
+    
+    .tokenomics-car__target--6{
+        right: 187px;
+        bottom: 112px;
+    }
+
+    .tokenomics-car__target-percent{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .tokenomics-car__target-descr{
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 1080px){
+    
+    .tokenomics{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .tokenomics__title{
+        font-size: 60px;
+        line-height: 68px;
+    }
+
+    .tokenomics__subtitle{
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .tokenomics-car__target-percent{
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+    .tokenomics-car__target-descr{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .tokenomics-car__img{
+        transform: scale(1);
+    }
+
+    
+    .tokenomics-car__target--1{
+        left: 155px;
+        top: 45px;
+    }   
+    
+    .tokenomics-car__target--2{
+        right: 311px;
+        top: 43px;
+    }
+    
+    .tokenomics-car__target--3{
+        right: 178px;
+        top: 80px;
+    }
+    
+    .tokenomics-car__target--4{
+        left: 137px;
+        bottom: 129px;
+    }
+    
+    .tokenomics-car__target--5{
+        right: 458px;
+        bottom: 63px;
+    }
+    
+    .tokenomics-car__target--6{
+        right: 195px;
+        bottom: 87px;
+    }
+}
+
 
 
 @media (max-width: 767px){

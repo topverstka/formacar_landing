@@ -21,6 +21,7 @@
     transform: scale(0.6);
 }
 
+
 .meta__point--1{
     top: 557px;
     right: 170px;
@@ -48,6 +49,10 @@
     top: 255px;
     right: 580px;
 }
+
+
+
+
 
 .meta__point-title{
     font-family:'Montserrat-bold';
@@ -101,13 +106,84 @@
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 1440px){
+    .meta__bg-img{
+        width: 100vw;
+    }
+
+    .meta__point--1{
+        top: 38.68055555555556VW;
+        right: 11.805555555555555VW;
+        transform: scale(1);
+        font-size: 22px;
+    }
+    
+    .meta__point--2{
+        top: 29.375VW;
+        right: 6.944444444444445VW;
+    }
+    
+    
+    .meta__point--3{
+        top: 25.48611111111111VW;
+        right: 28.47222222222222VW;
+    }
+    
+    .meta__point--4{
+        top: 18.88888888888889VW;
+        right: 17.708333333333336VW;
+    }
+    
+    .meta__point--5{
+        top: 17.708333333333336VW;
+        right: 40.27777777777778VW;
+    }
+}
+
+@media (max-width: 1080px){
     .meta{
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 50px;
+        padding-top: 70px;
         padding-bottom: 0;
         overflow: hidden;
+    } 
+
+    .meta__title{
+        text-align: center;
+        font-size: 60px;
+        line-height: 66px;
+    }
+
+    .meta__subtitle{
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+
+    .meta__text{
+        font-size: 18px;
+    }
+
+    .meta__bg{
+        position: relative;
+    }
+
+    .meta__bg-img{
+        width: 100%;
+        max-width: none;
+        object-fit: revert;
+        position: relative;
+        right: 0;
+        height: auto;
+    }
+
+    
+}
+
+@media (max-width: 767px){
+    .meta{
+        padding-top: 50px;
     }
     .meta__title{
         font-size: 36px;
@@ -163,8 +239,8 @@
         transform: scale(1);
     }
     .meta__point--1{
-        top: 180px;
-        right: 28px;
+        top: 56.25VW;
+        right: 8.75VW;
         .meta__point-title{
             font-size: 14px;
             line-height: 14px;
@@ -177,22 +253,22 @@
     }
 
     .meta__point--2{
-        top: 245px;
-        right: 66px;    
+        top: 76.5625VW;
+        right: 20.625VW;    
     }
 
     .meta__point--3{
-        top: 123px;
-        right: 100px;   
+        top: 38.4375VW;
+        right: 31.25VW;   
     }
 
     .meta__point--4{
-        top: 85px;
-        right: 50px;  
+        top: 26.5625VW;
+        right: 15.625VW;  
     }
 
     .meta__point--5{
-        top: 80px;
-        right: 161px;  
+        top: 25VW;
+        right: 50.31250000000001VW;  
     }
 }

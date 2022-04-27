@@ -32,10 +32,10 @@
                             </ul>
                         </li>
                         <li class="header__nav-elem"><a href="#">cars</a></li>
-                        <li class="header__nav-elem"><a href="#">Tokenomics</a></li>
-                        <li class="header__nav-elem"><a href="#">NFT’s</a></li>
+                        <li class="header__nav-elem"><a href="#tokenomics">Tokenomics</a></li>
+                        <li class="header__nav-elem"><a href="#nft">NFT’s</a></li>
                         <li class="header__nav-elem"><a href="#">Whitepaper</a></li>
-                        <li class="header__nav-elem"><a href="#">Contacts</a></li>
+                        <li class="header__nav-elem"><a href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
 
@@ -59,10 +59,10 @@
                 </ul>
             </li>
             <li class="header__nav-elem"><a href="#">cars</a></li>
-            <li class="header__nav-elem"><a href="#">Tokenomics</a></li>
-            <li class="header__nav-elem"><a href="#">NFT’s</a></li>
+            <li class="header__nav-elem"><a href="#tokenomics">Tokenomics</a></li>
+            <li class="header__nav-elem"><a href="#nft">NFT’s</a></li>
             <li class="header__nav-elem"><a href="#">Whitepaper</a></li>
-            <li class="header__nav-elem"><a href="#">Contacts</a></li>
+            <li class="header__nav-elem"><a href="#contacts">Contacts</a></li>
         </ul>
     </nav>
 
@@ -160,7 +160,7 @@
           <div class="swiper-pagination gallary__swiper-pagination"></div>
     </div>
 
-    <section class="tokenomics">
+    <section id="tokenomics" class="tokenomics">
         <img class="tokenomics-car__shadows" src="./img/tokenomics/shadows.png" alt="">
         <div class="container">
             <div class="wrap tokenomics__wrap">
@@ -227,7 +227,7 @@
     </section>
 
 
-    <section class="nft">
+    <section id="nft" class="nft">
         <div class="nft__bg">
             <img src="./img/nft/bg.png" alt="bg">
         </div>
@@ -353,7 +353,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="contacts__bg" >
             <img src="./img/contacts/bg.png" alt="">
         </div>
@@ -363,31 +363,31 @@
                 <p class="contacts__subtitle" data-aos="fade-down"><span>Subscribe to us</span> on social networks and follow the news</p>
             </div>
             <div class="wrap contacts__wrap2" data-aos="zoom-in">
-                <div class="contacts-item">
+                <a class="contacts-item" href="https://discord.gg/Ng4XVq4C52" target="_blank">
                     <svg width="46" height="33">
                         <use xlink:href="./img/icons-sprite.svg#discord"></use>
                     </svg>
-                </div>
+                </a>
                 <div class="contacts-item">
                     <svg width="50" height="51">
                         <use xlink:href="./img/icons-sprite.svg#telegram"></use>
                     </svg>
                 </div>
-                <div class="contacts-item">
+                <a class="contacts-item" href="https://twitter.com/formacar" target="_blank">
                     <svg width="50" height="51">
                         <use xlink:href="./img/icons-sprite.svg#twitter"></use>
                     </svg>
-                </div>
-                <div class="contacts-item">
+                </a>
+                <a class="contacts-item" href="https://medium.com/@FormaCarCrypto" target="_blank">
                     <svg width="50" height="51">
                         <use xlink:href="./img/icons-sprite.svg#medium"></use>
                     </svg>
-                </div>
-                <div class="contacts-item">
+                </a>
+                <a class="contacts-item" href="https://instagram.com/formacar_action?igshid=YmMyMTA2M2Y=" target="_blank">
                     <svg width="46" height="45">
                         <use xlink:href="./img/icons-sprite.svg#instagram"></use>
                     </svg>
-                </div>
+                </a>
             </div> 
         </div>
     </section>
@@ -593,8 +593,19 @@
                 spaceBetween: 20,
                 centeredSlides: false,
             },
+            475: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                centeredSlides: true,
+            },
             // when window width is >= 640px
             767: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            centeredSlides: false,
+            },
+
+            1080: {
             slidesPerView: 3,
             spaceBetween: 50,
             centeredSlides: true

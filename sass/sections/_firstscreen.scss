@@ -34,7 +34,37 @@
     font-family: 'Montserrat-bold';
     line-height: 117px;
     letter-spacing: -0.03em;
+    &::before{
+        display: none;
+    }
 }
+
+@media (max-width: 1080px){
+    
+    .first-screen{
+        padding-top: 320px;
+        &::before{
+            display: none;
+        }
+    }
+
+    .first-screen :before{
+        display: none;
+    }
+    .first-screen__bg{
+        top: 0;
+        width: 100%;
+        img{
+            object-fit: cover;
+        }
+    }
+
+    .first-screen__title{
+        font-size: 66px;
+        line-height: 80px;
+    }
+}
+
 
 @media (max-width: 992px){
     .first-screen{
@@ -58,5 +88,6 @@
 @media (max-width: 767px){
     .first-screen__title{
         text-align: center;
+        margin: 0 auto;
     }
 }

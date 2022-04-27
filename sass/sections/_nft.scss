@@ -96,6 +96,27 @@
     letter-spacing: 0em;
 }
 
+@media (max-width: 1080px){
+    .nft{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .nft__title{
+        font-size: 60px;
+        line-height: 68px;
+    }
+    .nft__subtitle{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .nft__attention{
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 50px;
+    }
+}
+
 @media (max-width: 767px){
     .nft{
         padding-top: 50px;

@@ -123,6 +123,29 @@
     bottom: 12px;
 }
 
+@media (max-width: 1080px){
+    .roadmap{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .roadmap__title{
+        font-size: 60px;
+        line-height: 66px;
+    }
+
+    .roadmap-list__item-data{
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .roadmap-list__item-text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
 @media (max-width: 767px){
     .roadmap{
         padding-top: 50px;

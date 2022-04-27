@@ -50,6 +50,14 @@
     opacity: 1;
 }
 
+@media (max-width: 1080px){
+    .gallary{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+
 @media (max-width: 767px){
     .gallary{
         padding-top: 50px;
