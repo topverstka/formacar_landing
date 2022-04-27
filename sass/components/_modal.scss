@@ -30,30 +30,54 @@
     align-items: center;
     padding: 30px 16px;
     transition: $tr;
-
-    & h2 {
-        margin: 0 0 8px 0;
-    }
 }
 
 .modal__content {
     position: relative;
-    max-width: 540px;
-    background: #fff;
+    width: 90%;
+    max-width: 435px;
+    background: #23252D;
     border-radius: $radius;
     padding: 40px 40px 32px 40px;
 }
 
-.modal__big-icon {
-    width: 177px;
-    height: 177px;
-    margin: 40px auto 24px auto;
-}
 
 .modal__title {
-    font-size: 32px;
-    font-weight: 900;
     text-align: center;
+    font-family: 'Oswald Regular';
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.015em;
+    
+    text-transform: uppercase;
+    background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: table;
+        margin: 0 auto;
+        margin-bottom: 40px;
+}
+
+.modal__telegram-item{
+    display: flex;
+    align-items: center;
+    opacity: 0.6;
+    transition: all 0.2s;
+    .contacts-item{
+        transform: scale(0.8);
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}
+.modal__telegram-name{
+    font-family: 'Montserrat-bold';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    color: #fff;
 }
 
 .modal__form {
@@ -84,7 +108,7 @@
         left: 50%;
         width: 20px;
         height: 2px;
-        background: $main;
+        background: #fff;
         border-radius: 100px;
 
         &:nth-child(1) {

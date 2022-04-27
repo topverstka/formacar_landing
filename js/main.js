@@ -108,51 +108,51 @@ function validationForm() {
 }
 
 // Отправка формы
-sumbitForm()
-function sumbitForm() {
-    const form = find('.modal__form')
+// sumbitForm()
+// function sumbitForm() {
+//     const form = find('.modal__form')
 
-    form.addEventListener('submit', async e => {
-        const modal = find('.modal._show')
-        const btnSend = form.querySelector('[type=submit]')
-        btnSend.classList.add('send-preloader')
+//     form.addEventListener('submit', async e => {
+//         const modal = find('.modal._show')
+//         const btnSend = form.querySelector('[type=submit]')
+//         btnSend.classList.add('send-preloader')
 
-        e.preventDefault()
+//         e.preventDefault()
         
-        let con = validationForm()
+//         let con = validationForm()
 
-        if (con === true) {
-            const formData = new FormData()
-            const action = form.getAttribute('action')
+//         if (con === true) {
+//             const formData = new FormData()
+//             const action = form.getAttribute('action')
     
-            let response = await fetch(action, {
-                method: 'POST',
-                body: formData
-            })
+//             let response = await fetch(action, {
+//                 method: 'POST',
+//                 body: formData
+//             })
             
-            // settimeout здесь для того, чтобы показать работу отправки формы. В дальнейшем это нужно убрать
-            setTimeout(() => {
-                if (response.ok) {
-                    console.log('Successful')
-                    form.reset()
+//             // settimeout здесь для того, чтобы показать работу отправки формы. В дальнейшем это нужно убрать
+//             setTimeout(() => {
+//                 if (response.ok) {
+//                     console.log('Successful')
+//                     form.reset()
     
-                    modal.classList.remove('_show')
-                    find('#send-done').classList.add('_show')
-                    btnSend.classList.remove('send-preloader')
-                }
-                else {
-                    console.log('Error')
-                    form.reset()
+//                     modal.classList.remove('_show')
+//                     find('#send-done').classList.add('_show')
+//                     btnSend.classList.remove('send-preloader')
+//                 }
+//                 else {
+//                     console.log('Error')
+//                     form.reset()
     
-                    modal.classList.remove('_show')
-                    find('#send-error').classList.add('_show')
-                    btnSend.classList.remove('send-preloader')
-                }
-            }, 2000)
+//                     modal.classList.remove('_show')
+//                     find('#send-error').classList.add('_show')
+//                     btnSend.classList.remove('send-preloader')
+//                 }
+//             }, 2000)
 
-        }
-    })
-}
+//         }
+//     })
+// }
 
 // Мобильное меню
 // menu()
@@ -171,29 +171,30 @@ menu();
 
 
 // Функции для модальных окон
-modal()
 function modal() {
     
+    
     // Открытие модальных окон при клике по кнопке
-    openModalWhenClickingOnBtn()
+    
     function openModalWhenClickingOnBtn() {
         const btnsOpenModal = document.querySelectorAll('[data-modal-open]');
-    
+        
+        
         for (let i = 0; i < btnsOpenModal.length; i++) {
             const btn = btnsOpenModal[i];
     
             btn.addEventListener('click', (e) => {
                 const dataBtn = btn.dataset.modalOpen;
                 const modal = document.querySelector(`#${dataBtn}`)
-
                 openModal(modal)
                 window.location.hash = dataBtn
             });
         }
     }
+    openModalWhenClickingOnBtn();
 
     // Открытие модального окна, если в url указан его id
-    openModalHash()
+    
     function openModalHash() {
         if (window.location.hash) {
             const hash = window.location.hash.substring(1)
@@ -202,9 +203,9 @@ function modal() {
             if (modal) openModal(modal)
         }
     }
+    openModalHash();
 
     // Показываем/убираем модальное окно при изменения хеша в адресной строке
-    checkHash()
     function checkHash() {
         window.addEventListener('hashchange', e => {
             const hash = window.location.hash
@@ -214,9 +215,9 @@ function modal() {
             if (modal && hash != '') openModal(modal)
         })
     }
+    checkHash()
 
     // Закрытие модального окна при клике по заднему фону
-    closeModalWhenClickingOnBg()
     function closeModalWhenClickingOnBg() {
         document.addEventListener('click', (e) => {
             const target = e.target
@@ -225,9 +226,9 @@ function modal() {
             if (modal && target.classList.contains('modal__body')) closeModal(modal)
         })
     }
+    closeModalWhenClickingOnBg();
 
     // Закрытие модальных окон при клике по крестику
-    closeModalWhenClickingOnCross()
     function closeModalWhenClickingOnCross() {
         const modalElems = document.querySelectorAll('.modal')
         for (let i = 0; i < modalElems.length; i++) {
@@ -239,9 +240,9 @@ function modal() {
             })
         }
     }
+    closeModalWhenClickingOnCross();
 
     // Закрытие модальных окон при нажатии по клавише ESC
-    closeModalWhenClickingOnESC()
     function closeModalWhenClickingOnESC() {
         const modalElems = document.querySelectorAll('.modal')
         for (let i = 0; i < modalElems.length; i++) {
@@ -252,6 +253,7 @@ function modal() {
             })
         }
     }
+    closeModalWhenClickingOnESC();
 
     // Сброс id модального окна в url
     function resetHash() {
@@ -273,3 +275,5 @@ function modal() {
         resetHash()
     }
 }
+
+modal();
