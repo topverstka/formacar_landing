@@ -27,9 +27,9 @@
 
 .faq__questions-list{
     width: 800px;
-    height: 1150px;
     position: relative;
     top: 10px;
+    margin-bottom: 200px;
 }
 
 .faq__questions-item{
@@ -231,7 +231,7 @@
     }
 
     .faq__questions-list{
-        height: 800px;
+        margin-bottom: 50px;
     }
 
     .faq__questions-item{
