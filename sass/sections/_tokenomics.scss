@@ -20,7 +20,8 @@
     background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    display: table;
+    display: block;
+    text-align: center;
     line-height: 53px;
     letter-spacing: 0.015em;
     text-transform: uppercase;
@@ -126,7 +127,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    display: table;
+    display: block;
     font-size: 64px;
     font-family: 'Montserrat-bold';
     line-height: 78px;
