@@ -1,6 +1,6 @@
 .faq{
     padding-top: 130px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     position: relative;
 }
 
@@ -27,7 +27,7 @@
 
 .faq__questions-list{
     width: 800px;
-    height: 1028px;
+    height: 1150px;
     position: relative;
     top: 10px;
 }
@@ -204,10 +204,6 @@
         margin-bottom: 50px;
     }
 
-    .faq__questions-list{
-        height: 900px;
-    }
-
     .faq__rights{
         line-height: 22px;
     }
@@ -219,7 +215,7 @@
     }
 
     .faq__bg{
-        height: 77.3%;
+        height: 100%;
         top: 0;
         img{
             object-fit: cover;
