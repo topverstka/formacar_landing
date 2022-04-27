@@ -15,6 +15,7 @@
 
 .gallary__slide{
     width: 900px;
+    max-width: 90%;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -47,4 +48,30 @@
     background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
     border-radius: 20px;
     opacity: 1;
+}
+
+@media (max-width: 767px){
+    .gallary{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .gallary__shadows{
+        top: -56px;
+    }
+
+    .gallary__swiper-pagination{
+        margin-top: 30px;
+    }
+
+    .swiper-pagination-bullet{
+        width: 8px;
+        height: 8px;
+        margin-right: 8px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .swiper-pagination-bullet-active{
+        width: 24px;
+    }
 }

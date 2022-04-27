@@ -15,7 +15,7 @@
 
 <body>
     <div class="header">
-        <div class="container">
+        <div class="container header__container">
             <div class="wrap header__wrap">
                 <a href="/" class="header__logo">
                     <img src="./img/logo.svg" alt="">
@@ -38,9 +38,33 @@
                         <li class="header__nav-elem"><a href="#">Contacts</a></li>
                     </ul>
                 </nav>
+
+                <div class="header__nav-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </div>
+
+    <nav class="header__nav header__nav--mobile">
+        <ul class="header__nav-list">
+            <li class="header__nav-elem header__nav-elem--has-sub">
+                <a href="#">Our products</a>
+                <ul class="header__nav-sub-list">
+                    <li class="header__nav-sub-elem"><a href="#">lorem 1</a></li>
+                    <li class="header__nav-sub-elem"><a href="#">lorem 2</a></li>
+                    <li class="header__nav-sub-elem"><a href="#">lorem 3</a></li>
+                </ul>
+            </li>
+            <li class="header__nav-elem"><a href="#">cars</a></li>
+            <li class="header__nav-elem"><a href="#">Tokenomics</a></li>
+            <li class="header__nav-elem"><a href="#">NFT’s</a></li>
+            <li class="header__nav-elem"><a href="#">Whitepaper</a></li>
+            <li class="header__nav-elem"><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
 
     <div class="first-screen">
         <div class="first-screen__bg">
@@ -214,34 +238,42 @@
                     car dealerships, gas stations and more</p>
                 <p class="nft__attention" data-aos="fade-down">Hurry up to get into the FormaCar meTaverse!</p>
             </div>
-            <div class="wrap nft__wrap2" data-aos="fade-down">
-                <div class="nft__card">
-                    <div class="nft__card-img">
-                        <img src="./img/nft/1.png" alt="">
-                    </div>
-                    <div class="nft__card-footer">
-                        <h3 class="nft__card-title">Mazda RX-7</h3>
-                        <p class="nft__card-creator">FormaCar</p>
-                    </div>
-                </div>
-
-                <div class="nft__card">
-                    <div class="nft__card-img">
-                        <img src="./img/nft/2.png" alt="">
-                    </div>
-                    <div class="nft__card-footer">
-                        <h3 class="nft__card-title">Toyota Mark II X100</h3>
-                        <p class="nft__card-creator">FormaCar</p>
-                    </div>
-                </div>
-
-                <div class="nft__card">
-                    <div class="nft__card-img">
-                        <img src="./img/nft/3.png" alt="">
-                    </div>
-                    <div class="nft__card-footer">
-                        <h3 class="nft__card-title">Porsche 911</h3>
-                        <p class="nft__card-creator">FormaCar</p>
+            <div class="wrap" data-aos="fade-down">
+                <div class="swiper nft__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="nft__card">
+                                <div class="nft__card-img">
+                                    <img src="./img/nft/1.png" alt="">
+                                </div>
+                                <div class="nft__card-footer">
+                                    <h3 class="nft__card-title">Mazda RX-7</h3>
+                                    <p class="nft__card-creator">FormaCar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="nft__card">
+                                <div class="nft__card-img">
+                                    <img src="./img/nft/2.png" alt="">
+                                </div>
+                                <div class="nft__card-footer">
+                                    <h3 class="nft__card-title">Toyota Mark II X100</h3>
+                                    <p class="nft__card-creator">FormaCar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="nft__card">
+                                <div class="nft__card-img">
+                                    <img src="./img/nft/3.png" alt="">
+                                </div>
+                                <div class="nft__card-footer">
+                                    <h3 class="nft__card-title">Porsche 911</h3>
+                                    <p class="nft__card-creator">FormaCar</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -549,7 +581,29 @@
             clickable: true,
           },
         });
-      </script>
+
+        var swiper2 = new Swiper(".nft__slider", {
+          spaceBetween: 50,
+          loop: true,
+          slidesPerView: 3,
+          breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1.1,
+                spaceBetween: 20,
+                centeredSlides: false,
+            },
+            // when window width is >= 640px
+            767: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+            centeredSlides: true
+            }
+        }
+        });
+      </script> 
+
+
 
     <script>
         AOS.init();

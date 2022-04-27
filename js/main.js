@@ -157,27 +157,17 @@ function sumbitForm() {
 // Мобильное меню
 // menu()
 function menu() {
-	const burger = find('.burger')
-	const menu = find('.menu');
-	
-	// Высота меню
-	window.addEventListener('resize', () => {
-		const headerHeight = find('.header').clientHeight
-
-		if (window.innerWidth <= 768) {
-			menu.style.paddingTop = headerHeight + 'px'
-		}
-		else {
-			menu.style.paddingTop = 0
-		}
-	})
+	const burger = find('.header__nav-burger')
+	const menu = find('.header__nav--mobile');
 
 	burger.addEventListener('click', (e) => {
-		burger.classList.toggle('burger_close')
-		menu.classList.toggle('_show')
+		burger.classList.toggle('active')
+		menu.classList.toggle('active')
 		bodyLock()
 	})
 }
+
+menu()
 
 
 // Функции для модальных окон

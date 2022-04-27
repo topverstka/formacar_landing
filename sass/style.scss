@@ -7,6 +7,10 @@
     @return $px/(1920 / 100vw);
 }
 
+html{
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: $ffMain;
@@ -16,15 +20,16 @@ body {
     font-style: normal;
     line-height: 1.5;
     background: #000;
+    //position: relative;
     overflow-x: hidden;
-
+    
     &._lock {
         overflow: hidden;
     }
 }
 
 h1,h2,h3{
-    font-family: 'Montserrat-bold';
+    font-family: 'Montserrat-bold'; 
     color: #fff;
 }
 

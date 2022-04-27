@@ -122,3 +122,55 @@
     position: relative;
     bottom: 12px;
 }
+
+@media (max-width: 767px){
+    .roadmap{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .roadmap__bg{
+        height: 100%;
+        img{
+            object-fit: cover;
+        }
+    }
+
+    .roadmap__title{
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.03em;
+    }
+
+    .roadmap-list__item{
+        height: 154px;
+        padding-left: 70px;
+    }
+
+    .roadmap-list__item:before{
+        left: 0;
+    }
+    .roadmap-list__item:after{
+        left: 15px;
+    }
+
+    .roadmap-list__item-data{
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+    }
+
+    .roadmap-list__item-text{
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0em;
+    }
+
+    .roadmap-list__item-border{
+        left: 24px;
+    }
+    .roadmap-list__item--1 .roadmap-list__item-border{
+        left: 23px;
+    }
+}

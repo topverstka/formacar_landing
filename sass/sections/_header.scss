@@ -39,6 +39,10 @@
     display: inline-block;
 }
 
+.header__nav--mobile{
+    display: none;
+}
+
 .header__nav-list{
     display: flex;
 }
@@ -102,5 +106,107 @@
     .header__nav-sub-list{
         max-height: none;
         opacity: 1;
+    }
+}
+
+
+.header__nav-burger{
+    display: none;
+}
+
+
+@media (max-width: 992px){
+    .header{
+        top: 0;
+    }
+
+    .header__nav{
+        background: rgba(35, 37, 45, 1);
+        position: fixed;
+        right: 20px;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 100px 20px 95px;
+        transition: all 0.2s;
+        opacity: 0;
+        z-index: -2;
+        //transform: translateX(50%);
+    }
+    .header__nav.active{
+        right: 0;
+        opacity: 1;
+        transform: translateX(0); 
+        z-index: 2;
+    }
+    .header__container{
+        position: relative;
+    }
+    .header__nav-list{
+        display: block;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__nav--mobile{
+        display: block;
+        position: fixed;
+    }
+
+    .header__nav-elem{
+        margin-bottom: 35px;
+        opacity: 1;
+    }
+    .header__nav-elem--has-sub::after{
+        right: -5px;
+    }
+
+    .header__nav-burger{
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 10;
+        span{
+            height: 2px;
+            width: 30px;
+            border-radius: 2px;
+            background-color: #fff;
+            margin-bottom: 7px;
+            transition: all 0.2s;
+            position: relative;
+            &:last-child{
+                margin-bottom: 0;
+                width: 15px;
+            }
+        }
+    }
+
+    .header__nav-burger.active{
+        
+        span{
+            &:first-child{
+                transform: rotate(45deg);
+                top: 4px;
+            }
+            &:nth-child(2){
+                transform: rotate(-45deg);
+                bottom: 5px;
+            }
+            &:last-child{
+                opacity: 0;
+            } 
+        }
+    }
+    
+}
+
+@media (max-width: 767px){
+    .header__nav-burger{
+        right: 20px;
     }
 }

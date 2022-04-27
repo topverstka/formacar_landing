@@ -53,10 +53,6 @@
 }
 
 
-.nft__wrap2{
-    gap: 50px;
-}
-
 .nft__card{
     max-width: 380px;
     width: 100%;
@@ -78,6 +74,8 @@
 .nft__card-footer{
     background: rgba(18, 20, 26, 1);
     padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    text-align: left;
 }
 
 .nft__card-title{
@@ -96,5 +94,45 @@
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0em;
+}
 
+@media (max-width: 767px){
+    .nft{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .nft__title{
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+    }
+    .nft__subtitle{
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+    }
+    .nft__attention{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        margin-bottom: 30px;
+    }
+
+    .nft__card-img{
+        height: 200px;
+    }
+
+    .nft__card-title{
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0em;
+        margin-bottom: 10px;
+    }
+    .nft__card-creator{
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0em;
+    }
 }
