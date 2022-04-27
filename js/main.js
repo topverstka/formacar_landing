@@ -47,7 +47,7 @@ function faq(){
     for( let i = 0; i < faqElements.length; i++){
         faqElements[i].addEventListener('click', function(){
             if(this.classList.contains('active')){
-                this.classList.remove('active')
+                this.classList.remove('active');
             }else{
                 if(d.querySelector('.faq__questions-item.active')){
                     d.querySelector('.faq__questions-item.active').classList.remove('active');

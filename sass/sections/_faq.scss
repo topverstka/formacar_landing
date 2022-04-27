@@ -98,10 +98,28 @@
     line-height: 32px;
     letter-spacing: 0em;
     color: #fff;
-    height: 0;
+    max-height: 0;
+    transition: all 0.2s ease-out;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.2s;
+    ul{
+        padding-left: 30px;
+        li{
+            list-style: none;
+            position: relative;
+            &:before{
+                width: 4px;
+                height: 4px;
+                content: '';
+                display: block;
+                background-color: #fff;
+                border-radius: 50%;
+                position: absolute;
+                left: -17px;
+                top: 13px;
+            }
+        }
+    }
 }
 
 .faq__questions-item.active{
@@ -117,7 +135,7 @@
     }
     .faq__questions-text{
         overflow: auto;
-        height: 96px;
+        max-height: 300px;
         opacity: 1;
     }
     .faq__questions-line:nth-child(2){
@@ -235,9 +253,13 @@
         font-size: 14px;
         line-height: 17px;
         letter-spacing: 0em;
-    }
-    .faq__questions-item.active .faq__questions-text{
-        height: 105px;
+        ul{
+            li{
+                
+                &:before{
+                    top: 5px;
+                }
+            }
     }
 
     .faq__questions-nav{
