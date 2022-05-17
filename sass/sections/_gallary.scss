@@ -18,6 +18,12 @@
     max-width: 90%;
     border-radius: 10px;
     overflow: hidden;
+    transform: scale(0.90);
+    transition: all 0.2s;
+}
+
+.swiper-slide-active{
+    transform: scale(1);
 }
 
 .gallary__swiper-pagination{
