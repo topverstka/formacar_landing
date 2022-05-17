@@ -93,6 +93,8 @@
     padding: 20px;
     border-radius: 0px 0px 20px 20px;
     text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 .nft__card-title{
@@ -102,8 +104,16 @@
     font-family: 'Montserrat-bold';
     line-height: 32px;
     letter-spacing: 0em;
-
 }
+
+.nft__card-icon{
+    fill: #6B7391;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+
 
 .nft__card-creator{
     color: #fff;
