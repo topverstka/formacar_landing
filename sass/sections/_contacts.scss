@@ -68,6 +68,9 @@
         height: auto;
         fill: #fff;
         transition: all 0.2s;
+        path{
+            transition: all 0.2s;
+        }
     }
 
     &::before{

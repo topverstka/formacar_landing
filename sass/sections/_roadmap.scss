@@ -2,24 +2,24 @@
     padding-top: 120px;
     padding-bottom: 140px;
     position: relative;
-    &:after {
-        content: "";
-        background: linear-gradient(360deg, #010203 0%, rgba(0,0,0,0) 100%),linear-gradient(360deg, #010102 0%, rgba(18,20,26,0) 100%);
-        opacity: 1;
-        width: 100%;
-        height: 100px; 
-        z-index: 0;
-        position: absolute;
-        bottom: 126px;
-        left: 0;
-    }
+    // &:after {
+    //     content: "";
+    //     background: linear-gradient(360deg, #010203 0%, rgba(0,0,0,0) 100%),linear-gradient(360deg, #010102 0%, rgba(18,20,26,0) 100%);
+    //     opacity: 1;
+    //     width: 100%;
+    //     height: 100px; 
+    //     z-index: 0;
+    //     position: absolute;
+    //     bottom: 120px;
+    //     left: 0;
+    // }
 }
 
 .roadmap__bg{
     position: absolute;
     top: 0px;
     left: 0;
-    width: 100%;
+    width: 80%;
     z-index: 0;
     opacity: 0.3;
 }
@@ -162,6 +162,9 @@
         &:after{
             display: none;
         }
+    }
+    .roadmap__bg{
+        width: 100%;
     }
 
     .roadmap__wrap-2{
