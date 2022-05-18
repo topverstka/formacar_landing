@@ -73,7 +73,7 @@
         }
     }
 
-    &::before{
+    &::before{ 
         content: '';
         display: block;
         width: 113px;
@@ -85,7 +85,7 @@
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: -1;
-        filter: blur(2px);
+        backdrop-filter: blur(25px);
         opacity: 0.2;
         transition: all 0.2s; 
 

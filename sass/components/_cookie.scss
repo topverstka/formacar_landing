@@ -1,0 +1,97 @@
+.cookie{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(18, 20, 26, 0.6);
+    background-image: url(../img/сookie__bg.png);
+    background-size: cover;
+    backdrop-filter: blur(25px);
+    z-index: -5;
+    transition: all 0.2s;
+    opacity: 0;
+    &.active{
+        opacity: 1;
+        bottom: 0;
+        z-index: 9;
+    }
+}
+
+.cookie__title{
+    font-family: 'Montserrat-bold';
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    margin-bottom: 20px;
+}
+
+.cookie__text{
+    font-family: 'Montserrat-medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
+    a{
+        color: #00F2FB;
+        text-decoration: underline;
+    }
+}
+
+.btn--cookie{
+    border: 2px solid rgba(255, 255, 255, 1);
+    padding: 20px 50px 20px 50px;
+    border-radius: 50px;
+    font-family: 'Montserrat-bold';
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-transform: none;
+    display: inline-block;
+    width: auto;
+    color: #fff;
+    height: auto;
+    &:hover{
+        color: rgba(0, 242, 251, 1);
+        border-color: rgba(0, 242, 251, 1);
+    }
+}
+
+
+@media (max-width: 992px){
+    .cookie__text{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    
+}
+
+@media (max-width: 575px){
+    .cookie{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .cookie__title{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .cookie__text{
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .btn--cookie{
+        font-size: 12px;
+        line-height: 14px;
+        padding: 10px 25px 10px 25px;
+    }
+
+}

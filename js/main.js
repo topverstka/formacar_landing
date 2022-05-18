@@ -299,3 +299,39 @@ function modal() {
 }
 
 modal();
+
+
+
+
+// Куки
+function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+           exdate.setDate(exdate.getDate() + exdays);
+    var c_value = escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString()) + "; path=/";
+    document.cookie=c_name + "=" + c_value;
+}
+
+function getMyCookie(name) {
+    var c = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+        if (c) return c[2];
+        else return "";
+}
+
+let cookieBtn = d.querySelector('#cookie-btn');
+
+cookieBtn.addEventListener('click', function(event){
+    event.preventDefault();
+    d.querySelector('.cookie').classList.remove('active');
+    setCookie("Cookie", 'yes', 1);
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var cookieCheck = getMyCookie("Cookie");
+	if (cookieCheck != 'yes') {
+        d.querySelector('.cookie').classList.add('active');
+        setCookie("Cookie", 'yes', 1);
+	}
+
+});
