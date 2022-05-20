@@ -100,7 +100,13 @@
         -webkit-text-fill-color: unset;
         background: none;
     }
+
+    .roadmap-list__item-border{
+        background-color: #fff;
+    }
 }
+
+
 
 .roadmap-list__item-border{
     width: 2px;
@@ -108,7 +114,6 @@
     position: absolute;
     left: -1px;
     top: 0;
-    background-color: #fff;
     opacity: 0.2;
     width: 4px;
     background: #00F2FB;
@@ -122,6 +127,20 @@
         top: -10px;
     }
 }
+
+.roadmap-list__item--current ~ .roadmap-list__item{
+    .roadmap-list__item-border{
+        background-color: #fff;
+    }
+
+    .roadmap-list__item-data{
+        color: #fff;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        background: none;
+    }
+}  
+ 
 
 
 
