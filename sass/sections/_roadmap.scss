@@ -93,6 +93,15 @@
     }
 }
 
+.roadmap-list__item--current{
+    .roadmap-list__item-data{
+        color: #fff;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        background: none;
+    }
+}
+
 .roadmap-list__item-border{
     width: 2px;
     height: 100%;
