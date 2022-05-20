@@ -22,6 +22,19 @@
     transition: all 0.2s;
 }
 
+.gallary__controls{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.gallary__controls-container{
+    position: relative;
+    display: inline-flex;
+}
+
 .swiper-slide-active{
     transform: scale(1);
 }
@@ -29,8 +42,7 @@
 .gallary__swiper-pagination{
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 50px;
+    //width: 100%;
 }
 
 .swiper-pagination-bullet{

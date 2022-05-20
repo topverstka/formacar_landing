@@ -52,6 +52,18 @@
     margin-bottom: 100px;
 }
 
+.nft__controls{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nft__controls-container{
+    display: inline-flex;
+    position: relative;
+}
 
 .nft__card{
     max-width: 380px;
@@ -126,8 +138,7 @@
 .nft__slider__swiper-pagination{
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 50px;
+    //width: 100%;
 }
 
 @media (max-width: 1080px){

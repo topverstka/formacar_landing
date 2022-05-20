@@ -161,7 +161,22 @@
                 </a>
             </div>
           </div>
-          <div class="swiper-pagination gallary__swiper-pagination"></div>
+
+          <div class="gallary__controls">
+              <div class="gallary__controls-container">
+                <div class="swiper-pagination gallary__swiper-pagination"></div>
+                <div class="swiper-button-prev swiper-btn swiper-btn-prev gallary-swiper-prev">
+                    <svg width="7">
+                        <use xlink:href="./img/icons-sprite.svg#arrow-left"></use>
+                    </svg>
+                </div>
+                <div class="swiper-button-next swiper-btn swiper-btn-next gallary-swiper-next">
+                    <svg width="7">
+                        <use xlink:href="./img/icons-sprite.svg#arrow-right"></use>
+                    </svg>
+                </div>
+              </div>
+          </div>     
     </div>
 
     <section id="tokenomics" class="tokenomics">
@@ -371,7 +386,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination nft__slider__swiper-pagination"></div>
+
+                <div class="nft__controls">
+                    <div class="nft__controls-container">
+                        <div class="swiper-pagination nft__slider__swiper-pagination"></div>
+                        <div class="swiper-button-prev swiper-btn swiper-btn-prev nft-swiper-prev">
+                            <svg width="7">
+                                <use xlink:href="./img/icons-sprite.svg#arrow-left"></use>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next swiper-btn swiper-btn-next nft-swiper-next">
+                            <svg width="7">
+                                <use xlink:href="./img/icons-sprite.svg#arrow-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -748,6 +778,10 @@
             el: ".gallary__swiper-pagination",
             clickable: true,
           },
+          navigation: {
+			nextEl: '.gallary-swiper-next',
+			prevEl: '.gallary-swiper-prev',
+		},
         });
 
 
@@ -760,6 +794,10 @@
             el: ".nft__slider__swiper-pagination",
             clickable: true,
           },
+          navigation: {
+			nextEl: '.nft-swiper-next',
+			prevEl: '.nft-swiper-prev',
+		},
           breakpoints: {
             // when window width is >= 320px
             320: {

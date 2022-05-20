@@ -28,3 +28,58 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .swiper-button-next, .swiper-button-prev{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+    opacity: 0.3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+
+    transition: all 0.2s;
+
+    svg{
+      fill: #fff;
+      width: 7px;
+      height: 11px;
+      transition: all 0.2s;
+    }
+
+
+    &:hover{
+      opacity: 1;
+      border-color:rgba(0, 242, 251, 1);
+      svg{
+        fill:rgba(0, 242, 251, 1);
+      }
+    }
+
+    
+
+    &:after{
+      content: none;
+    }
+
+    @media (max-width: 767px){
+      display: none;
+    }
+  }
+
+
+
+  .swiper-button-next{
+    right: -65px;
+  }
+
+  .swiper-button-prev{
+    left: -65px;
+  }
+
+  .swiper-pagination{
+    position: relative;
+  }
