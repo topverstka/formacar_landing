@@ -72,6 +72,8 @@
         left: -10px;
         top: 0px;
         z-index: 1;
+        box-shadow: 0px 2px 20px rgba(0, 173, 255, 1);
+        
     }
 
     &:before{
@@ -94,6 +96,9 @@
 }
 
 .roadmap-list__item--current{
+    &:after{
+        box-shadow: none;
+    }
     .roadmap-list__item-data{
         color: #fff;
         -webkit-background-clip: unset;
@@ -103,6 +108,9 @@
 
     .roadmap-list__item-border{
         background-color: #fff;
+        opacity: 0.5;
+        width: 2px;
+        left: -1px;
     }
 }
 
@@ -129,8 +137,14 @@
 }
 
 .roadmap-list__item--current ~ .roadmap-list__item{
+    &:after{
+        box-shadow: none;
+    }
     .roadmap-list__item-border{
         background-color: #fff;
+        opacity: 0.5;
+        width: 2px;
+        left: -1px;
     }
 
     .roadmap-list__item-data{
@@ -277,7 +291,10 @@
     .roadmap-list__item-border{
         left: 24px;
     }
-    .roadmap-list__item--1 .roadmap-list__item-border{
-        left: 23px;
+    .roadmap-list__item--current .roadmap-list__item-border{
+        left: 24px;
+    }
+    .roadmap-list__item--current ~ .roadmap-list__item .roadmap-list__item-border{
+        left: 24px;
     }
 }
