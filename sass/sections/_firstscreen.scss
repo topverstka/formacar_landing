@@ -2,6 +2,7 @@
     padding-top: 620px;
     padding-bottom: 60px;
     position: relative;
+    overflow: hidden;
     :before {
         content: '';
         background: -webkit-gradient(linear,left bottom,left top,color-stop(5%,#000),color-stop(99.9%,rgba(0,0,0,0)));
@@ -19,14 +20,23 @@
 
 .first-screen__bg{
     position: absolute;
-    bottom: -80px;
+    top: 0;
+    bottom: -160px;
     left: 0;
     width: 100%;
     z-index: -2;
     opacity: 0.8;
+    overflow: hidden;
 }
 
-
+.first-screen__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .first-screen__title{
     font-size: 96px;
@@ -52,7 +62,7 @@
         display: none;
     }
     .first-screen__bg{
-        top: 0;
+        bottom: -80px;
         width: 100%;
         img{
             object-fit: cover;
