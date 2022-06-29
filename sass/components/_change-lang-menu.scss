@@ -1,0 +1,37 @@
+.change-lang-menu {
+  position: relative;
+  padding: 20px 30px;
+  background-color: rgba(18, 20, 26, 0.9);
+  border-radius: 16px;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: -100%;
+    transform: translateY(50%);
+    width: 20px;
+    height: 20px;
+    background-color: red;
+  }
+}
+
+.change-lang-menu__item + .change-lang-menu__item {
+  margin-top: 10px;
+}
+
+.change-lang-menu__btn {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: var(--bg-page);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.change-lang-menu__img {
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+}
