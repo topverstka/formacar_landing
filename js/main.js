@@ -123,8 +123,35 @@ function menu() {
 
 menu();
 
+// Мобильное меню выбора языка
+function menuLang() {
+    const buttonNode = find('.header__nav-lang-btn');
+    const menuNode = find('.mobile-lang');
+    const backNode = find('.mobile-lang__back');
+    const closeNode = find('.mobile-lang__close');
+    const mainMenuNode = find('.header__nav--mobile');
+    const burgerNode = find('.header__nav-burger');
 
+    buttonNode.addEventListener('click', () => {
+        menuNode.classList.add('active');
+    });
 
+    backNode.addEventListener('click', () => {
+        menuNode.classList.remove('active');
+    });
+
+    if (mainMenuNode) {
+        closeNode.addEventListener('click', () => {
+            mainMenuNode.classList.remove('active');
+            menuNode.classList.remove('active');
+            bodyLock();
+
+            if (burgerNode) burgerNode.classList.toggle('active');
+        });
+    }
+}
+
+menuLang();
 
 
 // Плавная прокрутка

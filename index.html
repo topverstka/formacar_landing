@@ -40,24 +40,58 @@
                 </nav>
 
                 <div class="header__lang">
-                    <button class="header__lang-btn">
+                    <button class="header__lang-btn" type="button">
                         <img class="header__lang-img" src="img/lang/en.png" alt="en">
                         EN
                     </button>
-                    <ul class="change-lang-menu">
-                        <li class="change-lang-menu__item">
-                            <a class="change-lang-menu__btn" href="#">
-                                <img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
-                                English
-                            </a>
-                        </li>
-                        <li class="change-lang-menu__item">
-                            <a class="change-lang-menu__btn" href="#">
-                                <img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
-                                Русский
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="header__lang-menu">
+                        <div class="header__lang-menu-inner">
+                            <ul class="change-lang-menu">
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn change-lang-menu__btn--active" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
+                                        English
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
+                                        Русский
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/pt.png" alt="pt">
+                                        Português
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/zn.png" alt="zn">
+                                        汉语
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/hi.png" alt="hi">
+                                        हिन्दी
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/ja.png" alt="ja">
+                                        日本語
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/es.png" alt="es">
+                                        español
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="header__nav-burger">
@@ -88,8 +122,72 @@
                     <li class="header__nav-elem"><a class="anchor" href="#contacts">Contacts</a></li>
                 </ul>
             </div>
+
+            <div class="header__nav-lang">
+                <button class="header__nav-lang-btn" type="button">
+                    <img class="header__nav-lang-img" src="img/lang/en.png" alt="en">
+                    English
+                </button>
+            </div>
         </div>
     </nav>
+
+    <div class="mobile-lang">
+        <div class="mobile-lang__inner container">
+            <button class="mobile-lang__back" type="button" aria-label="back">
+                <svg width="12" height="22" viewBox="0 0 12 22">
+                    <use xlink:href="./img/icons-sprite.svg#arrow-back"></use>
+                </svg>
+            </button>
+    
+            <button class="mobile-lang__close" type="button" aria-label="close"></button>
+    
+            <ul class="change-lang-menu">
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn change-lang-menu__btn--active" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
+                        English
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
+                        Русский
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/pt.png" alt="pt">
+                        Português
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/zn.png" alt="zn">
+                        汉语
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/hi.png" alt="hi">
+                        हिन्दी
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/ja.png" alt="ja">
+                        日本語
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/es.png" alt="es">
+                        español
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <div class="first-screen">
         <div class="first-screen__bg">
