@@ -115,10 +115,11 @@
 
 @media (max-width: 375px){
     .first-screen{
-        padding-bottom: 0;
+        padding-bottom: 15px;
     }
 
-    .first-screen .container {
-        margin-bottom: -30px;
+    .first-screen__title {
+        font-size: 32px;
+        line-height: 39px;
     }
 }
