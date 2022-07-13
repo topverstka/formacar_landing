@@ -24,30 +24,30 @@
 
 .meta__point--1{
     top: 557px;
-    right: 170px;
+    right: 260px;
     transform: scale(1);
     font-size: 22px;
 }
 
 .meta__point--2{
     top: 423px;
-    right: 100px;
+    right: 232px;
 }
 
 
 .meta__point--3{
     top: 367px;
-    right: 410px;
+    right: 500px;
 }
 
 .meta__point--4{
     top: 272px;
-    right: 255px;
+    right: 349px;
 }
 
 .meta__point--5{
     top: 255px;
-    right: 580px;
+    right: 672px;
 }
 
 
@@ -61,9 +61,9 @@
     letter-spacing: 0em;
     color: #fff;
     text-transform: uppercase;
-    position: relative;
-    bottom: 5px;
-    left: -8px;
+    position: absolute;
+    left: 85px;
+    transform: translateY(-2px);
     line-height: 26px;
 }
 
@@ -113,30 +113,30 @@
 
     .meta__point--1{
         top: 38.68055555555556VW;
-        right: 11.805555555555555VW;
+        right: 18.005556VW;
         transform: scale(1);
         font-size: 22px;
     }
     
     .meta__point--2{
         top: 29.375VW;
-        right: 6.944444444444445VW;
+        right: 16.144444VW;
     }
     
     
     .meta__point--3{
         top: 25.48611111111111VW;
-        right: 28.47222222222222VW;
+        right: 34.572222VW;
     }
     
     .meta__point--4{
         top: 18.88888888888889VW;
-        right: 17.708333333333336VW;
+        right: 24.208333VW;
     }
     
     .meta__point--5{
         top: 17.708333333333336VW;
-        right: 40.27777777777778VW;
+        right: 46.577778VW;
     }
 }
 
@@ -229,8 +229,7 @@
         font-size: 14px;
         line-height: 14px;
         letter-spacing: 0em;
-        left: 0;
-        top: -3px;
+        left: 32px;
     }
     .meta__point-img{
         width: 30px;
@@ -240,12 +239,12 @@
     }
     .meta__point--1{
         top: 56.25VW;
-        right: 8.75VW;
+        right: 24.75VW;;
         .meta__point-title{
             font-size: 14px;
             line-height: 14px;
             letter-spacing: 0em;
-            top: -2px;
+            left: 40px;
         }
         .meta__point-img{
             width: 40px;
@@ -254,21 +253,21 @@
 
     .meta__point--2{
         top: 76.5625VW;
-        right: 20.625VW;    
+        right: 50.625VW;    
     }
 
     .meta__point--3{
         top: 38.4375VW;
-        right: 31.25VW;   
+        right: 51.25VW;   
     }
 
     .meta__point--4{
         top: 26.5625VW;
-        right: 15.625VW;  
+        right: 35.625VW;  
     }
 
     .meta__point--5{
         top: 25VW;
-        right: 50.31250000000001VW;  
+        right: 74.3125VW;  
     }
 }
