@@ -1087,7 +1087,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 100%;
+  width: 100vw;
   aspect-ratio: 1280/720;
 }
 .first-screen :before {
