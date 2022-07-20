@@ -1,0 +1,56 @@
+.contact-us {
+    margin-top: -120px;
+    margin-bottom: -130px;
+    padding-top: 240px;
+    padding-bottom: 260px;
+    background-image: linear-gradient(transparent, #12141A 18%, #12141A 78%, transparent 100%);
+
+    @media (max-width: 1080px) {
+        margin-top: -60px;
+        margin-bottom: -70px;
+        padding-top: 120px;
+        padding-bottom: 140px;
+    }
+}
+
+.contact-us__wrap {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    @media (max-width: $laptop-l) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact-us__title {
+    font-family: 'Montserrat-bold';
+    font-size: 96px;
+    line-height: 86px;
+    letter-spacing: -0.03em;
+    word-wrap: break-word;
+    overflow: hidden;
+
+    @media (max-width: $laptop-l) {
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 1080px) {
+        font-size: 60px;
+        line-height: 66px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.contact-us__form {
+    flex-shrink: 0;
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}

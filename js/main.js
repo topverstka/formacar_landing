@@ -84,27 +84,55 @@ function myFunction() {
 
 
 // Валидация формы
-function validationForm() {
-    const name = find('#user_name')
-    const phone = find('#user_phone')
-    const email = find('#user_email')
+validationForm('.form');
+function validationForm(selector) {
+    const formNodes = document.querySelectorAll(selector);
 
-    let con = true
+    formNodes.forEach((formNode) => {
+        const inputNodes = formNode.querySelectorAll('.form-input');
 
-    for (let i = 0; i < [name, phone, email].length; i++) {
-        const elem = [name, phone, email][i];
-        const elemValue = elem.value.trim()
+        formNode.setAttribute('novalidate', '');
+        setEvents(inputNodes);
 
-        if (elemValue === '') {
-            elem.classList.add('_error')
-            con = false
-        } else {
-            elem.classList.remove('_error')
-            con = true
-        }
+        formNode.addEventListener('submit', (evt) => {
+            if (hasInvalidInput(inputNodes)) {
+                evt.preventDefault();
+
+                inputNodes.forEach((inputNode) => {
+                    checkInput(inputNode);
+                });
+            }
+        });
+    });
+
+    function setEvents(inputNodes) {
+        inputNodes.forEach((inputNode) => {
+            inputNode.addEventListener('input', () => {
+                checkInput(inputNode);
+            });
+        });
     }
 
-    return con
+    function hasInvalidInput(inputNodes) {
+        return Array.from(inputNodes).some((inputNode) => !inputNode.validity.valid);
+    }
+
+    function checkInput(inputNode) {
+        const placehoder = inputNode.getAttribute('data-placeholder') || '';
+
+        if (inputNode.validity.valid) {
+            inputNode.classList.remove('form-input_error');
+            inputNode.placeholder = placehoder;
+        } else {
+            inputNode.classList.add('form-input_error');
+            inputNode.placeholder = inputNode.validationMessage;
+
+            setTimeout(() => {
+                inputNode.classList.remove('form-input_error');
+                inputNode.placeholder = placehoder;
+            }, 800);
+        }
+    }
 }
 
 
