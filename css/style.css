@@ -2837,6 +2837,7 @@ textarea.form-input {
 }
 
 .contact-us__title {
+  margin-right: 40px;
   font-family: "Montserrat-bold";
   font-size: 96px;
   line-height: 86px;
@@ -2847,6 +2848,7 @@ textarea.form-input {
 @media (max-width: 1440px) {
   .contact-us__title {
     margin-bottom: 50px;
+    margin-right: 0;
   }
 }
 @media (max-width: 1080px) {
