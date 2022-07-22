@@ -128,19 +128,19 @@ function validationForm(selector) {
 
     function checkInput(inputNode) {
         const placehoder = inputNode.getAttribute('data-placeholder') || '';
+        const errorMessage = inputNode.getAttribute('data-error') || '';
 
         if (inputNode.validity.valid) {
             inputNode.classList.remove('form-input_error');
-            inputNode.placeholder = placehoder;
         } else {
             inputNode.classList.add('form-input_error');
-            inputNode.placeholder = inputNode.validationMessage;
+            inputNode.placeholder = errorMessage;
 
             if (inputNode.value.length) return;
             setTimeout(() => {
                 inputNode.classList.remove('form-input_error');
                 inputNode.placeholder = placehoder;
-            }, 800);
+            }, 1200);
         }
     }
 }

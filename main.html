@@ -719,10 +719,10 @@
                 <h2 class="contact-us__title" data-aos="fade-down">Contact Us</h2>
     
                 <form class="contact-us__form form" action="/" name="contact" data-aos="zoom-in">
-                    <input class="form-input" type="email" name="email" placeholder="Email" data-placeholder="Email" required>
-                    <input class="form-input" type="text" name="name" placeholder="Name" data-placeholder="Name" required>
-                    <input class="form-input" type="url" name="social" placeholder="Link to your social networks" data-placeholder="Link to your social networks">
-                    <textarea class="form-input" name="message" placeholder="Message" data-placeholder="Message" required></textarea>
+                    <input class="form-input" type="email" name="email" placeholder="Email" data-placeholder="Email" data-error="Email entered incorrectly" required>
+                    <input class="form-input" type="text" name="name" placeholder="Name" data-placeholder="Name" data-error="Please fill out this field." required>
+                    <input class="form-input" type="url" name="social" placeholder="Link to your social networks" data-error="Please enter a URL." data-placeholder="Link to your social networks">
+                    <textarea class="form-input" name="message" placeholder="Message" data-placeholder="Message" data-error="Please fill out this field." required></textarea>
                     <button class="form-submit" type="submit">Send a message</button>
                 </form>
             </div>
