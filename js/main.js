@@ -135,13 +135,13 @@ function validationForm(selector) {
         } else {
             inputNode.classList.add('form-input_error');
             inputNode.placeholder = errorMessage;
-
-            if (inputNode.value.length) return;
-            setTimeout(() => {
-                inputNode.classList.remove('form-input_error');
-                inputNode.placeholder = placehoder;
-            }, 1200);
         }
+
+        if (inputNode.value.length) return;
+        setTimeout(() => {
+            inputNode.classList.remove('form-input_error');
+            inputNode.placeholder = placehoder;
+        }, 1200);
     }
 }
 
