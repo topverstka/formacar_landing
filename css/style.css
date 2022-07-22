@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Montserrat-medium";
   font-style: bold;
-  font-weight: 700;
+  font-weight: 500;
   font-stretch: 100%;
   font-display: swap;
   src: url("../fonts/Montserrat/Montserrat-Medium.ttf") format("woff2");
@@ -548,6 +548,9 @@ textarea.form-input {
 .form-input_error::placeholder {
   color: var(--error);
 }
+.form-input_error:hover, .form-input_error:focus {
+  border-color: var(--error);
+}
 
 .form-submit {
   display: inline-flex;
@@ -564,6 +567,10 @@ textarea.form-input {
 .form-submit:hover {
   color: rgb(0, 242, 251);
   border-color: rgb(0, 242, 251);
+}
+.form-submit:disabled:hover {
+  color: #fff;
+  border-color: #fff;
 }
 @media (max-width: 767px) {
   .form-submit {
@@ -614,6 +621,12 @@ textarea.form-input {
   padding: 40px 40px 32px 40px;
 }
 
+#message-sent .modal__content {
+  padding: 50px;
+  max-width: 524px;
+  text-align: center;
+}
+
 .modal__title {
   text-align: center;
   font-family: "Oswald Regular";
@@ -627,6 +640,14 @@ textarea.form-input {
   display: block;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.modal__desc {
+  color: #fff;
+  font-family: "Montserrat-medium", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 .modal__telegram-item {
@@ -695,11 +716,22 @@ textarea.form-input {
   .modal__content {
     padding: 20px;
   }
+  #message-sent .modal__content {
+    padding: 30px 20px;
+    max-width: 260px;
+  }
+  #message-sent .modal__title {
+    margin-bottom: 20px;
+  }
   .modal__title {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.015em;
     margin-bottom: 33px;
+  }
+  .modal__desc {
+    font-size: 14px;
+    line-height: 17px;
   }
   .modal__telegram-item {
     margin-bottom: 10px;
