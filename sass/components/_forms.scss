@@ -142,6 +142,11 @@ textarea.form-input {
     &::placeholder {
         color: $error;
     }
+
+    &:hover,
+    &:focus {
+        border-color: $error;
+    }
 }
 
 .form-submit {
@@ -159,6 +164,13 @@ textarea.form-input {
     &:hover {
         color: rgb(0, 242, 251);
         border-color: rgb(0, 242, 251);
+    }
+
+    &:disabled {
+        &:hover {
+            color: #fff;
+            border-color: #fff;
+        }
     }
 
     @media (max-width: 767px) {

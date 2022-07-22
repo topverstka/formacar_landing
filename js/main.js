@@ -90,25 +90,34 @@ function validationForm(selector) {
 
     formNodes.forEach((formNode) => {
         const inputNodes = formNode.querySelectorAll('.form-input');
+        const submitNode = formNode.querySelector('.form-submit');
 
         formNode.setAttribute('novalidate', '');
-        setEvents(inputNodes);
+        setEvents(inputNodes, submitNode);
+        toggleSubmitState(inputNodes, submitNode);
 
         formNode.addEventListener('submit', (evt) => {
             if (hasInvalidInput(inputNodes)) {
                 evt.preventDefault();
-
-                inputNodes.forEach((inputNode) => {
-                    checkInput(inputNode);
-                });
             }
         });
     });
 
-    function setEvents(inputNodes) {
+    function toggleSubmitState(inputNodes, submitNode) {
+        if (!submitNode) return;
+
+        if (hasInvalidInput(inputNodes)) {
+            submitNode.disabled = true;
+        } else {
+            submitNode.disabled = false;
+        }
+    }
+
+    function setEvents(inputNodes, submitNode) {
         inputNodes.forEach((inputNode) => {
             inputNode.addEventListener('input', () => {
                 checkInput(inputNode);
+                toggleSubmitState(inputNodes, submitNode);
             });
         });
     }
@@ -127,6 +136,7 @@ function validationForm(selector) {
             inputNode.classList.add('form-input_error');
             inputNode.placeholder = inputNode.validationMessage;
 
+            if (inputNode.value.length) return;
             setTimeout(() => {
                 inputNode.classList.remove('form-input_error');
                 inputNode.placeholder = placehoder;

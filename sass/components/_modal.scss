@@ -41,6 +41,11 @@
     padding: 40px 40px 32px 40px;
 }
 
+#message-sent .modal__content {
+    padding: 50px;
+    max-width: 524px;
+    text-align: center;
+}
 
 .modal__title {
     text-align: center;
@@ -56,6 +61,14 @@
         display: block;
         margin: 0 auto;
         margin-bottom: 40px;
+}
+
+.modal__desc {
+    color: #fff;
+    font-family: 'Montserrat-medium', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .modal__telegram-item{
@@ -126,11 +139,24 @@
     .modal__content{
         padding: 20px;
     }
+    #message-sent {
+        .modal__content {
+            padding: 30px 20px;
+            max-width: 260px;
+        }
+        .modal__title {
+            margin-bottom: 20px;
+        }
+    }
     .modal__title{
         font-size: 24px;
         line-height: 36px;
         letter-spacing: 0.015em;
         margin-bottom: 33px;
+    }
+    .modal__desc {
+        font-size: 14px;
+        line-height: 17px;
     }
     .modal__telegram-item{
         margin-bottom: 10px;
