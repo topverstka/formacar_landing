@@ -1725,13 +1725,16 @@ textarea.form-input {
   max-width: 900px;
   border-radius: 10px;
   overflow: hidden;
-  transform: scale(0.9);
-  transition: all 0.2s;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1023px) {
   .gallary__slide {
     max-width: 90vw;
   }
+}
+
+.gallary__img {
+  transform: scale(0.9);
+  transition: all 0.2s;
 }
 
 .gallary__controls {
@@ -1747,7 +1750,7 @@ textarea.form-input {
   display: inline-flex;
 }
 
-.swiper-slide-active {
+.swiper-slide-active .gallary__img {
   transform: scale(1);
 }
 
