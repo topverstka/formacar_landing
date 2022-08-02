@@ -2457,6 +2457,12 @@ textarea.form-input {
   font-size: 20px;
   line-height: 32px;
 }
+@media (max-width: 1080px) {
+  .info__card-paragraph,
+.info__card-ul {
+    font-size: 18px;
+  }
+}
 @media (max-width: 767px) {
   .info__card-paragraph,
 .info__card-ul {
