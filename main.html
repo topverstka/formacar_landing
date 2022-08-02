@@ -768,6 +768,37 @@
                 <form class="contact-us__form form" action="/" name="contact" data-aos="zoom-in">
                     <input class="form-input" type="email" name="email" placeholder="Email" data-placeholder="Email" data-error="Email entered incorrectly" required>
                     <input class="form-input" type="text" name="name" placeholder="Name" data-placeholder="Name" data-error="Please fill out this field." required>
+                    <div class="form-select">
+                        <select class="form-select__input" name="representative">
+                            <option value="Фонды">Фонды</option>
+                            <option value="Биржи" selected>Биржи</option>
+                            <option value="Лаунчпады">Лаунчпады</option>
+                            <option value="Эдвайзеры">Эдвайзеры</option>
+                            <option value="Работа">Работа</option>
+                            <option value="Иное">Иное</option>
+                        </select>
+                        <button class="form-select__toggle" type="button">You are a representative..</button>
+                        <ul class="form-select__list">
+                            <li>
+                                <button class="form-select__btn" type="button">Фонды</button>
+                            </li>
+                            <li>
+                                <button class="form-select__btn form-select__btn_active" type="button">Биржи</button>
+                            </li>
+                            <li>
+                                <button class="form-select__btn" type="button">Лаунчпады</button>
+                            </li>
+                            <li>
+                                <button class="form-select__btn" type="button">Эдвайзеры</button>
+                            </li>
+                            <li>
+                                <button class="form-select__btn" type="button">Работа</button>
+                            </li>
+                            <li>
+                                <button class="form-select__btn" type="button">Иное</button>
+                            </li>
+                        </ul>
+                    </div>
                     <input class="form-input" type="url" name="social" placeholder="Link to your social networks" data-error="Please enter a URL." data-placeholder="Link to your social networks">
                     <textarea class="form-input" name="message" placeholder="Message" data-placeholder="Message" data-error="Please fill out this field." required></textarea>
                     <button class="form-submit" type="submit">Send a message</button>

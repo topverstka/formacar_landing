@@ -145,6 +145,47 @@ function validationForm(selector) {
     }
 }
 
+// Кастомный select
+castomSelect();
+function castomSelect() {
+    const selectNodes = document.querySelectorAll('.form-select');
+
+    selectNodes.forEach(selectNode => {
+        const inputNode = selectNode.querySelector('.form-select__input');
+        const toggleNode = selectNode.querySelector('.form-select__toggle');
+        const buttonNodes = selectNode.querySelectorAll('.form-select__btn');
+
+        toggleNode.addEventListener('click', handleToggle);
+
+        buttonNodes.forEach((buttonNode, index) => {
+            buttonNode.addEventListener('click', () => {
+                buttonNodes.forEach(buttonNode => buttonNode.classList.remove('form-select__btn_active'));
+                buttonNode.classList.add('form-select__btn_active');
+                inputNode.selectedIndex = index;
+                toggleNode.classList.add('form-select__toggle_selected');
+                toggleNode.textContent = buttonNode.textContent;
+            });
+        });
+
+        function handleToggle(evt) {
+            evt.stopPropagation();
+            selectNode.classList.toggle('form-select_active');
+
+            if (selectNode.classList.contains('form-select_active')) {
+                toggleNode.removeEventListener('click', handleToggle);
+                document.addEventListener('click', handleDocument);
+            }
+        }
+
+        function handleDocument() {
+            selectNode.classList.remove('form-select_active');
+
+            document.removeEventListener('click', handleDocument);
+            selectNode.addEventListener('click', handleToggle);
+        }
+    });
+}
+
 
 // Мобильное меню
 // menu()
