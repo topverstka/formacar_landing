@@ -41,6 +41,17 @@ function bodyLock(con) {
 	}
 }
 
+firstScreenVideo();
+function firstScreenVideo() {
+    const videoNode = document.querySelector('.first-screen__video');
+
+    if (!videoNode) return;
+
+    document.addEventListener('DOMContentLoaded', () => {
+        videoNode.src = videoNode.getAttribute('data-src');
+    });
+}
+
 function faq(){
     let faqElements = d.querySelectorAll('.faq__questions-item');
 
