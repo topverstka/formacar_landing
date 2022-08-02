@@ -1722,12 +1722,16 @@ textarea.form-input {
 }
 
 .gallary__slide {
-  width: 900px;
-  max-width: 90%;
+  max-width: 900px;
   border-radius: 10px;
   overflow: hidden;
   transform: scale(0.9);
   transition: all 0.2s;
+}
+@media (max-width: 1439px) {
+  .gallary__slide {
+    max-width: 90vw;
+  }
 }
 
 .gallary__controls {
