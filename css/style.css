@@ -3245,20 +3245,34 @@ textarea.form-input {
   }
 }
 
+.contact-us__header {
+  display: grid;
+  gap: 40px;
+  margin-top: -10px;
+  margin-right: 58px;
+}
+@media (max-width: 1440px) {
+  .contact-us__header {
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us__header {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
+
 .contact-us__title {
-  margin-right: 40px;
   font-family: "Montserrat-bold";
   font-size: 96px;
   line-height: 86px;
   letter-spacing: -0.03em;
   word-wrap: break-word;
   overflow: hidden;
-}
-@media (max-width: 1440px) {
-  .contact-us__title {
-    margin-bottom: 50px;
-    margin-right: 0;
-  }
 }
 @media (max-width: 1080px) {
   .contact-us__title {
@@ -3268,9 +3282,22 @@ textarea.form-input {
 }
 @media (max-width: 767px) {
   .contact-us__title {
-    margin-bottom: 20px;
     font-size: 36px;
     line-height: 44px;
+  }
+}
+
+.contact-us__desc {
+  color: #ffffff;
+  font-family: "Montserrat-medium", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+@media (max-width: 767px) {
+  .contact-us__desc {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 
