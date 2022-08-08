@@ -2408,6 +2408,7 @@ textarea.form-input {
 
 .info__card-content {
   position: relative;
+  z-index: 1;
 }
 
 .info__card-title {
@@ -2520,6 +2521,8 @@ textarea.form-input {
   height: auto;
   max-width: unset;
   max-height: unset;
+  pointer-events: none;
+  user-select: none;
 }
 @media (max-width: 767px) {
   .info__card-shadow {
