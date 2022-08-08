@@ -437,7 +437,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var cookieCheck = getMyCookie("Cookie");
 	if (cookieCheck != 'yes') {
         d.querySelector('.cookie').classList.add('active');
-        setCookie("Cookie", 'yes', 1);
 	}
 
 });
