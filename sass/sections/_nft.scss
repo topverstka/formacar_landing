@@ -57,7 +57,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 66px;
+    padding-bottom: 16px;
+
+    @media (max-width: 767px) {
+        margin-top: 50px;
+    }
 }
 
 .nft__controls-container{
@@ -133,6 +138,18 @@
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 0em;
+}
+
+.nft__slider-container {
+    overflow-x: hidden;
+}
+
+.nft__slider {
+    overflow: unset;
+}
+
+.nft__slider .swiper-slide {
+    width: 305px;
 }
 
 .nft__slider__swiper-pagination{
