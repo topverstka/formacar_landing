@@ -39,6 +39,7 @@
 }
 
 .nft__attention{
+    max-width: 860px;
     font-family: 'Oswald Regular';
     font-size: 36px;
     line-height: 53px;
@@ -50,6 +51,17 @@
     -webkit-text-fill-color: transparent;
     display: block;
     margin-bottom: 100px;
+}
+
+.nft__desc {
+    margin-top: 100px;
+    font-family: 'Oswald Regular';
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 0.015em;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .nft__controls{
@@ -149,7 +161,7 @@
 }
 
 .nft__slider .swiper-slide {
-    width: 305px;
+    width: 384px;
 }
 
 .nft__slider__swiper-pagination{
@@ -217,5 +229,16 @@
         font-size: 15px;
         line-height: 18px;
         letter-spacing: 0em;
+    }
+    .nft__slider .swiper-slide {
+        width: 280px;
+    }
+    .nft__controls {
+        margin-top: 28px;
+    }
+    .nft__desc  {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
