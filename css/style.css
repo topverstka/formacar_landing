@@ -26,7 +26,7 @@
 @font-face {
   font-family: "Montserrat-regular";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-stretch: 100%;
   font-display: swap;
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("woff2");
@@ -48,12 +48,28 @@
   src: url("../fonts/Oswald/Oswald-Regular.ttf") format("woff2");
 }
 @font-face {
+  font-family: "Oswald Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("../fonts/Oswald/Oswald-Medium.ttf") format("woff2");
+}
+@font-face {
   font-family: "Steppe";
   font-style: normal;
   font-weight: 700;
   font-stretch: 100%;
   font-display: swap;
   src: url("../fonts/Steppe.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Panchang-Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("../fonts/Panchang/Panchang-Semibold.ttf") format("woff2");
 }
 :root {
   --ffMain: "Noto Sans", sans-serif;
@@ -1127,6 +1143,169 @@ textarea.form-input {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.nft-card-grayscale {
+  position: relative;
+  width: 384px;
+  height: 340px;
+}
+@media (max-width: 767px) {
+  .nft-card-grayscale {
+    width: 280px;
+    height: 249px;
+  }
+}
+
+.nft-card-grayscale_type_pro .nft-card-grayscale__bg {
+  background: radial-gradient(50% 63.5% at 50% 50%, #CBCBD5 0%, #323333 100%);
+}
+.nft-card-grayscale_type_pro .nft-card-grayscale__border {
+  fill: #2B2B2B;
+}
+.nft-card-grayscale_type_pro .nft-card-grayscale__header {
+  color: #fff;
+}
+.nft-card-grayscale_type_pro .nft-card-grayscale__logo {
+  fill: #fff;
+}
+.nft-card-grayscale_type_pro .nft-card-grayscale__title {
+  color: #fff;
+  background: #000000;
+}
+
+.nft-card-grayscale_type_ultra .nft-card-grayscale__bg {
+  background: linear-gradient(231.78deg, #575B5F 0%, #CBCBD5 25%, #F1F1F2 50%, #BCBCBC 75%, #75787D 100%);
+}
+.nft-card-grayscale_type_ultra .nft-card-grayscale__border {
+  fill: #000000;
+}
+.nft-card-grayscale_type_ultra .nft-card-grayscale__title {
+  background: radial-gradient(50.12% 393.76% at 50% 50.01%, #58595B 0%, #B2B4B6 100%);
+}
+
+.nft-card-grayscale__bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 98%;
+  height: 98%;
+  background: radial-gradient(50% 63.5% at 50% 50%, #FFFFFF 0%, #CBCBD5 100%);
+  border-radius: 30px;
+}
+
+.nft-card-grayscale__border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  fill: #686868;
+  stroke: #fff;
+}
+
+.nft-card-grayscale__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  padding-top: 28px;
+  padding-bottom: 55px;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .nft-card-grayscale__content {
+    padding: 9px;
+    padding-top: 20px;
+    padding-bottom: 37px;
+  }
+}
+
+.nft-card-grayscale__img {
+  max-height: 200px;
+}
+@media (max-width: 767px) {
+  .nft-card-grayscale__img {
+    max-height: 146px;
+  }
+}
+
+.nft-card-grayscale__header {
+  display: grid;
+  grid-template-columns: 126px 30px auto;
+  align-items: center;
+  gap: 9px;
+  padding: 0 30px;
+  color: #000000;
+  font-family: "Oswald Medium";
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.15em;
+}
+@media (max-width: 767px) {
+  .nft-card-grayscale__header {
+    grid-template-columns: 97px 30px auto;
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.nft-card-grayscale__id {
+  text-align: left;
+}
+
+.nft-card-grayscale__logo {
+  width: 32px;
+  height: 32px;
+}
+
+.nft-card-grayscale__desc {
+  text-align: right;
+}
+
+.nft-card-grayscale__title {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 20px;
+  color: #fff;
+  font-family: "Oswald Regular";
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  background-color: #686868;
+  text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+}
+@media (max-width: 767px) {
+  .nft-card-grayscale__title {
+    margin-top: -10px;
+  }
+}
+
+.nft-card-grayscale__type {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  width: 230px;
+  color: #fff;
+  font-family: "Panchang-Semibold";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .nft-card-grayscale__type {
+    bottom: 7px;
+    font-size: 11px;
+    line-height: 15px;
+  }
 }
 
 .header {
@@ -2267,6 +2446,7 @@ textarea.form-input {
 }
 
 .nft__attention {
+  max-width: 860px;
   font-family: "Oswald Regular";
   font-size: 36px;
   line-height: 53px;
@@ -2278,6 +2458,17 @@ textarea.form-input {
   -webkit-text-fill-color: transparent;
   display: block;
   margin-bottom: 100px;
+}
+
+.nft__desc {
+  margin-top: 100px;
+  font-family: "Oswald Regular";
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .nft__controls {
@@ -2375,7 +2566,7 @@ textarea.form-input {
 }
 
 .nft__slider .swiper-slide {
-  width: 305px;
+  width: 384px;
 }
 
 .nft__slider__swiper-pagination {
@@ -2438,6 +2629,17 @@ textarea.form-input {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0em;
+  }
+  .nft__slider .swiper-slide {
+    width: 280px;
+  }
+  .nft__controls {
+    margin-top: 28px;
+  }
+  .nft__desc {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 .info {
