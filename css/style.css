@@ -1661,18 +1661,23 @@ textarea.form-input {
   top: 0;
   width: 100%;
   object-fit: cover;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .first-screen__video::-webkit-media-controls-panel {
   display: none !important;
   -webkit-appearance: none;
+  appearance: none;
 }
 .first-screen__video::-webkit-media-controls-play-button {
   display: none !important;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
 }
 .first-screen__video::-webkit-media-controls-start-playback-button {
   display: none !important;
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
+  appearance: none !important;
 }
 
 .first-screen__content {
