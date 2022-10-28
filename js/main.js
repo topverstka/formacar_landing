@@ -440,3 +440,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 });
+
+function checkPowerSavingModeVideo() {
+    const videoNode = document.querySelector('.first-screen__video');
+    if (!videoNode) return;
+    videoNode.addEventListener('canplay', () => videoNode.play());
+}
+
+checkPowerSavingModeVideo();
