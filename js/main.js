@@ -440,15 +440,3 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 });
-
-function checkPowerSavingModeVideo() {
-    const videoNode = document.querySelector('.first-screen__video');
-    const imgNode = document.querySelector('.first-screen__img');
-    if (!videoNode || !imgNode) return;
-    videoNode.addEventListener('waiting', (evt) => {
-        videoNode.style.display = 'none';
-        imgNode.style.display = 'block';
-    });
-}
-
-checkPowerSavingModeVideo();
