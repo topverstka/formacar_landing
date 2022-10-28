@@ -31,6 +31,13 @@
     overflow: hidden;
 }
 
+.first-screen__img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .first-screen__video {
     position: absolute;
     left: 0;
