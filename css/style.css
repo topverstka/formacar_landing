@@ -2256,6 +2256,11 @@ textarea.form-input {
   bottom: 130px;
 }
 
+.tokenomics-car__target--7 {
+  left: 461px;
+  top: 124px;
+}
+
 .tokenomics-car__target-circle {
   height: 20px;
   width: 20px;
@@ -2349,6 +2354,10 @@ textarea.form-input {
     right: 187px;
     bottom: 112px;
   }
+  .tokenomics-car__target--7 {
+    left: 389px;
+    top: 96px;
+  }
   .tokenomics-car__target-percent {
     font-size: 40px;
     line-height: 45px;
@@ -2407,6 +2416,10 @@ textarea.form-input {
     right: 195px;
     bottom: 87px;
   }
+  .tokenomics-car__target--7 {
+    left: 296px;
+    top: 68px;
+  }
 }
 @media (max-width: 767px) {
   .tokenomics {
@@ -2439,6 +2452,12 @@ textarea.form-input {
     top: 0;
     flex-basis: 100%;
   }
+  .tokenomics-car__targets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
   .tokenomics-car__target {
     position: static;
     opacity: 1;
@@ -2453,6 +2472,7 @@ textarea.form-input {
     border-radius: 10px;
   }
   .tokenomics-car__target-percent {
+    margin-bottom: 0;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0em;
