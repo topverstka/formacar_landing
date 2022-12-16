@@ -196,13 +196,12 @@
 }
 
 @media (max-width: 1300px){
-    .header__lang {
-        width: 100%;
-        margin-top: 20px;
+    .header__nav-elem {
+        margin-right: 25px;
     }
 
-    .header__lang-btn {
-        margin-left: auto;
+    .header__nav-elem--has-sub {
+        margin-right: 50px;
     }
 }
 
