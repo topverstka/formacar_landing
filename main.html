@@ -94,6 +94,8 @@
                     </div>
                 </div>
 
+                <button class="header__join btn btn_primary" type="button" data-modal-open="join">Join the Waitlist</button>
+
                 <div class="header__nav-burger">
                     <span></span>
                     <span></span>
@@ -129,6 +131,8 @@
                     English
                 </button>
             </div>
+
+            <button class="header__nav-join btn btn_primary" type="button" data-modal-open="join">Join the Waitlist</button>
         </div>
     </nav>
 
@@ -1058,6 +1062,33 @@
 			<div class="modal__content">
 				<h2 class="modal__title">Message sent</h2>
                 <p class="modal__desc">Your message has been sent successfully!<br>We will contact you shortly.</p>
+				<button class="modal__close">
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="join">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Join the Waitlist</h2>
+                <form class="form" action="/">
+                    <input class="form-input" type="email" name="email" placeholder="Enter your email" data-placeholder="Enter your email" data-error="Please fill out this field." required>
+                    <button class="btn btn_primary" type="submit" disabled>Subscribe now</button>
+                </form>
+				<button class="modal__close">
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="email-submitted">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title modal__title_secondary">Email Submitted</h2>
+                <p class="modal__desc modal__desc_center">Your email has been submitted.<br>Thank you!</p>
 				<button class="modal__close">
 					<span></span>
 					<span></span>

@@ -90,7 +90,7 @@ function validationForm(selector) {
 
     formNodes.forEach((formNode) => {
         const inputNodes = formNode.querySelectorAll('.form-input');
-        const submitNode = formNode.querySelector('.form-submit');
+        const submitNode = formNode.querySelector('[type=submit]');
 
         formNode.setAttribute('novalidate', '');
         setEvents(inputNodes, submitNode);
@@ -448,3 +448,32 @@ function checkPowerSavingModeVideo() {
 }
 
 checkPowerSavingModeVideo();
+
+// Смена языка
+toggleChangeLang();
+function toggleChangeLang() {
+    const toggleNode = document.querySelector('.header__lang-btn');
+    const menuNode = document.querySelector('.header__lang-menu');
+
+    if (!toggleNode || !menuNode) return;
+
+    toggleNode.addEventListener('click', handleToggle);
+    menuNode.addEventListener('click', (evt) => evt.stopPropagation());
+
+    function handleToggle(evt) {
+        evt.stopPropagation();
+        menuNode.classList.toggle('header__lang-menu_active');
+
+        if (menuNode.classList.contains('header__lang-menu_active')) {
+            toggleNode.removeEventListener('click', handleToggle);
+            document.addEventListener('click', handleDocument);
+        }
+    }
+
+    function handleDocument() {
+        menuNode.classList.remove('header__lang-menu_active');
+
+        document.removeEventListener('click', handleDocument);
+        toggleNode.addEventListener('click', handleToggle);
+    }
+}

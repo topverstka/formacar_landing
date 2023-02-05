@@ -47,6 +47,10 @@
     text-align: center;
 }
 
+#join .modal__content {
+    max-width: 783px;
+}
+
 .modal__title {
     text-align: center;
     font-family: 'Oswald Regular';
@@ -63,12 +67,23 @@
         margin-bottom: 40px;
 }
 
+.modal__title_secondary {
+    color: #2BD628;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+
 .modal__desc {
     color: #fff;
     font-family: 'Montserrat-medium', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
+}
+
+.modal__desc_center {
+    text-align: center;
 }
 
 .modal__telegram-item{
