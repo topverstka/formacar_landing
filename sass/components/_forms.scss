@@ -98,7 +98,7 @@
 }
 
 .form-input {
-    padding: 19px 29px;
+    padding: 13px 29px;
     font-family: 'Montserrat-medium', sans-serif;
     color: #fff;
     font-weight: 500;
@@ -121,7 +121,7 @@
     }
 
     @media (max-width: 767px) {
-        padding: 19px;
+        padding: 15px 19px;
         font-size: 14px;
         line-height: 17px;
     }
@@ -207,7 +207,7 @@ textarea.form-input {
 
 .form-select__toggle {
     position: relative;
-    padding: 19px 29px;
+    padding: 13px 29px;
     padding-right: 60px;
     font-family: 'Montserrat-medium', sans-serif;
     color: rgba(255, 255, 255, .5);
