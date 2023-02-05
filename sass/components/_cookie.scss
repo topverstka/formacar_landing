@@ -6,8 +6,8 @@
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: rgba(18, 20, 26, 0.6);
-    background-image: url(../img/сookie__bg.png);
-    background-size: cover;
+    // background-image: url(../img/сookie__bg.png);
+    // background-size: cover;
     backdrop-filter: blur(25px);
     z-index: -5;
     transition: all 0.2s;
@@ -20,8 +20,9 @@
 }
 
 .cookie__title{
-    font-family: 'Montserrat-bold';
-    font-size: 22px;
+    font-family: 'Montserrat-medium';
+    font-weight: 500;
+    font-size: 20px;
     line-height: 32px;
     letter-spacing: 0em;
     margin-bottom: 20px;
@@ -29,23 +30,27 @@
 
 .cookie__text{
     font-family: 'Montserrat-medium';
-    font-size: 20px;
     font-weight: 500;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
     margin-bottom: 20px;
     a{
-        color: #00F2FB;
-        text-decoration: underline;
+        color: #387DFB;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
 .btn--cookie{
     border: 2px solid rgba(255, 255, 255, 1);
-    padding: 20px 50px 20px 50px;
-    border-radius: 50px;
+    padding: 15px 40px;
+    border-radius: 10px;
     font-family: 'Montserrat-bold';
     font-size: 18px;
     line-height: 22px;
@@ -56,8 +61,8 @@
     color: #fff;
     height: auto;
     &:hover{
-        color: rgba(0, 242, 251, 1);
-        border-color: rgba(0, 242, 251, 1);
+        color: #387DFB;
+        border-color: #387DFB;
     }
 }
 
