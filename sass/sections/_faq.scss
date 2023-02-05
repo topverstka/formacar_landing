@@ -95,8 +95,9 @@
 
 .faq__questions-text{
     font-family: 'Montserrat-medium';
-    font-size: 20px;
-    line-height: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
     letter-spacing: 0em;
     color: #fff;
     max-height: 0;
@@ -135,7 +136,7 @@
         opacity: 0.3;
     }
     .faq__questions-title{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
