@@ -1,0 +1,112 @@
+.teams {
+    padding: 200px 0;
+
+    @media (max-width: 767px) {
+        padding: 50px 0;
+    }
+}
+
+.teams__title {
+    margin-bottom: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 86px;
+    line-height: 105px;
+    letter-spacing: -0.03em;
+
+    @media (max-width: 1080px) {
+        font-size: 60px;
+        line-height: 66px;
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+.teams__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 120px;
+
+    @media (max-width: 1080px) {
+        gap: 30px 40px;
+    }
+}
+
+.teams__item {
+    max-width: 200px;
+    width: 100%;
+
+    @media (max-width: 767px) {
+        max-width: 120px;
+    }
+}
+
+.teams__member {
+    display: grid;
+    gap: 20px;
+    
+    @media (max-width: 767px) {
+        gap: 10px;
+    }
+}
+
+.teams__member-avatar {
+    position: relative;
+}
+
+.teams__member-img {
+    border-radius: 25px;
+}
+
+.teams__member-label {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45px;
+    height: 45px;
+
+    @media (max-width: 767px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.teams__member-info {
+    display: grid;
+    gap: 10px;
+    color: #fff;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        gap: 5px;
+    }
+}
+
+.teams__member-name {
+    font-family: 'Montserrat-bold';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.teams__member-job {
+    font-family: 'Oswald Regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
