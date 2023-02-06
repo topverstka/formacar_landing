@@ -46,11 +46,13 @@
     }
 }
 
-.teams__member {
-    display: grid;
-    gap: 20px;
+.teams__item-link {
+    &:hover,
+    &:focus {
+        .teams__member-img {
+            transform: scale(1.04);
+        }
 
-    &:hover {
         .teams__member-name {
             background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
             -webkit-background-clip: text;
@@ -58,7 +60,12 @@
             background-clip: text;
         }
     }
-    
+}
+
+.teams__member {
+    display: grid;
+    gap: 20px;
+
     @media (max-width: 767px) {
         gap: 10px;
     }
@@ -70,6 +77,7 @@
 
 .teams__member-img {
     border-radius: 25px;
+    transition: transform .2s;
 }
 
 .teams__member-label {
