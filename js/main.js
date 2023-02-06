@@ -490,7 +490,17 @@ function initRoadmapCollapse() {
 
         if (!collapsedNode || !toggleNode || !contentNode) return;
 
-        const collapseHeight = collapsedNode.clientHeight;
+        let collapseHeight = collapsedNode.clientHeight;
+        window.addEventListener('resize', () => {
+            collapsedNode.style.height = null;
+
+            const currentHeight = collapsedNode.clientHeight;
+
+            collapsedNode.style.height = 0;
+            contentNode.classList.remove('roadmap__collapse-content_active');
+            toggleNode.classList.remove('roadmap__collapse-toggle_active');
+            collapseHeight = currentHeight;
+        });
 
         collapsedNode.style.height = 0;
         const icon = document.createElement('img');
