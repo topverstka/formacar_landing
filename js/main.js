@@ -477,3 +477,30 @@ function toggleChangeLang() {
         toggleNode.addEventListener('click', handleToggle);
     }
 }
+
+initRoadmapCollapse();
+function initRoadmapCollapse() {
+    const collapseNodes = document.querySelectorAll('.roadmap__collapse');
+    const iconSrc = 'data:image/svg+xml,%3Csvg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0.707105 1.7071C0.07714 1.07714 0.523309 0 1.41421 0L14.5858 0C15.4767 0 15.9229 1.07714 15.2929 1.70711L8.70711 8.29289C8.31658 8.68342 7.68342 8.68342 7.29289 8.29289L0.707105 1.7071Z" fill="white"/%3E%3C/svg%3E%0A';
+
+    collapseNodes.forEach((collapseNode) => {
+        const contentNode = collapseNode.querySelector('.roadmap__collapse-content');
+        const collapsedNode = collapseNode.querySelector('.roadmap__collapse-collapsed');
+        const toggleNode = collapseNode.querySelector('.roadmap__collapse-toggle');
+
+        if (!collapsedNode || !toggleNode || !contentNode) return;
+
+        const collapseHeight = collapsedNode.clientHeight;
+
+        collapsedNode.style.height = 0;
+        const icon = document.createElement('img');
+        icon.src = iconSrc;
+        toggleNode.append(icon);
+        
+        toggleNode.addEventListener('click', () => {
+            collapsedNode.style.height = parseInt(collapsedNode.style.height) ? 0 : collapseHeight + 'px';
+            contentNode.classList.toggle('roadmap__collapse-content_active');
+            toggleNode.classList.toggle('roadmap__collapse-toggle_active');
+        });
+    });
+}
