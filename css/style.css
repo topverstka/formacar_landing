@@ -3504,7 +3504,10 @@ textarea.form-input {
   display: grid;
   color: #fff;
   gap: 1em;
+  font-family: "Montserrat-medium";
   font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .roadmap__item-item {
@@ -3691,15 +3694,19 @@ textarea.form-input {
   }
 }
 
-.teams__member {
-  display: grid;
-  gap: 20px;
+.teams__item-link:hover .teams__member-img, .teams__item-link:focus .teams__member-img {
+  transform: scale(1.04);
 }
-.teams__member:hover .teams__member-name {
+.teams__item-link:hover .teams__member-name, .teams__item-link:focus .teams__member-name {
   background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.teams__member {
+  display: grid;
+  gap: 20px;
 }
 @media (max-width: 767px) {
   .teams__member {
@@ -3713,6 +3720,7 @@ textarea.form-input {
 
 .teams__member-img {
   border-radius: 25px;
+  transition: transform 0.2s;
 }
 
 .teams__member-label {
