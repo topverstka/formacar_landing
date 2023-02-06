@@ -49,6 +49,15 @@
 .teams__member {
     display: grid;
     gap: 20px;
+
+    &:hover {
+        .teams__member-name {
+            background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
     
     @media (max-width: 767px) {
         gap: 10px;
