@@ -74,6 +74,11 @@
 .teams__member-avatar {
     position: relative;
 }
+.teams__member-avatar picture {
+	display: block;
+	border-radius: 25px;
+	overflow: hidden;
+}
 
 .teams__member-img {
     border-radius: 25px;
