@@ -3361,20 +3361,19 @@ textarea.form-input {
 
 .roadmap__collapse-collapsed {
   display: grid;
-  gap: 60px;
   transition: 0.3s;
   opacity: 0;
   overflow: hidden;
 }
-.roadmap__collapse-collapsed .roadmap__items:first-child {
-  margin-top: 60px;
+.roadmap__collapse-collapsed .roadmap__items {
+  padding-top: 60px;
 }
 @media (max-width: 1080px) {
   .roadmap__collapse-collapsed {
     gap: 0;
   }
-  .roadmap__collapse-collapsed .roadmap__items:first-child {
-    margin-top: 0;
+  .roadmap__collapse-collapsed .roadmap__items {
+    padding-top: 0;
   }
   .roadmap__collapse-collapsed .roadmap__item .roadmap__item-bg:nth-child(n) {
     background: none;
