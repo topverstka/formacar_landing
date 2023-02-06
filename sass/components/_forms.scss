@@ -125,7 +125,7 @@
 
     &:hover,
     &:focus {
-        border-color: rgb(0, 242, 251);
+        border-color: var(--accent-light);
     }
 
     &::placeholder {
@@ -176,8 +176,8 @@ textarea.form-input {
     border-radius: 10px;
 
     &:hover {
-        color: rgb(0, 242, 251);
-        border-color: rgb(0, 242, 251);
+        color: var(--accent-light);
+        border-color: var(--accent-light);
     }
 
     &:disabled {
@@ -236,7 +236,7 @@ textarea.form-input {
 
     &:hover,
     &:focus {
-        border-color: rgb(0, 242, 251);
+        border-color: var(--accent-light);
     }
 
     &::before {
