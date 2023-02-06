@@ -96,8 +96,8 @@
 .faq__questions-text{
     font-family: 'Montserrat-medium';
     font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
     letter-spacing: 0em;
     color: #fff;
     max-height: 0;
@@ -106,7 +106,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
     opacity: 0;
-  
+
     &::-webkit-scrollbar {
             width: 0;
             height: 0;
@@ -173,7 +173,7 @@
 
 .faq__logo{
     flex-basis: 25%;
-    
+
     display: inline-block;
     img{
         max-width: 200px;
@@ -260,7 +260,7 @@
         letter-spacing: 0em;
         ul{
             li{
-                
+
                 &:before{
                     top: 5px;
                 }
