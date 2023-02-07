@@ -5,9 +5,10 @@
     left: 0;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: rgba(18, 20, 26, 0.8);
-    // background-image: url(../img/сookie__bg.png);
-    // background-size: cover;
+    // background-color: rgba(18, 20, 26, 0.8);
+		background-color: #000;
+    background-image: url(../img/сookie__bg.png);
+    background-size: cover;
     z-index: -5;
     transition: all 0.2s;
     opacity: 0;
@@ -71,7 +72,7 @@
         font-size: 16px;
         line-height: 26px;
     }
-    
+
 }
 
 @media (max-width: 575px){
