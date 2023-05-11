@@ -1958,12 +1958,13 @@ textarea.form-input {
   align-items: center;
   gap: 2px 16px;
   padding: 12px;
-  height: 100%;
+  height: 92px;
   text-transform: unset;
 }
 @media (max-width: 1080px) {
   .apps__link {
     padding: 6px;
+    height: 51px;
   }
 }
 
