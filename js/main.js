@@ -298,6 +298,20 @@ for(let i = 0; i < anchors.length; i++){
 
 
 
+let video_box = document.querySelectorAll('.p-video__box');
+
+video_box?.forEach(box => {
+    box.addEventListener('click', function(e) {
+        let player = this.querySelector('iframe');
+    
+        if (!player.src && e.target.classList.contains('p-video__play')) {
+            player.src = e.target.dataset.youtubeSrc;
+            e.target.style.display = 'none';
+        }
+    });
+});
+
+
 // Функции для модальных окон
 function modal() {
     
@@ -398,9 +412,17 @@ function modal() {
 
     // Закрытие модального окна
     function closeModal(modal) {
-        modal.classList.remove('_show')
-        bodyLock(false)
-        resetHash()
+        modal.classList.remove('_show');
+        bodyLock(false);
+        resetHash();
+
+        video_box?.forEach(box => {
+            let play = box.querySelector('.p-video__play');
+            let iframe = box.querySelector('iframe');
+
+            iframe.removeAttribute('src');
+            play.style.display = 'block';
+        });
     }
 }
 

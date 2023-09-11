@@ -24,6 +24,13 @@
 
     &_youtube._show {
         background-color: rgba(0, 0, 57, 0.9);
+
+        #{$self}__content {
+            overflow: hidden;
+            max-width: 800px;
+            height: auto;
+            padding: 0;
+        }
     }
 }
 
@@ -135,6 +142,7 @@
     right: 16px;
     width: 24px;
     height: 24px;
+    z-index: 2;
 
     & span {
         position: absolute;

@@ -952,6 +952,12 @@ textarea.form-input {
 .modal_youtube._show {
   background-color: rgba(0, 0, 57, 0.9);
 }
+.modal_youtube._show .modal__content {
+  overflow: hidden;
+  max-width: 800px;
+  height: auto;
+  padding: 0;
+}
 
 .modal__body {
   min-height: 100%;
@@ -1079,6 +1085,7 @@ textarea.form-input {
   right: 16px;
   width: 24px;
   height: 24px;
+  z-index: 2;
 }
 .modal__close span {
   position: absolute;
@@ -8184,4 +8191,52 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .p-network__text {
   margin-bottom: 40px;
+}
+.p-video__box {
+  min-height: 300px;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.p-video__box::before {
+  display: block;
+  content: "";
+  padding-top: 56.27%;
+}
+.p-video__box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
+  z-index: 2;
+}
+.p-video__play {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 115px;
+  height: 80px;
+  border-radius: 25px;
+  background: url("../img/icon-play.svg") center/26px 36px no-repeat rgba(200, 33, 33, 0.5);
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
