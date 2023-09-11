@@ -1,0 +1,23 @@
+.p-text {
+	$self: &;
+	font-family: 'Oswald Regular';
+	font-size: 28px;
+	line-height: 1.3;
+	letter-spacing: 0.015em;
+	color: #fff;
+	text-transform: uppercase;
+	
+	@media (max-width: 1440px) {
+		font-size: calc(0.8vw + 17px);
+	}
+	
+	@media (max-width: 640px) {
+		line-height: 1.4;
+		font-size: 22px;
+	}
+	
+	@media (max-width: 440px) {
+		line-height: 1.5;
+		font-size: 20px;
+	}
+}

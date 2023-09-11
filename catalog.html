@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="./img/favicon.ico"> <!-- Генератор фавикон - https://realfavicongenerator.net/ -->
+	<title>ТопВерстка</title>
+	<meta name="description" content="Описание сайта">
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container header__container">
+            <div class="wrap header__wrap">
+                <div class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-elem header__nav-elem--has-sub">
+                            <a class="anchor" href="#">Our products</a>
+                            <ul class="header__nav-sub-list">
+                                <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 1</a></li>
+                                <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 2</a></li>
+                                <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__nav-elem"><a class="anchor" href="#">cars</a></li>
+                        <li class="header__nav-elem"><a class="anchor" href="#tokenomics">Tokenomics</a></li>
+                        <li class="header__nav-elem"><a class="anchor" href="#nft">NFT’s</a></li>
+                        <li class="header__nav-elem"><a class="anchor" href="#">Whitepaper</a></li>
+                        <li class="header__nav-elem"><a class="anchor" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__lang">
+                    <button class="header__lang-btn" type="button">
+                        <img class="header__lang-img" src="img/lang/en.png" alt="en">
+                        EN
+                    </button>
+                    <div class="header__lang-menu">
+                        <div class="header__lang-menu-inner">
+                            <ul class="change-lang-menu">
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn change-lang-menu__btn--active" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
+                                        English
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
+                                        Русский
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/pt.png" alt="pt">
+                                        Português
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/zn.png" alt="zn">
+                                        汉语
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/hi.png" alt="hi">
+                                        हिन्दी
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/ja.png" alt="ja">
+                                        日本語
+                                    </a>
+                                </li>
+                                <li class="change-lang-menu__item">
+                                    <a class="change-lang-menu__btn" href="#">
+                                        <img class="change-lang-menu__img" src="img/lang/es.png" alt="es">
+                                        español
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="header__join btn btn_primary" type="button" data-modal-open="join">Join the Waitlist</button>
+
+                <div class="header__nav-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="header__nav header__nav--mobile">
+        <div class="container">
+            <div class="wrap">
+                <ul class="header__nav-list">
+                    <li class="header__nav-elem header__nav-elem--has-sub">
+                        <a class="anchor" href="#">Our products</a>
+                        <ul class="header__nav-sub-list">
+                            <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 1</a></li>
+                            <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 2</a></li>
+                            <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-elem"><a class="anchor" href="#">cars</a></li>
+                    <li class="header__nav-elem"><a class="anchor" href="#tokenomics">Tokenomics</a></li>
+                    <li class="header__nav-elem"><a class="anchor" href="#nft">NFT’s</a></li>
+                    <li class="header__nav-elem"><a class="anchor" href="#">Whitepaper</a></li>
+                    <li class="header__nav-elem"><a class="anchor" href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="header__nav-lang">
+                <button class="header__nav-lang-btn" type="button">
+                    <img class="header__nav-lang-img" src="img/lang/en.png" alt="en">
+                    English
+                </button>
+            </div>
+
+            <button class="header__nav-join btn btn_primary" type="button" data-modal-open="join">Join the Waitlist</button>
+        </div>
+    </nav>
+
+    <div class="mobile-lang">
+        <div class="mobile-lang__inner container">
+            <button class="mobile-lang__back" type="button" aria-label="back">
+                <svg width="12" height="22">
+                    <use xlink:href="./img/icons-sprite.svg#arrow-back"></use>
+                </svg>
+            </button>
+    
+            <button class="mobile-lang__close" type="button" aria-label="close"></button>
+    
+            <ul class="change-lang-menu">
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn change-lang-menu__btn--active" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
+                        English
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
+                        Русский
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/pt.png" alt="pt">
+                        Português
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/zn.png" alt="zn">
+                        汉语
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/hi.png" alt="hi">
+                        हिन्दी
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/ja.png" alt="ja">
+                        日本語
+                    </a>
+                </li>
+                <li class="change-lang-menu__item change-lang-menu__item--mobile">
+                    <a class="change-lang-menu__btn" href="#">
+                        <img class="change-lang-menu__img" src="img/lang/es.png" alt="es">
+                        español
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="catalog">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="/" class="footer__logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <a class="footer__audit" href="https://www.verichains.io/?search=formacar" target="_blank">
+                    <p class="footer__audit-desc">Contract verified by</p>
+                    <img class="footer__audit-img" src="img/audit.png" alt="">
+                </a>
+                <div class="footer__rights">
+                    <p>2022 FormaCar. All rights reserved. 18+</p>
+                    <p>United Arab Emirates, Dubai, IFZA</p>
+                </div>
+                <a href="#" class="privacy">USER AGREEMENT</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="cookie">
+        <div class="container">
+            <div class="wrap">
+                <h2 class="cookie__title">Этот веб-сайт использует файлы cookie</h2>
+                <p class="cookie__text">Нажав на кнопку “Разрешить все файлы “cookie”, вы соглашаетесь на использование файлов cookie нашим сервисом.
+                    Узнать больше и изменить настройки можно в <a href="#">Политике использования файлов cookie MY.GAMES.</a>
+                </p>
+                <a href="#" id="cookie-btn" class="btn btn--cookie">Разрешить все файлы “cookie”</a>
+            </div>
+        </div>
+    </div>
+
+	<!-- Модальные окна -->
+	<div class="modal" id="discord">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Welcome to Discord</h2>
+				<div class="modal__telegram-list">
+
+                    <a class="modal__telegram-item" href="https://t.me/formacarcrypto" target="_blank">
+                        <div class="contacts-item">
+                            <svg width="50" height="51">
+                                <use xlink:href="./img/icons-sprite.svg#discord"></use>
+                            </svg>
+                        </div>
+                        <p class="modal__telegram-name">Channel</p>
+                    </a>
+
+                    <a class="modal__telegram-item" href="https://t.me/formacarcryptoenglish" target="_blank">
+                        <div class="contacts-item">
+                            <svg width="50" height="51">
+                                <use xlink:href="./img/icons-sprite.svg#discord"></use>
+                            </svg>
+                        </div>
+                        <p class="modal__telegram-name">Admin</p>
+                    </a>
+
+                </div>
+				<button class="modal__close">
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="telegram">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Welcome to telegram</h2>
+				<div class="modal__telegram-list">
+
+                    <a class="modal__telegram-item" href="https://t.me/formacarcrypto" target="_blank">
+                        <div class="contacts-item">
+                            <svg width="50" height="51">
+                                <use xlink:href="./img/icons-sprite.svg#telegram"></use>
+                            </svg>
+                        </div>
+                        <p class="modal__telegram-name">Channel</p>
+                    </a>
+
+                    <a class="modal__telegram-item" href="https://t.me/formacarcryptoenglish" target="_blank">
+                        <div class="contacts-item">
+                            <svg width="50" height="51">
+                                <use xlink:href="./img/icons-sprite.svg#telegram"></use>
+                            </svg>
+                        </div>
+                        <p class="modal__telegram-name">Chat</p>
+                    </a>
+
+                    <a class="modal__telegram-item" href="https://t.me/formacarcryptorussian" target="_blank">
+                        <div class="contacts-item">
+                            <svg width="50" height="51">
+                                <use xlink:href="./img/icons-sprite.svg#telegram"></use>
+                            </svg>
+                        </div>
+                        <p class="modal__telegram-name">Admin</p>
+                    </a>
+
+                </div>
+				<button class="modal__close">
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="message-sent">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Message sent</h2>
+                <p class="modal__desc">Your message has been sent successfully!<br>We will contact you shortly.</p>
+				<button class="modal__close">
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="join">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title">Join the Waitlist</h2>
+                <form class="form" action="/">
+                    <input class="form-input" type="email" name="email" placeholder="Enter your email" data-placeholder="Enter your email" data-error="Please fill out this field." required>
+                    <button class="btn btn_primary" type="submit" disabled>Subscribe now</button>
+                </form>
+				<button class="modal__close">
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="email-submitted">
+		<div class="modal__body">
+			<div class="modal__content">
+				<h2 class="modal__title modal__title_secondary">Email Submitted</h2>
+                <p class="modal__desc modal__desc_center">Your email has been submitted.<br>Thank you!</p>
+				<button class="modal__close">
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Подключение скриптов -->
+	<script src="./js/libs/swiper-bundle.min.js"></script>
+    <script src="./js/libs/aos.js"></script>
+
+    <script src="./js/libs/lightGallary/lightgallery.min.js"></script>
+	<script src="./js/libs/lightGallary/lg-thumbnails.js"></script>
+
+    <script>
+
+        lightGallery(document.querySelector('.lightgallery'));
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 0,
+            autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+            loop: true,
+            pagination: {
+                el: ".gallary__swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.gallary-swiper-next',
+                prevEl: '.gallary-swiper-prev',
+            },
+        });
+
+        var swiper2 = new Swiper(".nft__slider", {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          pagination: {
+            el: ".nft__slider__swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+			nextEl: '.nft-swiper-next',
+			prevEl: '.nft-swiper-prev',
+		},
+          breakpoints: {
+            475: {
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+            },
+            767: {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+            },
+            1080: {
+                slidesPerView: 'auto',
+                spaceBetween: 50,
+            }
+        }
+        });
+    </script>
+
+    <script src="./js/main.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    
+</body>
+
+</html>

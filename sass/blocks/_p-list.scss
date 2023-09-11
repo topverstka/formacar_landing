@@ -1,0 +1,22 @@
+.p-list {
+	$self: &;
+	margin-bottom: 25px;
+	
+	li {
+		padding-left: 30px;
+		position: relative;
+		margin: 8px 0;
+
+		&::before {
+			display: block;
+			content: '';
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #fff;
+			position: absolute;
+			left: 8px;
+			top: 15px;
+		}
+	}
+}

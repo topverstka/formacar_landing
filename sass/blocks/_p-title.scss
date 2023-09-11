@@ -1,0 +1,28 @@
+.p-title {
+	$self: &;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 1.1;
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	background: linear-gradient(270deg, #387DFB 0%, #ABFCFF 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+		
+	@media (max-width: 1440px) {
+		font-size: calc(5.5vw + 1px);
+	}
+	
+	@media (max-width: 640px) {
+		font-size: 36px;
+	}
+	
+	@media (max-width: 440px) {
+		font-size: 32px;
+	}
+
+	&_white {
+		background-color: #fff;
+	}
+}

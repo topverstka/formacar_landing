@@ -1,0 +1,69 @@
+.p-button {
+	$self: &;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	min-height: 70px;
+	max-width: 360px;
+	width: 100%;
+	padding: 10px;
+	background: linear-gradient(270deg, #0052E7 0%, #03B2CA 100%);
+	border-radius: 500px;
+	appearance: none;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	min-width: 0;
+	
+	@media (max-width: 960px) {
+		min-height: 60px;
+		max-width: 350px;
+	}
+
+	&::before {
+		display: none;
+		content: '';
+		margin-right: 16px;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 30px;
+	}
+
+	&_apple::before {
+		display: block;
+		height: 37px;
+		background-image: url('../img/icon-apple.svg');
+		transform: translateY(-4px);
+	}
+	
+	&_google::before {
+		display: block;
+		height: 34px;
+		background-image: url('../img/icon-market.svg');
+	}
+
+	&_youtube {
+		background: none;
+		border: 2px solid #fff;
+		font-family: 'Oswald Regular';
+		font-weight: 400;
+		font-size: 24px;
+		
+		&::after {
+			display: block;
+			content: '';
+			width: 16px;
+			height: 14px;
+			background: url('../img/icon-play.svg') center / contain no-repeat transparent;
+			margin-left: 16px;
+		}
+	}
+}
