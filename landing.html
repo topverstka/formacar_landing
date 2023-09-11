@@ -48,13 +48,45 @@
 				</ul>
 				<p>Play the game, complete quests and earn $FCG!</p>
 			</div>
-			<button class="p-play__button p-button p-button_youtube">Watch video</button>
+			<button class="p-play__button p-button p-button_youtube" data-modal-open="join">Watch video</button>
 		</div>
 		<div class="p-play__image">
 			<img src="./img/promo/promo-ply-car.png" alt="">
 		</div>		
 	</div>
 </section>
+
+<section class="p-network">
+	<div class="p-network__inner p-container">
+		<h2 class="p-network__title p-title p-title_white">our social<br>project networks</h2>
+		<div class="p-network__text p-text">Subscribe to our social networks and follow the news!</div>
+		<div class="p-network__social p-social">
+			<a class="p-social__link p-social__link_inst" href="./"></a>
+			<a class="p-social__link p-social__link_twtr" href="./"></a>
+			<a class="p-social__link p-social__link_tgrm" href="./"></a>
+			<a class="p-social__link p-social__link_dscd" href="./"></a>
+			<a class="p-social__link p-social__link_mdum" href="./"></a>
+		</div>
+	</div>
+</section>
+
+<div class="modal" id="youtube">
+	<div class="modal__body">
+		<div class="modal__content">
+			<h2 class="modal__title">Join the Waitlist</h2>
+			<form class="form" action="/">
+				<input class="form-input" type="email" name="email" placeholder="Enter your email" data-placeholder="Enter your email" data-error="Please fill out this field." required>
+				<button class="btn btn_primary" type="submit" disabled>Subscribe now</button>
+			</form>
+			<button class="modal__close">
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<script src="./js/main.js"></script>
 
 </body>
 </html>

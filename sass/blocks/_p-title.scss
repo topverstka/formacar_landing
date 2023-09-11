@@ -1,5 +1,6 @@
 .p-title {
 	$self: &;
+	color: #fff;
 	font-weight: 700;
 	font-size: 80px;
 	line-height: 1.1;
@@ -9,7 +10,7 @@
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-		
+
 	@media (max-width: 1440px) {
 		font-size: calc(5.5vw + 1px);
 	}
@@ -23,6 +24,7 @@
 	}
 
 	&_white {
-		background-color: #fff;
+		background: none;
+		-webkit-text-fill-color: #fff;
 	}
 }

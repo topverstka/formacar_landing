@@ -1,0 +1,70 @@
+.p-social {
+	$self: &;
+	display: flex;
+
+	&__link {
+		display: block;
+		box-sizing: border-box;
+		height: 70px;
+		width: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid #fff;
+		flex-shrink: 0;
+		border-radius: 50%;
+		
+		@media (max-width: 640px) {
+			height: 52px;
+			width: 52px;
+		}
+
+		&:hover {
+			opacity: 0.7;
+		}
+
+		&:not(:last-child) {
+			margin-right: 35px;
+			
+			@media (max-width: 640px) {
+				margin-right: 16px;
+			}
+		}
+
+		&::before {
+			display: block;
+			content: '';
+			width: 26px;
+			height: 26px;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			
+			@media (max-width: 640px) {
+				height: 20px;
+				width: 20px;
+			}
+		}
+
+		&_inst::before {
+			background-image: url('../img/instagram.svg');			
+		}
+		
+		&_twtr::before {
+			background-image: url('../img/twitter.svg');			
+		}
+		
+		&_tgrm::before {
+			background-image: url('../img/telegram.svg');			
+		}
+		
+		&_dscd::before {
+			background-image: url('../img/discord.svg');			
+		}
+		
+		&_mdum::before {
+			background-image: url('../img/medium.svg');			
+		}
+	}
+}

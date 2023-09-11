@@ -74,9 +74,9 @@ var sticky = 1000;
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+    header?.classList.add("sticky");
   } else {
-    header.classList.remove("sticky");
+    header?.classList.remove("sticky");
   }
 }
 
@@ -193,7 +193,7 @@ function menu() {
 	const burger = find('.header__nav-burger')
 	const menu = find('.header__nav--mobile');
 
-	burger.addEventListener('click', (e) => {
+	burger?.addEventListener('click', (e) => {
 		burger.classList.toggle('active')
 		menu.classList.toggle('active')
 		bodyLock()
@@ -211,11 +211,11 @@ function menuLang() {
     const mainMenuNode = find('.header__nav--mobile');
     const burgerNode = find('.header__nav-burger');
 
-    buttonNode.addEventListener('click', () => {
+    buttonNode?.addEventListener('click', () => {
         menuNode.classList.add('active');
     });
 
-    backNode.addEventListener('click', () => {
+    backNode?.addEventListener('click', () => {
         menuNode.classList.remove('active');
     });
 
@@ -425,7 +425,7 @@ function getMyCookie(name) {
 
 let cookieBtn = d.querySelector('#cookie-btn');
 
-cookieBtn.addEventListener('click', function(event){
+cookieBtn?.addEventListener('click', function(event){
     event.preventDefault();
     d.querySelector('.cookie').classList.remove('active');
     setCookie("Cookie", 'yes', 1);
@@ -436,7 +436,7 @@ cookieBtn.addEventListener('click', function(event){
 document.addEventListener("DOMContentLoaded", function () {
     var cookieCheck = getMyCookie("Cookie");
 	if (cookieCheck != 'yes') {
-        d.querySelector('.cookie').classList.add('active');
+        d?.querySelector('.cookie')?.classList.add('active');
 	}
 
 });
