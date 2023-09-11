@@ -954,7 +954,7 @@ textarea.form-input {
 }
 .modal_youtube._show .modal__content {
   overflow: hidden;
-  max-width: 800px;
+  max-width: 1000px;
   height: auto;
   padding: 0;
 }
@@ -8194,7 +8194,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .p-video__box {
   min-height: 300px;
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   background-repeat: no-repeat;
