@@ -1,4 +1,5 @@
 .modal {
+    $self: &;
     position: fixed;
     z-index: 12;
     top: 0;
@@ -19,6 +20,10 @@
         & .modal__body {
             transform: translate(0, 0);
         }
+    }
+
+    &_youtube._show {
+        background-color: rgba(0, 0, 57, 0.9);
     }
 }
 

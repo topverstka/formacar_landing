@@ -949,6 +949,9 @@ textarea.form-input {
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
 }
+.modal_youtube._show {
+  background-color: rgba(0, 0, 57, 0.9);
+}
 
 .modal__body {
   min-height: 100%;
