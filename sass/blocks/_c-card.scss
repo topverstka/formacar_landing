@@ -10,6 +10,10 @@
 		overflow: hidden;
 		border-radius: 10px;
 		margin-bottom: 32px;
+
+		&:hover {
+			transform: scale(105%);
+		}
 		
 		@media (max-width: 440px) {
 			height: 170px;
