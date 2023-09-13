@@ -1,0 +1,25 @@
+.c-tab {
+	$self: &;
+	@keyframes show_tab { from { opacity: 0; } to { opacity: 1; }}
+
+	&__buttons {
+
+	}
+
+	&__button {
+
+	}
+
+	&__blocks {
+		
+	}
+
+	&__block {
+		display: none;
+		animation: show_tab 1.0s;
+
+		&.active {
+			display: grid;
+		}
+	}
+}

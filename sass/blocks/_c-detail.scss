@@ -1,0 +1,140 @@
+.c-detail {
+	$self: &;
+	box-sizing: border-box;
+	padding-top: 200px;
+	margin-bottom: 200px;
+	position: relative;
+	color: #fff;
+	
+	@media (max-width: 1080px) {
+		margin-bottom: 170px;
+	}
+	
+	@media (max-width: 780px) {
+		padding-top: 130px;
+		margin-bottom: 100px;
+	}
+	
+	@media (max-width: 640px) {
+		margin-bottom: 60px;
+	}
+	
+	@media (max-width: 440px) {
+		margin-bottom: 40px;
+	}
+
+	&::before {
+		display: block;
+		content: '';
+		width: 2800px;
+		height: 2000px;
+		background: url('../img/catalog/catalog-glow.png') center / auto no-repeat transparent;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -550px);
+	}
+
+	&__inner {
+		position: relative;
+		z-index: 2;
+	}
+
+	&__image {
+		width: 100%;
+		max-width: 950px;
+		overflow: hidden;
+		border-radius: 10px;
+		margin-bottom: 90px;
+		
+		@media (max-width: 780px) {
+			margin-bottom: 50px;
+		}
+
+		img {
+			display: block;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		font-family: 'Montserrat-regular', sans-serif;
+		font-size: 16px;
+		margin-bottom: 30px;
+		font-size: 20px;
+
+		@media (max-width: 780px) {
+			font-size: 18px;
+		}
+
+		@media (max-width: 440px) {
+			font-size: 16px;
+		}
+	}
+
+	&__date {
+
+	}
+
+	&__cat {
+		color: rgba(255, 255, 255, 0.3);
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+	
+	&__tags {
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		font-family: "Montserrat-regular", sans-serif;
+		font-size: 20px;
+		font-weight: 500;
+		color: #fff;
+
+		@media (max-width: 1080px) {
+			font-size: calc(14px + 6 * (100vw - 440px) / (1080 - 440));
+		}
+
+		@media (max-width: 440px) {
+			font-size: 14px;
+		}
+
+		ul li {
+			padding-left: 30px;
+			position: relative;
+			margin: 20px 0;
+			
+			@media (max-width: 640px) {
+				margin: 10px 0;
+			}
+			
+			@media (max-width: 440px) {
+				padding-left: 23px;
+				margin: 6px 0;
+			}
+		
+			&::before {
+				display: block;
+				content: '';
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background-color: #fff;
+				position: absolute;
+				left: 8px;
+				top: 14px;
+				
+				@media (max-width: 440px) {
+					width: 3px;
+					height: 3px;
+					top: 10px;
+				}
+			}
+		}
+	}
+}

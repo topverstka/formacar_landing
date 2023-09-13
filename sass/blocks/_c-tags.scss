@@ -1,0 +1,25 @@
+.c-tags {
+	$self: &;
+	font-family: 'Montserrat-regular', sans-serif;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	
+	&__item {
+		box-sizing: border-box;
+		padding: 8px 16px;
+		margin: 0 8px 8px 0;
+		border-radius: 8px;
+		background: rgba(255, 255, 255, 0.2);		
+		font-size: 16px;
+		
+		@media (max-width: 780px) {
+			border-radius: 6px;
+			font-size: 15px;
+		}
+
+		@media (max-width: 440px) {
+			font-size: 14px;
+		}
+	}
+}

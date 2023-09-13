@@ -6,7 +6,7 @@
     "bemtree-from-html": "^1.0.10"
 	},
 	"bemtree": {
-		"from": "landing.html",
+		"from": "detail.html",
 		"to": "sass/blocks",
 		"omit": "@@,js-,active,opened,header,mobile,container,change,swiper,footer,wrap,anchor,btn,contacts,cookie,form,privacy,modal"
   }
