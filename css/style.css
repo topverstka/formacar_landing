@@ -8464,6 +8464,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   overflow: hidden;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   border-radius: 10px;
   margin-bottom: 32px;
 }
