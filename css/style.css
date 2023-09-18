@@ -4626,6 +4626,10 @@ textarea.form-input {
   display: block;
   border-radius: 25px;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .teams__member-img {
