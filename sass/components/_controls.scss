@@ -1,0 +1,92 @@
+.controls {
+	$self: &;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__button {
+		width: 45px;
+		height: 45px;
+		opacity: 0.3;
+		display: flex;
+		border-radius: 50%;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid #fff;
+		transition: all 0.2s;
+		flex-shrink: 0;
+		cursor: pointer;
+
+		@media (max-width: 780px) {
+			display: none;
+		}
+
+		&.disabled {
+			opacity: .35;
+			cursor: auto;
+			pointer-events: none;
+		}
+		
+		svg {
+			fill: #fff;
+			width: 7px;
+			height: 11px;
+			transition: all 0.2s;
+		}
+
+		&:hover {
+			opacity: 1;
+			border-color:rgba(0, 242, 251, 1);
+
+			svg { fill:rgba(0, 242, 251, 1); }
+		}
+
+		&_prev {
+
+		}
+
+		&_next {
+
+		}
+	}
+
+	&__pagination {
+		width: auto !important;
+		padding: 0 14px;
+		display: flex;
+	}
+
+	&__dot {
+		display: block;
+		box-sizing: border-box;
+		height: 12px;
+		width: 12px;
+		opacity: 0.3;
+		border-radius: 50%;
+		transition: all 0.2s;
+		background-color: #fff;
+		cursor: pointer;
+		margin: 0 6px;
+		
+		@media (max-width: 480px) {
+			margin: 0 4px;
+			height: 8px;
+			width: 8px;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+			
+		&.active {
+			width: 40px;
+			background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
+			border-radius: 20px;
+			opacity: 1;
+
+			@media (max-width: 480px) {
+				width: 24px;
+			}
+		}
+	}
+}

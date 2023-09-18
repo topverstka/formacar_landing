@@ -1,7 +1,12 @@
 .apps {
+    display: none;
     position: relative;
     padding-top: 400px;
     padding-bottom: 400px;
+
+    @media (max-width: 1300px) {
+        display: block;
+    }
 
     @media (max-width: 1080px) {
         padding-top: 200px;
@@ -52,6 +57,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    text-transform: uppercase;
 
     @media (max-width: 1080px) {
         font-size: 60px;
@@ -90,7 +96,7 @@
 }
 
 .apps__download {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-family: 'Montserrat-medium';
     font-style: normal;
     font-weight: 500;
@@ -116,37 +122,32 @@
 
 .apps__links {
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px 50px;
     justify-content: center;
-
+    max-width: 800px;
+    margin: 0 auto;
+    
     @media (max-width: 1080px) {
-        grid-template-columns: 280px 280px;
+        // grid-template-columns: 280px 280px;
     }
-
+    
     @media (max-width: 767px) {
-        grid-template-columns: 350px;
+        // grid-template-columns: 350px;
     }
-
+    
     @media (max-width: 575px) {
         grid-template-columns: 1fr;
+        max-width: 240px;
+    }
+    
+    @media (max-width: 375px) {
+        max-width: 180px;
     }
 }
 
 .apps__link {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: center;
-    align-items: center;
-    gap: 2px 16px;
-    padding: 12px;
-    height: 92px;
-    text-transform: unset;
 
-    @media (max-width: 1080px) {
-        padding: 6px;
-        height: 51px;
-    }
 }
 
 .apps__link-icon {

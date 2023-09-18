@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+// сбросить размерность у чисел
+@function num($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return math.div($number, ($number * 0 + 1));
+	}
+
+	@return $number;
+}
+
+@mixin range($currentValue, $targetValue, $currentScreen, $targetScreen, $property: 'font-size') {
+	$diffValue: num($currentValue) - num($targetValue);
+	$diffScreen: num($currentScreen) - num($targetScreen);
+	
+	@media (max-width: $currentScreen) {
+		#{$property}: calc(#{$targetValue} + #{$diffValue} * ((100vw - #{$targetScreen}) / #{$diffScreen}));
+	}
+	@media (max-width: $targetScreen) {
+		#{$property}: $targetValue;
+	}
+}

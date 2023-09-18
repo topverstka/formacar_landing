@@ -1,11 +1,11 @@
-.congratulations{
+.congratulations {
     padding-top: 180px;
     padding-bottom: 120px;
     height: 1044px;
     position: relative;
 }
 
-.congratulations__bg{
+.congratulations__bg {
     position: absolute;
     top: 75px;
     left: 0;
@@ -14,20 +14,20 @@
     opacity: 0.3;
 }
 
-.congratulations__wrap{
+.congratulations__wrap {
     justify-content: center;
     flex-direction: column;
 }
 
-.congratulations__title{
+.congratulations__title {
     font-family: 'Montserrat-bold';
     font-size: 86px;
     line-height: 117px;
     letter-spacing: -0.03em;
-
+    text-transform: uppercase;
 }
 
-.congratulations__subtitle{
+.congratulations__subtitle {
     background: linear-gradient(270deg, #387DFB 0%, #00F2FB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,12 +42,18 @@
     text-align: center;
 }
 
-.congratulations__wrap2{
+.congratulations__boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px 50px;
+    
+    @media (max-width: 1080px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 
-.congratulations__box{
+.congratulations__box {
     background: rgba(35, 37, 45, 1);
     padding-top: 30px;
     padding-bottom: 30px;
@@ -55,15 +61,23 @@
     padding-left: 160px;
     position: relative;
     border-radius: 10px;
-    width: 595px;
+    // width: 595px;
     height: 150px;
     color: #fff;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    @media (max-width: 1300px) {
+        padding-left: 120px;
+    }
+
+    @media (max-width: 1080px) {
+        width: 100%;
+    }
 }
 
-.congratulations__box-img{
+.congratulations__box-img {
     position: absolute;
     left: 0;
     top: 0;
@@ -71,7 +85,7 @@
     margin-right: 10px;
 }
 
-.congratulations__box-title{
+.congratulations__box-title {
     text-transform: uppercase;
     font-family: 'Montserrat-bold';
     font-size: 22px;
@@ -80,7 +94,7 @@
 
 }
 
-.congratulations__box-descr{
+.congratulations__box-descr {
     margin-top: 10px;
     font-family: 'Steppe';
     font-size: 20px;
@@ -88,69 +102,61 @@
     letter-spacing: 0em;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
     .congratulations__wrap2{
         gap: 20px 30px;
     }
-    .congratulations__box{
-        width: 497px;
-        padding-left: 120px;
-    }
-    .congratulations__box-img{
+    .congratulations__box-img {
         width: 120px;
     }
-    .congratulations__box-title{
+    .congratulations__box-title {
         font-size: 18px;
     }
-    .congratulations__box-descr{
+    .congratulations__box-descr {
         font-size: 16px;
     }
-    .congratulations{
+    .congratulations {
         height: auto;
     }
 }
 
 
-@media (max-width: 1080px){
+@media (max-width: 1080px) {
     .congratulations{
         padding-bottom: 70px;
     }
-    
-    .congratulations__box{
-        width: 100%;
-    }
-    .congratulations__title{
+    .congratulations__title {
         font-size: 60px;
         line-height: 68px;
         margin-bottom: 0px;
     }
-    .congratulations__subtitle{
+    .congratulations__subtitle {
         font-size: 28px;
         margin-bottom: 30px;
     }
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .congratulations{
         padding-top: 50px;
         padding-bottom: 50px;
         height: auto;
     }
-    .congratulations__bg{
+    .congratulations__bg {
         height: 100%;
         width: auto;
         img{
             object-fit: cover;
         }
     }
-    .congratulations__title{
+    .congratulations__title {
         font-size: 32px;
         line-height: 39px;
         letter-spacing: -0.03em;
         margin-bottom: 10px;
     }
-    .congratulations__subtitle{
+    .congratulations__subtitle {
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.015em;
@@ -158,24 +164,24 @@
         margin-bottom: 30px;
     }
 
-    .congratulations__wrap2{
+    .congratulations__wrap2 {
         gap: 10px;
     }
 
-    .congratulations__box{
+    .congratulations__box {
         width: 100%;
         padding: 14px;
         padding-left: 128px;
     }
-    .congratulations__box-img{
+    .congratulations__box-img {
         width: 100px;
     }
-    .congratulations__box-title{
+    .congratulations__box-title {
         font-size: 15px;
         line-height: 18px;
         letter-spacing: 0em;
     }
-    .congratulations__box-descr{
+    .congratulations__box-descr {
         font-size: 14px;
         line-height: 17px;
         letter-spacing: 0em;

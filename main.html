@@ -7,1292 +7,1249 @@
 	<link rel="icon" href="./img/favicon.ico"> <!-- Генератор фавикон - https://realfavicongenerator.net/ -->
 	<title>ТопВерстка</title>
 	<meta name="description" content="Описание сайта">
-
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/aos.css">
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/aos.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="container header__container">
-            <div class="wrap header__wrap">
-                <div class="header__logo">
-                    <img src="./img/logo.svg" alt="">
-                </div>
-
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-elem header__nav-elem--has-sub">
-                            <a class="anchor" href="#">Our products</a>
-                            <ul class="header__nav-sub-list">
-                                <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 1</a></li>
-                                <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 2</a></li>
-                                <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__nav-elem"><a class="anchor" href="#">cars</a></li>
-                        <li class="header__nav-elem"><a class="anchor" href="#tokenomics">Tokenomics</a></li>
-                        <li class="header__nav-elem"><a class="anchor" href="#nft">NFT’s</a></li>
-                        <li class="header__nav-elem"><a class="anchor" href="#">Whitepaper</a></li>
-                        <li class="header__nav-elem"><a class="anchor" href="#contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header__lang">
-                    <button class="header__lang-btn" type="button">
-                        <img class="header__lang-img" src="img/lang/en.png" alt="en">
-                        EN
-                    </button>
-                    <div class="header__lang-menu">
-                        <div class="header__lang-menu-inner">
-                            <ul class="change-lang-menu">
-                                <li class="change-lang-menu__item">
-                                    <a class="change-lang-menu__btn change-lang-menu__btn--active" href="#">
-                                        <img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
-                                        English
-                                    </a>
-                                </li>
-                                <li class="change-lang-menu__item">
-                                    <a class="change-lang-menu__btn" href="#">
-                                        <img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
-                                        Русский
-                                    </a>
-                                </li>
-                                <li class="change-lang-menu__item">
-                                    <a class="change-lang-menu__btn" href="#">
-                                        <img class="change-lang-menu__img" src="img/lang/pt.png" alt="pt">
-                                        Português
-                                    </a>
-                                </li>
-                                <li class="change-lang-menu__item">
-                                    <a class="change-lang-menu__btn" href="#">
-                                        <img class="change-lang-menu__img" src="img/lang/zn.png" alt="zn">
-                                        汉语
-                                    </a>
-                                </li>
-                                <li class="change-lang-menu__item">
-                                    <a class="change-lang-menu__btn" href="#">
-                                        <img class="change-lang-menu__img" src="img/lang/hi.png" alt="hi">
-                                        हिन्दी
-                                    </a>
-                                </li>
-                                <li class="change-lang-menu__item">
-                                    <a class="change-lang-menu__btn" href="#">
-                                        <img class="change-lang-menu__img" src="img/lang/ja.png" alt="ja">
-                                        日本語
-                                    </a>
-                                </li>
-                                <li class="change-lang-menu__item">
-                                    <a class="change-lang-menu__btn" href="#">
-                                        <img class="change-lang-menu__img" src="img/lang/es.png" alt="es">
-                                        español
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="header__join btn btn_primary" type="button" data-modal-open="join">Join the Waitlist</button>
-
-                <div class="header__nav-burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <nav class="header__nav header__nav--mobile">
-        <div class="container">
-            <div class="wrap">
-                <ul class="header__nav-list">
-                    <li class="header__nav-elem header__nav-elem--has-sub">
-                        <a class="anchor" href="#">Our products</a>
-                        <ul class="header__nav-sub-list">
-                            <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 1</a></li>
-                            <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 2</a></li>
-                            <li class="header__nav-sub-elem"><a class="anchor" href="#">lorem 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__nav-elem"><a class="anchor" href="#">cars</a></li>
-                    <li class="header__nav-elem"><a class="anchor" href="#tokenomics">Tokenomics</a></li>
-                    <li class="header__nav-elem"><a class="anchor" href="#nft">NFT’s</a></li>
-                    <li class="header__nav-elem"><a class="anchor" href="#">Whitepaper</a></li>
-                    <li class="header__nav-elem"><a class="anchor" href="#contacts">Contacts</a></li>
-                </ul>
-            </div>
-
-            <div class="header__nav-lang">
-                <button class="header__nav-lang-btn" type="button">
-                    <img class="header__nav-lang-img" src="img/lang/en.png" alt="en">
-                    English
-                </button>
-            </div>
-
-            <button class="header__nav-join btn btn_primary" type="button" data-modal-open="join">Join the Waitlist</button>
-        </div>
-    </nav>
-
-    <div class="mobile-lang">
-        <div class="mobile-lang__inner container">
-            <button class="mobile-lang__back" type="button" aria-label="back">
-                <svg width="12" height="22">
-                    <use xlink:href="./img/icons-sprite.svg#arrow-back"></use>
-                </svg>
-            </button>
-    
-            <button class="mobile-lang__close" type="button" aria-label="close"></button>
-    
-            <ul class="change-lang-menu">
-                <li class="change-lang-menu__item change-lang-menu__item--mobile">
-                    <a class="change-lang-menu__btn change-lang-menu__btn--active" href="#">
-                        <img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
-                        English
-                    </a>
-                </li>
-                <li class="change-lang-menu__item change-lang-menu__item--mobile">
-                    <a class="change-lang-menu__btn" href="#">
-                        <img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
-                        Русский
-                    </a>
-                </li>
-                <li class="change-lang-menu__item change-lang-menu__item--mobile">
-                    <a class="change-lang-menu__btn" href="#">
-                        <img class="change-lang-menu__img" src="img/lang/pt.png" alt="pt">
-                        Português
-                    </a>
-                </li>
-                <li class="change-lang-menu__item change-lang-menu__item--mobile">
-                    <a class="change-lang-menu__btn" href="#">
-                        <img class="change-lang-menu__img" src="img/lang/zn.png" alt="zn">
-                        汉语
-                    </a>
-                </li>
-                <li class="change-lang-menu__item change-lang-menu__item--mobile">
-                    <a class="change-lang-menu__btn" href="#">
-                        <img class="change-lang-menu__img" src="img/lang/hi.png" alt="hi">
-                        हिन्दी
-                    </a>
-                </li>
-                <li class="change-lang-menu__item change-lang-menu__item--mobile">
-                    <a class="change-lang-menu__btn" href="#">
-                        <img class="change-lang-menu__img" src="img/lang/ja.png" alt="ja">
-                        日本語
-                    </a>
-                </li>
-                <li class="change-lang-menu__item change-lang-menu__item--mobile">
-                    <a class="change-lang-menu__btn" href="#">
-                        <img class="change-lang-menu__img" src="img/lang/es.png" alt="es">
-                        español
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="first-screen">
-        <div class="first-screen__bg">
-            <!-- <img src="./img/first-screen/bg.png" alt="bg"> -->
-            <video class="first-screen__video" src="video/hero.mp4" poster="./img/first-screen/bg.png" autoplay loop muted playsinline></video>
-        </div>
-        <div class="first-screen__content">
-            <div class="container">
-                <div class="wrap">
-                    <h1 class="first-screen__title" data-aos="fade-up">FormaCar Action<br>Play2Earn</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="apps">
-        <div class="apps__bg">
-            <picture>
-                <source media="(max-width: 767px)" srcset="img/apps/bg-touch.png">
-                <img src="img/apps/bg.png" alt="">
-            </picture>
-        </div>
-
-        <div class="container">
-            <h2 class="apps__title" data-aos="fade-down">Pre-Beta is live</h2>
-    
-            <p class="apps__desc" data-aos="fade-down">The new Formacar Action Pre-Beta is already available<br>and open for everyone to play!</p>
-    
-            <p class="apps__download" data-aos="fade-down">Download Formacar Action right now!</p>
-    
-            <ul class="apps__links" data-aos="zoom-in">
-                <li>
-                    <a class="apps__link btn btn_primary" href="" target="_blank">
-                        <svg class="apps__link-icon" width="52" height="68">
-                            <use xlink:href="./img/icons-sprite.svg#apple"></use>
-                        </svg>
-                        <span class="apps__link-desc">Download on</span>
-                        <span class="apps__link-title">App Store</span>
-                    </a>
-                </li>
-    
-                <li>
-                    <a class="apps__link btn btn_primary" href="" target="_blank">
-                        <svg class="apps__link-icon" width="55" height="60">
-                            <use xlink:href="./img/icons-sprite.svg#google-play"></use>
-                        </svg>
-                        <span class="apps__link-desc">Download on</span>
-                        <span class="apps__link-title">Google Play</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="congratulations">
-        <div class="congratulations__bg">
-            <img src="./img/congratulations/bg.png" alt="">
-        </div>
-        <div class="container">
-            <div class="wrap congratulations__wrap">
-                <h2 class="congratulations__title" data-aos="fade-down">Congratulations!</h2>
-                <p class="congratulations__subtitle" data-aos="fade-down">You found a GameFi project like no other!</p>
-            </div>
-            <div class="wrap congratulations__wrap2" data-aos="zoom-in">
-                <div class="congratulations__box">
-                    <img class="congratulations__box-img" src="./img/congratulations/icon1.png" alt="ico">
-                    <h3 class="congratulations__box-title">Completely finished game</h3>
-                    <p class="congratulations__box-descr">Will be available immediately after the sale of the NFT Collection and IDO</p>
-                </div>
-                <div class="congratulations__box">
-                    <img class="congratulations__box-img" src="./img/congratulations/icon2.png" alt="ico">
-                    <h3 class="congratulations__box-title">3D game graphics</h3>
-                </div>
-                <div class="congratulations__box">
-                    <img class="congratulations__box-img" src="./img/congratulations/icon3.png" alt="ico">
-                    <h3 class="congratulations__box-title">6 different types of races, incl. free ride</h3>
-                </div>
-                <div class="congratulations__box">
-                    <img class="congratulations__box-img" src="./img/congratulations/icon4.png" alt="ico">
-                    <h3 class="congratulations__box-title">Tuning both technical and aesthetic</h3>
-                </div>
-                <div class="congratulations__box">
-                    <img class="congratulations__box-img" src="./img/congratulations/icon5.png" alt="ico">
-                    <h3 class="congratulations__box-title">Compete with your friends or other players</h3>
-                </div>
-                <div class="congratulations__box">
-                    <img class="congratulations__box-img" src="./img/congratulations/icon6.png" alt="ico">
-                    <h3 class="congratulations__box-title">Full immersion in the real world of luxury cars</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <div class="first-pilot" data-aos="zoom-in">
-        <div class="container">
-            <div class="wrap">
-                <div class="first-pilot__box">
-                    <p class="first-pilot__box-text">
-                        Hurry up to become<br>
-                        the first pilot of the global<br>
-                        <a href="#">FormaCar crypto</a>
-                    </p>
-                    <img class="first-pilot__box-img" src="./img/first-pilot/cars.png" alt="cars">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="gallary">
-        <img class="gallary__shadows" src="./img/gallary/shadows.png" alt="shadows">
-
-        <div class="container">
-            <div class="wrap gallary__wrap">
-                <h2 class="gallary__title" data-aos="fade-down">First GameFi-powered mobile racing game</h2>
-                <p class="gallary__subtitle" data-aos="fade-down">Immerse yourself in an amazing interactive experience with cars by participating in races, completing online and offline missions, collecting NFTs and winning rewards and prizes.</p>
-            </div>
-        </div>
-        
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper lightgallery">
-                <a class="swiper-slide gallary__slide" href="./img/gallary/1.jpg">
-                    <img class="gallary__img" src="./img/gallary/1.jpg" alt="1">
-                </a>
-                <a class="swiper-slide gallary__slide" href="./img/gallary/2.jpg">
-                    <img class="gallary__img" src="./img/gallary/2.jpg" alt="1">
-                </a>
-                <a class="swiper-slide gallary__slide" href="./img/gallary/3.jpg">
-                    <img class="gallary__img" src="./img/gallary/3.jpg" alt="1">
-                </a>
-                <a class="swiper-slide gallary__slide" href="./img/gallary/4.jpg">
-                    <img class="gallary__img" src="./img/gallary/4.jpg" alt="1">
-                </a>
-                <a class="swiper-slide gallary__slide" href="./img/gallary/5.jpg">
-                    <img class="gallary__img" src="./img/gallary/5.jpg" alt="1">
-                </a>
-                <a class="swiper-slide gallary__slide" href="./img/gallary/6.jpg">
-                    <img class="gallary__img" src="./img/gallary/6.jpg" alt="1">
-                </a>
-            </div>
-          </div>
-
-          <div class="gallary__controls">
-              <div class="gallary__controls-container">
-                <div class="swiper-pagination gallary__swiper-pagination"></div>
-                <div class="swiper-button-prev swiper-btn swiper-btn-prev gallary-swiper-prev">
-                    <svg width="7">
-                        <use xlink:href="./img/icons-sprite.svg#arrow-left"></use>
-                    </svg>
-                </div>
-                <div class="swiper-button-next swiper-btn swiper-btn-next gallary-swiper-next">
-                    <svg width="7">
-                        <use xlink:href="./img/icons-sprite.svg#arrow-right"></use>
-                    </svg>
-                </div>
-              </div>
-          </div>     
-    </div>
-
-    <section id="tokenomics" class="tokenomics">
-        <img class="tokenomics-car__shadows" src="./img/tokenomics/shadows.png" alt="">
-        <div class="container">
-            <div class="wrap tokenomics__wrap">
-                <h2 class="tokenomics__title" data-aos="fade-down">Tokenomics</h2>
-                <p class="tokenomics__subtitle" data-aos="fade-down">Total Supply: 1 000 000 000 $FCG</p>
-            </div>
-            <div class="wrap">
-                <div class="tokenomics-car">
-                    
-                    <img src="./img/tokenomics/car.png" alt="car" class="tokenomics-car__img">
-
-                    <!-- Точки для наведения курсора -->
-                    <div class="tokenomics-car__targets">
-                        <div class="tokenomics-car__target tokenomics-car__target--1" data-aos="fade-down">
-                            <div class="tokenomics-car__target-circle"></div>
-    
-                            <div class="tokenomics-car__target-info">
-                                <p class="tokenomics-car__target-percent">49,00%</p>
-                                <p class="tokenomics-car__target-descr">Game Pool & Liquidity</p>
-                            </div>
-                        </div>
-                        <div class="tokenomics-car__target tokenomics-car__target--2" data-aos="fade-down" data-aos-delay="300">
-                            <div class="tokenomics-car__target-circle"></div>
-    
-                            <div class="tokenomics-car__target-info">
-                                <p class="tokenomics-car__target-percent">18,00%</p>
-                                <p class="tokenomics-car__target-descr">Marketing & Development </p>
-                            </div>
-                        </div>
-                        <div class="tokenomics-car__target tokenomics-car__target--3" data-aos="fade-down" data-aos-offset="200">
-                            <div class="tokenomics-car__target-circle"></div>
-    
-                            <div class="tokenomics-car__target-info">
-                                <p class="tokenomics-car__target-percent">15,00%</p>
-                                <p class="tokenomics-car__target-descr">Staking pool & Team</p>
-                            </div>
-                        </div>
-                        <div class="tokenomics-car__target tokenomics-car__target--4" data-aos="fade-down">
-                            <div class="tokenomics-car__target-circle"></div>
-    
-                            <div class="tokenomics-car__target-info">
-                                <p class="tokenomics-car__target-percent">9,00%</p>
-                                <p class="tokenomics-car__target-descr">Private sale & IDO</p>
-                            </div>
-                        </div>
-                        <div class="tokenomics-car__target tokenomics-car__target--5" data-aos="fade-down">
-                            <div class="tokenomics-car__target-circle"></div>
-    
-                            <div class="tokenomics-car__target-info">
-                                <p class="tokenomics-car__target-percent">4,00%</p>
-                                <p class="tokenomics-car__target-descr">Treasure</p>
-                            </div>
-                        </div>
-                        <div class="tokenomics-car__target tokenomics-car__target--6" data-aos="fade-down">
-                            <div class="tokenomics-car__target-circle"></div>
-    
-                            <div class="tokenomics-car__target-info">
-                                <p class="tokenomics-car__target-percent">3,00%</p>
-                                <p class="tokenomics-car__target-descr">Advisers</p>
-                            </div>
-                        </div>
-                        <div class="tokenomics-car__target tokenomics-car__target--7" data-aos="fade-down">
-                            <div class="tokenomics-car__target-circle"></div>
-    
-                            <div class="tokenomics-car__target-info">
-                                <p class="tokenomics-car__target-percent">2,00%</p>
-                                <p class="tokenomics-car__target-descr">Reserve</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="nft" class="nft">
-        <div class="nft__bg">
-            <img src="./img/nft/bg.png" alt="bg">
-        </div>
-        <div class="container">
-            <div class="wrap nft__wrap">
-                <h2 class="nft__title" data-aos="fade-down">NFT</h2>
-                <!-- <p class="nft__subtitle" data-aos="fade-down">NFTs - Cars, parts, land, garages, competition tracks,
-                    car dealerships, gas stations and more</p> -->
-                <p class="nft__attention" data-aos="fade-down">NFT - Cars, parts, land, garages, competition tracks,
-                    car dealerships, gas stations and more</p>
-            </div>
-        </div>
-
-        <div class="nft__slider-container" data-aos="fade-down">
-            <div class="container">
-                <div class="nft__slider-wrap">
-                    <div class="swiper nft__slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <article class="nft-card-grayscale nft-card-grayscale_type_pro">
-                                    <div class="nft-card-grayscale__bg"></div>
-                                    <svg class="nft-card-grayscale__border">
-                                        <use xlink:href="./img/icons-sprite.svg#nft-card-grayscale"></use>
-                                    </svg>
-
-                                    <div class="nft-card-grayscale__content">
-                                        <div class="nft-card-grayscale__header">
-                                            <span class="nft-card-grayscale__id">#123456789</span>
-                                            <svg class="nft-card-grayscale__logo" width="30" hidden="32">
-                                                <use xlink:href="./img/icons-sprite.svg#logo"></use>
-                                            </svg>
-                                            <span class="nft-card-grayscale__desc">7/20000</span>
-                                        </div>
-
-                                        <img class="nft-card-grayscale__img" src="./img/nft/11.png" alt="">
-    
-                                        <h3 class="nft-card-grayscale__title">tuyota celica t320</h3>
-                                    </div>
-
-                                    <span class="nft-card-grayscale__type">formacar PRO</span>
-                                </article>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <article class="nft-card-grayscale nft-card-grayscale_type_ultra">
-                                    <div class="nft-card-grayscale__bg"></div>
-                                    <svg class="nft-card-grayscale__border">
-                                        <use xlink:href="./img/icons-sprite.svg#nft-card-grayscale"></use>
-                                    </svg>
-
-                                    <div class="nft-card-grayscale__content">
-                                        <div class="nft-card-grayscale__header">
-                                            <span class="nft-card-grayscale__id">#123456789</span>
-                                            <svg class="nft-card-grayscale__logo" width="30" hidden="32">
-                                                <use xlink:href="./img/icons-sprite.svg#logo"></use>
-                                            </svg>
-                                            <span class="nft-card-grayscale__desc">7/20000</span>
-                                        </div>
-
-                                        <img class="nft-card-grayscale__img" src="./img/nft/11.png" alt="">
-    
-                                        <h3 class="nft-card-grayscale__title">tuyota celica t320</h3>
-                                    </div>
-
-                                    <span class="nft-card-grayscale__type">formacar ultra</span>
-                                </article>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <article class="nft-card-grayscale">
-                                    <div class="nft-card-grayscale__bg"></div>
-                                    <svg class="nft-card-grayscale__border">
-                                        <use xlink:href="./img/icons-sprite.svg#nft-card-grayscale"></use>
-                                    </svg>
-
-                                    <div class="nft-card-grayscale__content">
-                                        <div class="nft-card-grayscale__header">
-                                            <span class="nft-card-grayscale__id">#123456789</span>
-                                            <svg class="nft-card-grayscale__logo" width="30" hidden="32">
-                                                <use xlink:href="./img/icons-sprite.svg#logo"></use>
-                                            </svg>
-                                            <span class="nft-card-grayscale__desc">7/20000</span>
-                                        </div>
-
-                                        <img class="nft-card-grayscale__img" src="./img/nft/11.png" alt="">
-    
-                                        <h3 class="nft-card-grayscale__title">tuyota celica t320</h3>
-                                    </div>
-
-                                    <span class="nft-card-grayscale__type">formacar start</span>
-                                </article>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <article class="nft-card-grayscale nft-card-grayscale_type_pro">
-                                    <div class="nft-card-grayscale__bg"></div>
-                                    <svg class="nft-card-grayscale__border">
-                                        <use xlink:href="./img/icons-sprite.svg#nft-card-grayscale"></use>
-                                    </svg>
-
-                                    <div class="nft-card-grayscale__content">
-                                        <div class="nft-card-grayscale__header">
-                                            <span class="nft-card-grayscale__id">#123456789</span>
-                                            <svg class="nft-card-grayscale__logo" width="30" hidden="32">
-                                                <use xlink:href="./img/icons-sprite.svg#logo"></use>
-                                            </svg>
-                                            <span class="nft-card-grayscale__desc">7/20000</span>
-                                        </div>
-
-                                        <img class="nft-card-grayscale__img" src="./img/nft/11.png" alt="">
-    
-                                        <h3 class="nft-card-grayscale__title">tuyota celica t320</h3>
-                                    </div>
-
-                                    <span class="nft-card-grayscale__type">formacar PRO</span>
-                                </article>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <article class="nft-card-grayscale nft-card-grayscale_type_ultra">
-                                    <div class="nft-card-grayscale__bg"></div>
-                                    <svg class="nft-card-grayscale__border">
-                                        <use xlink:href="./img/icons-sprite.svg#nft-card-grayscale"></use>
-                                    </svg>
-
-                                    <div class="nft-card-grayscale__content">
-                                        <div class="nft-card-grayscale__header">
-                                            <span class="nft-card-grayscale__id">#123456789</span>
-                                            <svg class="nft-card-grayscale__logo" width="30" hidden="32">
-                                                <use xlink:href="./img/icons-sprite.svg#logo"></use>
-                                            </svg>
-                                            <span class="nft-card-grayscale__desc">7/20000</span>
-                                        </div>
-
-                                        <img class="nft-card-grayscale__img" src="./img/nft/11.png" alt="">
-    
-                                        <h3 class="nft-card-grayscale__title">tuyota celica t320</h3>
-                                    </div>
-
-                                    <span class="nft-card-grayscale__type">formacar ultra</span>
-                                </article>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <article class="nft-card-grayscale">
-                                    <div class="nft-card-grayscale__bg"></div>
-                                    <svg class="nft-card-grayscale__border">
-                                        <use xlink:href="./img/icons-sprite.svg#nft-card-grayscale"></use>
-                                    </svg>
-
-                                    <div class="nft-card-grayscale__content">
-                                        <div class="nft-card-grayscale__header">
-                                            <span class="nft-card-grayscale__id">#123456789</span>
-                                            <svg class="nft-card-grayscale__logo" width="30" hidden="32">
-                                                <use xlink:href="./img/icons-sprite.svg#logo"></use>
-                                            </svg>
-                                            <span class="nft-card-grayscale__desc">7/20000</span>
-                                        </div>
-
-                                        <img class="nft-card-grayscale__img" src="./img/nft/11.png" alt="">
-    
-                                        <h3 class="nft-card-grayscale__title">tuyota celica t320</h3>
-                                    </div>
-
-                                    <span class="nft-card-grayscale__type">formacar start</span>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="nft__controls">
-                        <div class="nft__controls-container">
-                            <div class="swiper-pagination nft__slider__swiper-pagination"></div>
-                            <div class="swiper-button-prev swiper-btn swiper-btn-prev nft-swiper-prev">
-                                <svg width="7">
-                                    <use xlink:href="./img/icons-sprite.svg#arrow-left"></use>
-                                </svg>
-                            </div>
-                            <div class="swiper-button-next swiper-btn swiper-btn-next nft-swiper-next">
-                                <svg width="7">
-                                    <use xlink:href="./img/icons-sprite.svg#arrow-right"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <p class="nft__desc" data-aos="fade-up">Hurry up to get into the FormaCar meTaverse!</p>
-        </div>
-    </section>
-
-    <section class="info">
-        <div class="container">
-            <h2 class="info__title" data-aos="fade-down">Drive-To-Earn</h2>
-            <p class="info__subtitle" data-aos="fade-down">Complete game modes daily, complete tasks and farm tokens.<br>Upgrade NFTcar or buy a more "cool" car</p>
-
-            <div class="info__cards">
-                <div class="info__card">
-                    <div class="info__card-content">
-                        <h3 class="info__card-title" data-aos="fade-down">Free Ride</h3>
-                        <p class="info__card-tag" data-aos="fade-down">#1 Game mode</p>
-    
-                        <p class="info__card-paragraph" data-aos="fade-down">The Free Ride mode has no set route to follow.<br>
-                            Players have the following interaction opportunities in this mode:</p>
-                        
-                        <ul class="info__card-ul" data-aos="fade-down">
-                            <li class="info__card-li">Pick up crates (loot boxes) randomly appearing on the map</li>
-                            <li class="info__card-li">Interact with other players via chat</li>
-                            <li class="info__card-li">Complete tasks received from other players, e.g. give someone a lift</li>
-                            <li class="info__card-li">Complete randomly generated tasks</li>
-                            <li class="info__card-li">Create Gathering (i.e., meeting) points with other players or attend existing Gathering points</li>
-                            <li class="info__card-li">Farm tokens, as long as there is enough fuel</li>
-                        </ul>
-                    </div>
-
-                    <div class="info__card-picture">
-                        <img class="info__card-shadow" src="img/info/info-shadow-1.png" alt="">
-                        <img class="info__card-img" src="img/info/info-1.png" alt="" data-aos="zoom-in">
-                    </div>
-                </div>
-
-                <div class="info__card">
-                    <div class="info__card-picture">
-                        <img class="info__card-shadow" src="img/info/info-shadow-2.png" alt="">
-                        <img class="info__card-img" src="img/info/info-2.png" alt="" data-aos="fade-up-right">
-                    </div>
-
-                    <div class="info__card-content">
-                        <h3 class="info__card-title" data-aos="fade-down">Race Mode</h3>
-                        <p class="info__card-tag" data-aos="fade-down">#2 Game mode</p>
-    
-                        <p class="info__card-paragraph" data-aos="fade-down">Driving mode on a specific route built on the map. The goal of the player is to reach from point A to point B. Upon reaching the goal, the player will receive a reward in the form of a loot box (s), the quantity and quality depends on NFTcara.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="meta">
-        <div class="meta__bg">
-            <img class="meta__bg-img" src="./img/meta/bg.png" alt="">
-
-            <div class="meta__point meta__point--1">
-                <img class="meta__point-img" src="./img/meta/point.png" alt="">
-                <p class="meta__point-title">Track</p>
-            </div>
-            <div class="meta__point meta__point--2">
-                <img class="meta__point-img" src="./img/meta/point.png" alt="">
-                <p class="meta__point-title">car<br>dealership</p>
-            </div>
-            <div class="meta__point meta__point--3">
-                <img class="meta__point-img" src="./img/meta/point.png" alt="">
-                <p class="meta__point-title">garage</p>
-            </div>
-            <div class="meta__point meta__point--4">
-                <img class="meta__point-img" src="./img/meta/point.png" alt="">
-                <p class="meta__point-title">gas<br>station</p>
-            </div>
-            <div class="meta__point meta__point--5">
-                <img class="meta__point-img" src="./img/meta/point.png" alt="">
-                <p class="meta__point-title">Service<br>station</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="wrap meta__wrap">
-                <h2 class="meta__title" data-aos="fade-down">AutoVerse</h2>
-                <p class="meta__subtitle" data-aos="fade-down">Buy, develop, earn, communicate, enjoy!</p>
-
-                <p class="meta__text" data-aos="fade-down">
-                    FormaCar MetaVerse is a virtual world where players can create, own, monetize their Assets - cars, land, garages, competition tracks, car dealerships, gas stations, bars, service stations and more.
-                </p>
-                <p class="meta__text" data-aos="fade-down">
-                    Any User can walk around it, interact with other participants. And the most important thing is to watch the competitions held by other participants, cheer for someone, and place bets. And if you have your own car, then you can drive freely through the FormaCar Metaverse universe.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="roadmap">
-        <div class="roadmap__bg">
-            <img src="./img/roadmap/bg-1.png" alt="">
-        </div>
-
-        <div class="container">
-            <h2 class="roadmap__title">Roadmap</h2>
-
-            <div class="roadmap__collapse">
-                <h3 class="roadmap__collapse-title">
-                    <button class="roadmap__collapse-toggle" type="button">Completed</button>
-                </h3>
-                <div class="roadmap__collapse-content">
-                    <ul class="roadmap__items">
-                        <li class="roadmap__item">
-                            <span class="roadmap__item-bg"></span>
-                            <div class="roadmap__item-content">
-                                <h4 class="roadmap__item-title">1Q 2020</h4>
-                                <ul class="roadmap__item-list">
-                                    <li class="roadmap__item-item">The idea is born for the Formacar Metaverse.</li>
-                                    <li class="roadmap__item-item">The idea is born for a unique, large-scale crypto game with P2E and F2P models.</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="roadmap__item">
-                            <span class="roadmap__item-bg"></span>
-                            <div class="roadmap__item-content">
-                                <h4 class="roadmap__item-title">2Q 2020</h4>
-                                <ul class="roadmap__item-list">
-                                    <li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
-                                    <li class="roadmap__item-item">Recruiting the best game developers.</li>
-                                    <li class="roadmap__item-item">Starting the development of the Formacar Action game.</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="roadmap__item">
-                            <span class="roadmap__item-bg"></span>
-                            <div class="roadmap__item-content">
-                                <h4 class="roadmap__item-title">3Q 2020</h4>
-                                <ul class="roadmap__item-list">
-                                    <li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="roadmap__collapse-collapsed">
-                        <ul class="roadmap__items">
-                            <li class="roadmap__item">
-                                <span class="roadmap__item-bg"></span>
-                                <div class="roadmap__item-content">
-                                    <h4 class="roadmap__item-title">1Q 2020</h4>
-                                    <ul class="roadmap__item-list">
-                                        <li class="roadmap__item-item">The idea is born for the Formacar Metaverse.</li>
-                                        <li class="roadmap__item-item">The idea is born for a unique, large-scale crypto game with P2E and F2P models.</li>
-                                    </ul>
-                                </div>
-                            </li>
-    
-                            <li class="roadmap__item">
-                                <span class="roadmap__item-bg"></span>
-                                <div class="roadmap__item-content">
-                                    <h4 class="roadmap__item-title">2Q 2020</h4>
-                                    <ul class="roadmap__item-list">
-                                        <li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
-                                        <li class="roadmap__item-item">Recruiting the best game developers.</li>
-                                        <li class="roadmap__item-item">Starting the development of the Formacar Action game.</li>
-                                    </ul>
-                                </div>
-                            </li>
-    
-                            <li class="roadmap__item">
-                                <span class="roadmap__item-bg"></span>
-                                <div class="roadmap__item-content">
-                                    <h4 class="roadmap__item-title">3Q 2020</h4>
-                                    <ul class="roadmap__item-list">
-                                        <li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-
-                        <ul class="roadmap__items">
-                            <li class="roadmap__item">
-                                <span class="roadmap__item-bg"></span>
-                                <div class="roadmap__item-content">
-                                    <h4 class="roadmap__item-title">1Q 2020</h4>
-                                    <ul class="roadmap__item-list">
-                                        <li class="roadmap__item-item">The idea is born for the Formacar Metaverse.</li>
-                                        <li class="roadmap__item-item">The idea is born for a unique, large-scale crypto game with P2E and F2P models.</li>
-                                    </ul>
-                                </div>
-                            </li>
-    
-                            <li class="roadmap__item">
-                                <span class="roadmap__item-bg"></span>
-                                <div class="roadmap__item-content">
-                                    <h4 class="roadmap__item-title">2Q 2020</h4>
-                                    <ul class="roadmap__item-list">
-                                        <li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
-                                        <li class="roadmap__item-item">Recruiting the best game developers.</li>
-                                        <li class="roadmap__item-item">Starting the development of the Formacar Action game.</li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="roadmap__item">
-                                <span class="roadmap__item-bg"></span>
-                                <div class="roadmap__item-content">
-                                    <h4 class="roadmap__item-title">3Q 2020</h4>
-                                    <ul class="roadmap__item-list">
-                                        <li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="roadmap__collapse">
-                <h3 class="roadmap__collapse-title">
-                    <button class="roadmap__collapse-toggle" type="button">To do</button>
-                </h3>
-                <div class="roadmap__collapse-content">
-                    <ul class="roadmap__items">
-                        <li class="roadmap__item">
-                            <span class="roadmap__item-bg"></span>
-                            <div class="roadmap__item-content">
-                                <h4 class="roadmap__item-title">1Q 2023</h4>
-                                <ul class="roadmap__item-list">
-                                    <li class="roadmap__item-item">Develop the D2E mechanics for Formacar Action.</li>
-                                    <li class="roadmap__item-item">Hold a Presale Round on our own platform.</li>
-                                    <li class="roadmap__item-item">Launch Formacar Action Beta on iOS/Android and open access for all users.</li>
-                                    <li class="roadmap__item-item">Prepare for DEX token listing.</li>
-                                    <li class="roadmap__item-item">Implement the D2E mechanics in the game release.</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="roadmap__item">
-                            <span class="roadmap__item-bg"></span>
-                            <div class="roadmap__item-content">
-                                <h4 class="roadmap__item-title">2Q 2023</h4>
-                                <ul class="roadmap__item-list">
-                                    <li class="roadmap__item-item">Release the Production version of Formacar Action.</li>
-                                    <li class="roadmap__item-item">Release the D2E mechanics.</li>
-                                    <li class="roadmap__item-item">Hold a Presale Round on Launchpad.</li>
-                                    <li class="roadmap__item-item">List the $FCG token on DEX.</li>
-                                    <li class="roadmap__item-item">Open $FCG farming.</li>
-                                    <li class="roadmap__item-item">Open $FCG staking.</li>
-                                    <li class="roadmap__item-item">Start the development of the Formacar Metaverse.</li>
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="roadmap__item">
-                            <span class="roadmap__item-bg"></span>
-                            <div class="roadmap__item-content">
-                                <h4 class="roadmap__item-title">3Q 2023</h4>
-                                <ul class="roadmap__item-list">
-                                    <li class="roadmap__item-item">Start offering land plots, buildings and structures for sale in the Formacar AutoVerse.</li>
-                                    <li class="roadmap__item-item">Get listed on 10 largest exchanges.</li>
-                                    <li class="roadmap__item-item">Release the Formacar Metaverse.</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="partners">
-        <div class="container">
-            <h2 class="partners__title" data-aos="fade-down">Partners</h2>
-
-            <ul class="partners__list" data-aos="zoom-in">
-                <li class="partners__item">
-                    <img class="partners__logo" src="./img/partners/item-1.png" alt="">
-                </li>
-                <li class="partners__item">
-                    <img class="partners__logo" src="./img/partners/item-2.png" alt="">
-                </li>
-                <li class="partners__item">
-                    <img class="partners__logo" src="./img/partners/item-3.png" alt="">
-                </li>
-                <li class="partners__item">
-                    <img class="partners__logo" src="./img/partners/item-4.png" alt="">
-                </li>
-                <li class="partners__item">
-                    <img class="partners__logo" src="./img/partners/item-5.svg" alt="">
-                </li>
-                <li class="partners__item">
-                    <img class="partners__logo" src="./img/partners/item-6.png" alt="">
-                </li>
-                <li class="partners__item">
-                    <img class="partners__logo" src="./img/partners/item-7.png" alt="">
-                </li>
-                <li class="partners__item">
-                    <img class="partners__logo" src="./img/partners/item-8.png" alt="">
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="teams" class="teams">
-        <div class="container">
-            <h2 class="teams__title">Formacar Team</h2>
-
-            <ul class="teams__list">
-                <li class="teams__item">
-                    <a class="teams__item-link" href="https://www.linkedin.com/in/alexander-ivanchenko-50a236187/" target="_blank">
-                        <figure class="teams__member">
-                            <div class="teams__member-avatar">
-                                <picture>
-                                    <img class="teams__member-img" src="img/teams/item-1.jpg" alt="">
-                                </picture>
-                                <svg class="teams__member-label" width="45" height="45">
-                                    <use xlink:href="./img/icons-sprite.svg#in"></use>
-                                </svg>
-                            </div>
-    
-                            <figcaption class="teams__member-info">
-                                <p class="teams__member-name">Alexander</p>
-                                <p class="teams__member-job">Executive Director</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-                
-                <li class="teams__item">
-                    <a class="teams__item-link" href="https://www.linkedin.com/in/formacar/" target="_blank">
-                        <figure class="teams__member">
-                            <div class="teams__member-avatar">
-                                <picture>
-                                    <img class="teams__member-img" src="img/teams/item-2.jpg" alt="">
-                                </picture>
-                                <svg class="teams__member-label" width="45" height="45">
-                                    <use xlink:href="./img/icons-sprite.svg#in"></use>
-                                </svg>
-                            </div>
-    
-                            <figcaption class="teams__member-info">
-                                <p class="teams__member-name">Ilya</p>
-                                <p class="teams__member-job">IT Director, Co-Founder</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-
-                <li class="teams__item">
-                    <a class="teams__item-link" href="https://www.linkedin.com/in/nikita-bronnikov-951616121/" target="_blank">
-                        <figure class="teams__member">
-                            <div class="teams__member-avatar">
-                                <picture>
-                                    <img class="teams__member-img" src="img/teams/item-3.jpg" alt="">
-                                </picture>
-                                <svg class="teams__member-label" width="45" height="45">
-                                    <use xlink:href="./img/icons-sprite.svg#in"></use>
-                                </svg>
-                            </div>
-    
-                            <figcaption class="teams__member-info">
-                                <p class="teams__member-name">Nick</p>
-                                <p class="teams__member-job">Strategy Manager,<br>Co-Founder</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-
-                <li class="teams__item">
-                    <a class="teams__item-link" href="https://www.linkedin.com/in/pavel-rachkovskiy/" target="_blank">
-                        <figure class="teams__member">
-                            <div class="teams__member-avatar">
-                                <picture>
-                                    <img class="teams__member-img" src="img/teams/item-4.jpg" alt="">
-                                </picture>
-                                <svg class="teams__member-label" width="45" height="45">
-                                    <use xlink:href="./img/icons-sprite.svg#in"></use>
-                                </svg>
-                            </div>
-    
-                            <figcaption class="teams__member-info">
-                                <p class="teams__member-name">Paul</p>
-                                <p class="teams__member-job">Creative Director</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-
-                <li class="teams__item">
-                    <a class="teams__item-link" href="https://www.linkedin.com/in/mishinkinkv/" target="_blank">
-                        <figure class="teams__member">
-                            <div class="teams__member-avatar">
-                                <picture>
-                                    <img class="teams__member-img" src="img/teams/item-5.jpg" alt="">
-                                </picture>
-                                <svg class="teams__member-label" width="45" height="45">
-                                    <use xlink:href="./img/icons-sprite.svg#in"></use>
-                                </svg>
-                            </div>
-    
-                            <figcaption class="teams__member-info">
-                                <p class="teams__member-name">Constantine</p>
-                                <p class="teams__member-job">Marketing Director<br>(Formacar)</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-
-                <li class="teams__item">
-                    <a class="teams__item-link" href="https://www.linkedin.com/company/formacar/about/" target="_blank">
-                        <figure class="teams__member">
-                            <div class="teams__member-avatar">
-                                <picture>
-                                    <img class="teams__member-img" src="img/teams/item-6.jpg" alt="">
-                                </picture>
-                                <svg class="teams__member-label" width="45" height="45">
-                                    <use xlink:href="./img/icons-sprite.svg#in"></use>
-                                </svg>
-                            </div>
-    
-                            <figcaption class="teams__member-info">
-                                <p class="teams__member-name">Alex</p>
-                                <p class="teams__member-job">Marketing Director<br>(Formacar Crypto),<br>Co-Founder</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-
-                <li class="teams__item">
-                    <a class="teams__item-link" href="https://www.linkedin.com/in/david-akopyan-42974a263" target="_blank">
-                        <figure class="teams__member">
-                            <div class="teams__member-avatar">
-                                <picture>
-                                    <img class="teams__member-img" src="img/teams/item-7.jpg" alt="">
-                                </picture>
-                                <svg class="teams__member-label" width="45" height="45">
-                                    <use xlink:href="./img/icons-sprite.svg#in"></use>
-                                </svg>
-                            </div>
-    
-                            <figcaption class="teams__member-info">
-                                <p class="teams__member-name">David</p>
-                                <p class="teams__member-job">Web3 & Smart Contracts<br>Developer</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-
-                <li class="teams__item">
-                    <a class="teams__item-link" href="https://www.linkedin.com/in/4handzmusic/" target="_blank">
-                        <figure class="teams__member">
-                            <div class="teams__member-avatar">
-                                <picture>
-                                    <img class="teams__member-img" src="img/teams/item-8.jpg" alt="">
-                                </picture>
-                                <svg class="teams__member-label" width="45" height="45">
-                                    <use xlink:href="./img/icons-sprite.svg#in"></use>
-                                </svg>
-                            </div>
-    
-                            <figcaption class="teams__member-info">
-                                <p class="teams__member-name">Nick</p>
-                                <p class="teams__member-job">Web3 Content & Community Manager</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contacts" class="contacts">
-        <div class="contacts__inner container">
-            <div class="contacts__circles"></div>
-            <div class="wrap contacts__wrap">
-                <h2 class="contacts__title" data-aos="fade-down">Social Networks</h2>
-                <p class="contacts__subtitle" data-aos="fade-down"><span>Subscribe to us</span> on social networks and follow the news</p>
-            </div>
-            <div class="wrap contacts__wrap2" data-aos="zoom-in">
-                <a class="contacts-item" data-modal-open="discord">
-                    <svg width="46" height="33">
-                        <use xlink:href="./img/icons-sprite.svg#discord"></use>
-                    </svg>
-                </a>
-                <div class="contacts-item" data-modal-open="telegram">
-                    <svg width="50" height="51">
-                        <use xlink:href="./img/icons-sprite.svg#telegram"></use>
-                    </svg>
-                </div>
-                <a class="contacts-item" href="https://twitter.com/formacar" target="_blank">
-                    <svg width="50" height="51">
-                        <use xlink:href="./img/icons-sprite.svg#twitter"></use>
-                    </svg>
-                </a>
-                <a class="contacts-item" href="https://medium.com/@FormaCarCrypto" target="_blank">
-                    <svg width="50" height="51">
-                        <use xlink:href="./img/icons-sprite.svg#medium"></use>
-                    </svg>
-                </a>
-                <a class="contacts-item" href="https://instagram.com/formacar_action?igshid=YmMyMTA2M2Y=" target="_blank">
-                    <svg width="46" height="45">
-                        <use xlink:href="./img/icons-sprite.svg#instagram"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="contacts__desc">
-                <p>Be careful! Formacar Crypto communicates its messages solely using these official accounts. Any other communication channels or social media pages you might encounter do not belong to Formacar and do not represent our brand in any way.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-us">
-        <div class="container">
-            <div class="wrap contact-us__wrap">
-                <div class="contact-us__header">
-                    <h2 class="contact-us__title" data-aos="fade-down">Contact Us</h2>
-                    <p class="contact-us__desc" data-aos="fade-down">Dear friends, we are committed to improving our project together with you and are always looking for cooperation opportunities. If you have any wishes or suggestions, welcome!</p>
-                </div>
-    
-                <form class="contact-us__form form" action="/" name="contact" data-aos="zoom-in">
-                    <input class="form-input" type="email" name="email" placeholder="Email" data-placeholder="Email" data-error="Email entered incorrectly" required>
-                    <input class="form-input" type="text" name="name" placeholder="Name" data-placeholder="Name" data-error="Please fill out this field." required>
-                    <div class="form-select">
-                        <select class="form-select__input" name="representative">
-                            <option value="Фонды">Фонды</option>
-                            <option value="Биржи">Биржи</option>
-                            <option value="Лаунчпады">Лаунчпады</option>
-                            <option value="Эдвайзеры">Эдвайзеры</option>
-                            <option value="Работа">Работа</option>
-                            <option value="Иное">Иное</option>
-                        </select>
-                        <button class="form-select__toggle" type="button">You are a representative..</button>
-                        <ul class="form-select__list">
-                            <li>
-                                <button class="form-select__btn" type="button">Фонды</button>
-                            </li>
-                            <li>
-                                <button class="form-select__btn" type="button">Биржи</button>
-                            </li>
-                            <li>
-                                <button class="form-select__btn" type="button">Лаунчпады</button>
-                            </li>
-                            <li>
-                                <button class="form-select__btn" type="button">Эдвайзеры</button>
-                            </li>
-                            <li>
-                                <button class="form-select__btn" type="button">Работа</button>
-                            </li>
-                            <li>
-                                <button class="form-select__btn" type="button">Иное</button>
-                            </li>
-                        </ul>
-                    </div>
-                    <input class="form-input" type="url" name="social" placeholder="Link to your social networks" data-error="Please enter a URL." data-placeholder="Link to your social networks">
-                    <textarea class="form-input" name="message" placeholder="Message" data-placeholder="Message" data-error="Please fill out this field." required></textarea>
-                    <button class="form-submit" type="submit">SEND A MESSAGE</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq">
-        <div class="faq__bg">
-            <img src="./img/faq/bg-1.png" alt="bg">
-        </div>
-        <div class="container">
-            <div class="wrap faq__wrap">
-                <h2 class="faq__h2" data-aos="fade-down">FAQ</h2>
-                <div class="faq__questions-list" data-aos="zoom-in">
-
-                    <div class="faq__questions-item active">
-                        <div class="faq__questions-nav">
-                            <div class="faq__questions-line"></div>
-                            <div class="faq__questions-line"></div>
-                        </div>
-                        <h3 class="faq__questions-title">What is FormaCar Action?</h3>
-                        <p class="faq__questions-text">FormaCar Action is a realistic crypto game - a metaverse where you can play with your friends and earn real money by competing in races.</p>
-                    </div>
-
-                    <div class="faq__questions-item">
-                        <div class="faq__questions-nav">
-                            <div class="faq__questions-line"></div>
-                            <div class="faq__questions-line"></div>
-                        </div>
-                        <h3 class="faq__questions-title">What NFTs does FormaCar Action have?</h3>
-                        <p class="faq__questions-text">NFT in FormaCar Action ' is the coolest realistic cars, parts, components, units, tuning elements, land, gas stations, service stations, team members and much more! Buy, develop and earn together with FormaCar Action!</p>
-                    </div>
-
-                    <div class="faq__questions-item">
-                        <div class="faq__questions-nav">
-                            <div class="faq__questions-line"></div>
-                            <div class="faq__questions-line"></div>
-                        </div>
-                        <h3 class="faq__questions-title">What is $FCG token?</h3>
-                        <p class="faq__questions-text">$FCG Token - This is a utility token on the FormaCar Action platform in Bep-20 (BSC) format All sales, purchases, reward payments in the FormaCar Action game and the FormaCar MetaVerse Metaverse, all for the utility token $FCG.</p>
-                    </div>
-
-                    <div class="faq__questions-item">
-                        <div class="faq__questions-nav">
-                            <div class="faq__questions-line"></div>
-                            <div class="faq__questions-line"></div>
-                        </div>
-                        <h3 class="faq__questions-title">What blockchain does FormaCar use?</h3>
-                        <p class="faq__questions-text">Binance Smart Chain is a blockchain that provides scalable, secure, and instant transactions with minimal fees.</p>
-                    </div>
-
-                    <div class="faq__questions-item">
-                        <div class="faq__questions-nav">
-                            <div class="faq__questions-line"></div>
-                            <div class="faq__questions-line"></div>
-                        </div>
-                        <h3 class="faq__questions-title">What modes are there in FormaCar Action?</h3>
-                        <div class="faq__questions-text">
-                            We have several kinds of modes with different possibilities:
-                            <ul>
-                                <li>Ring/Sprint (Standard ride)</li>
-                                <li>Drift</li>
-                                <li>Free (Freeride)</li>
-                                <li>Drag</li>
-                                <li>Escape</li>
-                            </ul>
-                            Each player can earn, but your earnings depend not only on your driving skills, but also on the class of the car and its characteristics.
-                        </div>
-                    </div>
-
-                    <div class="faq__questions-item">
-                        <div class="faq__questions-nav">
-                            <div class="faq__questions-line"></div>
-                            <div class="faq__questions-line"></div>
-                        </div>
-                        <h3 class="faq__questions-title">How to get NFT?</h3>
-                        <p class="faq__questions-text">In order to become a happy owner of cool NFTs, you need to get into the WhiteList, which we will open in the near future. And then you will have the opportunity to purchase the first gaming NFTs.</p>
-                    </div>
-
-                    <div class="faq__questions-item">
-                        <div class="faq__questions-nav">
-                            <div class="faq__questions-line"></div>
-                            <div class="faq__questions-line"></div>
-                        </div>
-                        <h3 class="faq__questions-title">How can I buy $FCG token?</h3>
-                        <p class="faq__questions-text">You can purchase the $FCG token at the next IDO round. And for this, also, you need to get into the WhiteList.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer footer_shift">
-        <div class="container">
-            <div class="footer__inner">
-                <a href="/" class="footer__logo">
-                    <img src="./img/logo.svg" alt="">
-                </a>
-                <a class="footer__audit" href="https://www.verichains.io/?search=formacar" target="_blank">
-                    <p class="footer__audit-desc">Contract verified by</p>
-                    <img class="footer__audit-img" src="img/audit.png" alt="">
-                </a>
-                <div class="footer__rights">
-                    <p>2022 FormaCar. All rights reserved. 18+</p>
-                    <p>United Arab Emirates, Dubai, IFZA</p>
-                </div>
-                <a href="#" class="privacy">USER AGREEMENT</a>
-            </div>
-        </div>
-    </footer>
-
-
-    <div class="cookie">
-        <div class="container">
-            <div class="wrap">
-                <h2 class="cookie__title">Этот веб-сайт использует файлы cookie</h2>
-                <p class="cookie__text">Нажав на кнопку “Разрешить все файлы “cookie”, вы соглашаетесь на использование файлов cookie нашим сервисом.
-                    Узнать больше и изменить настройки можно в <a href="#">Политике использования файлов cookie MY.GAMES.</a>
-                </p>
-                <a href="#" id="cookie-btn" class="btn btn--cookie">Разрешить все файлы “cookie”</a>
-            </div>
-        </div>
-    </div>
+	<div class="header">
+		<div class="container header__container">
+			<div class="wrap header__wrap">
+				<div class="header__logo">
+					<img src="./img/logo.svg" alt="">
+				</div>
+
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-elem header__nav-elem--has-sub">
+							<a class="anchor" href="#">Game</a>
+							<ul class="header__nav-sub-list">
+								<li class="header__nav-sub-elem"><a class="anchor" href="#">Overview</a></li>
+								<li class="header__nav-sub-elem"><a class="anchor" href="#tokenomics">Tokenomics</a></li>
+								<li class="header__nav-sub-elem"><a class="anchor" href="#nft">NFT’s</a></li>
+							</ul>
+						</li>
+						<li class="header__nav-elem"><a class="anchor" href="#">Blog</a></li>
+						<li class="header__nav-elem"><a class="anchor" href="#">Whitepaper</a></li>
+						<li class="header__nav-elem"><a class="anchor" href="#roadmap">Roadmap</a></li>
+						<li class="header__nav-elem"><a class="anchor" href="#partners">Partners</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__lang">
+					<button class="header__lang-btn" type="button">
+						<img class="header__lang-img" src="img/lang/en.png" alt="en">
+						EN
+					</button>
+					<div class="header__lang-menu">
+						<div class="header__lang-menu-inner">
+							<ul class="change-lang-menu">
+								<li class="change-lang-menu__item">
+									<a class="change-lang-menu__btn change-lang-menu__btn--active" href="#">
+										<img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
+										English
+									</a>
+								</li>
+								<li class="change-lang-menu__item">
+									<a class="change-lang-menu__btn" href="#">
+										<img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
+										Русский
+									</a>
+								</li>
+								<li class="change-lang-menu__item">
+									<a class="change-lang-menu__btn" href="#">
+										<img class="change-lang-menu__img" src="img/lang/pt.png" alt="pt">
+										Português
+									</a>
+								</li>
+								<li class="change-lang-menu__item">
+									<a class="change-lang-menu__btn" href="#">
+										<img class="change-lang-menu__img" src="img/lang/zn.png" alt="zn">
+										汉语
+									</a>
+								</li>
+								<li class="change-lang-menu__item">
+									<a class="change-lang-menu__btn" href="#">
+										<img class="change-lang-menu__img" src="img/lang/hi.png" alt="hi">
+										हिन्दी
+									</a>
+								</li>
+								<li class="change-lang-menu__item">
+									<a class="change-lang-menu__btn" href="#">
+										<img class="change-lang-menu__img" src="img/lang/ja.png" alt="ja">
+										日本語
+									</a>
+								</li>
+								<li class="change-lang-menu__item">
+									<a class="change-lang-menu__btn" href="#">
+										<img class="change-lang-menu__img" src="img/lang/es.png" alt="es">
+										español
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<button class="header__join btn btn_primary" type="button" data-modal-open="join">Join the Waitlist</button>
+
+				<div class="header__nav-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="header__nav header__nav--mobile">
+		<div class="container">
+			<div class="wrap">
+				<ul class="header__nav-list">
+					<li class="header__nav-elem header__nav-elem--has-sub">
+						<a class="anchor" href="#">Game</a>
+						<ul class="header__nav-sub-list">
+							<li class="header__nav-sub-elem"><a class="anchor" href="#">Overview</a></li>
+							<li class="header__nav-sub-elem"><a class="anchor" href="#tokenomics">Tokenomics</a></li>
+							<li class="header__nav-sub-elem"><a class="anchor" href="#nft">NFT’s</a></li>
+						</ul>
+					</li>
+					<li class="header__nav-elem"><a class="anchor" href="#">Blog</a></li>
+					<li class="header__nav-elem"><a class="anchor" href="#">Whitepaper</a></li>
+					<li class="header__nav-elem"><a class="anchor" href="#roadmap">Roadmap</a></li>
+					<li class="header__nav-elem"><a class="anchor" href="#partners">Partners</a></li>
+				</ul>
+			</div>
+
+			<div class="header__nav-lang">
+				<button class="header__nav-lang-btn" type="button">
+					<img class="header__nav-lang-img" src="img/lang/en.png" alt="en">
+					English
+				</button>
+			</div>
+
+			<button class="header__nav-join btn btn_primary" type="button" data-modal-open="join">Join the Waitlist</button>
+		</div>
+	</nav>
+
+	<div class="mobile-lang">
+		<div class="mobile-lang__inner container">
+			<button class="mobile-lang__back" type="button" aria-label="back">
+				<svg width="12" height="22">
+					<use xlink:href="./img/icons-sprite.svg#arrow-back"></use>
+				</svg>
+			</button>
+	
+			<button class="mobile-lang__close" type="button" aria-label="close"></button>
+	
+			<ul class="change-lang-menu">
+				<li class="change-lang-menu__item change-lang-menu__item--mobile">
+					<a class="change-lang-menu__btn change-lang-menu__btn--active" href="#">
+						<img class="change-lang-menu__img" src="img/lang/en.png" alt="en">
+						English
+					</a>
+				</li>
+				<li class="change-lang-menu__item change-lang-menu__item--mobile">
+					<a class="change-lang-menu__btn" href="#">
+						<img class="change-lang-menu__img" src="img/lang/ru.png" alt="ru">
+						Русский
+					</a>
+				</li>
+				<li class="change-lang-menu__item change-lang-menu__item--mobile">
+					<a class="change-lang-menu__btn" href="#">
+						<img class="change-lang-menu__img" src="img/lang/pt.png" alt="pt">
+						Português
+					</a>
+				</li>
+				<li class="change-lang-menu__item change-lang-menu__item--mobile">
+					<a class="change-lang-menu__btn" href="#">
+						<img class="change-lang-menu__img" src="img/lang/zn.png" alt="zn">
+						汉语
+					</a>
+				</li>
+				<li class="change-lang-menu__item change-lang-menu__item--mobile">
+					<a class="change-lang-menu__btn" href="#">
+						<img class="change-lang-menu__img" src="img/lang/hi.png" alt="hi">
+						हिन्दी
+					</a>
+				</li>
+				<li class="change-lang-menu__item change-lang-menu__item--mobile">
+					<a class="change-lang-menu__btn" href="#">
+						<img class="change-lang-menu__img" src="img/lang/ja.png" alt="ja">
+						日本語
+					</a>
+				</li>
+				<li class="change-lang-menu__item change-lang-menu__item--mobile">
+					<a class="change-lang-menu__btn" href="#">
+						<img class="change-lang-menu__img" src="img/lang/es.png" alt="es">
+						español
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="first-screen">
+		<div class="first-screen__bg">
+			<!-- <img src="./img/first-screen/bg.png" alt="bg"> -->
+			<video class="first-screen__video" src="video/hero.mp4" poster="./img/first-screen/bg.png" autoplay loop muted playsinline></video>
+		</div>
+		<div class="first-screen__content container">
+			<div class="first-screen__bottom">
+				<h1 class="first-screen__title" data-aos="fade-up"><span>FormaCar Action</span> <span>Web3 Racing Game</span></h1>
+				<div class="first-screen__side">
+					<h3 class="first-screen__subtitle">Pre-Beta is live</h3>
+					<div class="first-screen__text">The new Formacar Action Pre-Beta is already available and open for everyone to play!</div>
+					<div class="first-screen__links">
+						<a class="first-screen__link" href="./"><img src="./img/first-screen/appstore.svg" alt=""></a>
+						<a class="first-screen__link" href="./"><img src="./img/first-screen/googleplay.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="apps">
+		<div class="apps__bg">
+			<picture>
+				<source media="(max-width: 767px)" srcset="img/apps/bg-touch.png">
+				<img src="img/apps/bg.png" alt="">
+			</picture>
+		</div>
+
+		<div class="container">
+			<h2 class="apps__title" data-aos="fade-down">Pre-Beta is live</h2>
+			<p class="apps__desc" data-aos="fade-down">The new Formacar Action Pre-Beta is already available<br>and open for everyone to play!</p>
+			<p class="apps__download" data-aos="fade-down">Download Formacar Action right now!</p>
+			<ul class="apps__links" data-aos="zoom-in">
+				<li>
+					<a class="apps__link" href="./" target="_blank">
+						<img src="./img/first-screen/appstore.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a class="apps__link" href="" target="_blank">
+						<img src="./img/first-screen/googleplay.svg" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="congratulations">
+		<div class="congratulations__bg">
+			<img src="./img/congratulations/bg.png" alt="">
+		</div>
+		<div class="container">
+			<div class="wrap congratulations__wrap">
+				<h2 class="congratulations__title" data-aos="fade-down">Congratulations!</h2>
+				<p class="congratulations__subtitle" data-aos="fade-down">You found a GameFi project like no other!</p>
+			</div>
+			<div class="congratulations__boxes" data-aos="zoom-in">
+				<div class="congratulations__box">
+					<img class="congratulations__box-img" src="./img/congratulations/icon1.png" alt="ico">
+					<h3 class="congratulations__box-title">Free-to-play</h3>
+					<p class="congratulations__box-descr">Pre-Beta release is Public and available for everyone on Android & iOS</p>
+				</div>
+				<div class="congratulations__box">
+					<img class="congratulations__box-img" src="./img/congratulations/icon2.png" alt="ico">
+					<h3 class="congratulations__box-title">Blockchain features</h3>
+					<p class="congratulations__box-descr">We implement the best Web3 mechanics for a new level of racing gaming</p>
+				</div>
+				<div class="congratulations__box">
+					<img class="congratulations__box-img" src="./img/congratulations/icon3.png" alt="ico">
+					<h3 class="congratulations__box-title">Plenty of content</h3>
+					<p class="congratulations__box-descr">Various tracks, supercars, drive modes and more, including online races</p>
+				</div>
+				<div class="congratulations__box">
+					<img class="congratulations__box-img" src="./img/congratulations/icon4.png" alt="ico">
+					<h3 class="congratulations__box-title">Multilevel NFT cars and tuning</h3>
+					<p class="congratulations__box-descr">Become a garage owner of the best cars, upgrading their characteristics</p>
+				</div>
+				<div class="congratulations__box">
+					<img class="congratulations__box-img" src="./img/congratulations/icon5.png" alt="ico">
+					<h3 class="congratulations__box-title">Compete for pizes</h3>
+					<p class="congratulations__box-descr">Practice and play against opponents in tourneys, winning valuable prizes</p>
+				</div>
+				<div class="congratulations__box">
+					<img class="congratulations__box-img" src="./img/congratulations/icon6.png" alt="ico">
+					<h3 class="congratulations__box-title">Full immersion in the real world of luxury cars</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="first-pilot" data-aos="zoom-in">
+		<div class="container">
+			<div class="wrap">
+				<div class="first-pilot__box">
+					<p class="first-pilot__box-text">Hurry up to become the greatest pilot in<br>
+						<a href="#">Formacar's automotive metaverse</a>
+					</p>
+					<img class="first-pilot__box-img" src="./img/first-pilot/cars.png" alt="cars">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gallary">
+		<img class="gallary__shadows" src="./img/gallary/shadows.png" alt="shadows">
+
+		<div class="container">
+			<div class="wrap gallary__wrap">
+				<h2 class="gallary__title" data-aos="fade-down">First GameFi-powered mobile racing game</h2>
+				<p class="gallary__subtitle" data-aos="fade-down">Immerse yourself in an amazing interactive experience with cars by participating in races, completing online and offline missions, collecting NFTs and winning rewards and prizes.</p>
+			</div>
+		</div>
+		
+		<div class="gallary__slider swiper">
+			<div class="swiper-wrapper lightgallery">
+				<a class="swiper-slide gallary__slide" href="./img/gallary/gallery-image-3.png">
+					<img class="gallary__img" src="./img/gallary/gallery-image-3.png" alt="1">
+				</a>
+				<a class="swiper-slide gallary__slide" href="./img/gallary/gallery-image-4.png">
+					<img class="gallary__img" src="./img/gallary/gallery-image-4.png" alt="1">
+				</a>
+				<a class="swiper-slide gallary__slide" href="./img/gallary/gallery-image-5.png">
+					<img class="gallary__img" src="./img/gallary/gallery-image-5.png" alt="1">
+				</a>
+				<a class="swiper-slide gallary__slide" href="./img/gallary/gallery-image-1.png">
+					<img class="gallary__img" src="./img/gallary/gallery-image-1.png" alt="1">
+				</a>
+				<a class="swiper-slide gallary__slide" href="./img/gallary/gallery-image-2.png">
+					<img class="gallary__img" src="./img/gallary/gallery-image-2.png" alt="1">
+				</a>
+				<a class="swiper-slide gallary__slide" href="./img/gallary/gallery-image-4.png">
+					<img class="gallary__img" src="./img/gallary/gallery-image-4.png" alt="1">
+				</a>
+				<a class="swiper-slide gallary__slide" href="./img/gallary/gallery-image-5.png">
+					<img class="gallary__img" src="./img/gallary/gallery-image-5.png" alt="1">
+				</a>
+			</div>
+			<div class="gallary__controls controls">
+				<div class="controls__button controls__button_prev">
+					<svg width="7"><use xlink:href="./img/icons-sprite.svg#arrow-left"></use></svg>
+				</div>
+				<div class="controls__pagination"></div>
+				<div class="controls__button controls__button_next">
+					<svg width="7"><use xlink:href="./img/icons-sprite.svg#arrow-right"></use></svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="tokenomics" class="tokenomics">
+		<img class="tokenomics-car__shadows" src="./img/tokenomics/shadows.png" alt="">
+		<div class="container">
+			<div class="wrap tokenomics__wrap">
+				<h2 class="tokenomics__title" data-aos="fade-down">Tokenomics</h2>
+				<p class="tokenomics__subtitle" data-aos="fade-down">Total Supply: 1 000 000 000 $FCG</p>
+			</div>
+			<div class="wrap">
+				<div class="tokenomics-car">
+					
+					<img src="./img/tokenomics/car.png" alt="car" class="tokenomics-car__img">
+
+					<!-- Точки для наведения курсора -->
+					<div class="tokenomics-car__targets">
+						<div class="tokenomics-car__target tokenomics-car__target--1" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">10,00%</p>
+								<p class="tokenomics-car__target-descr">Seed</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--2" data-aos="fade-down" data-aos-delay="300">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">1,00%</p>
+								<p class="tokenomics-car__target-descr">Private 1 </p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--3" data-aos="fade-down" data-aos-offset="200">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">0,70%</p>
+								<p class="tokenomics-car__target-descr">Private 2</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--4" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">1,00%</p>
+								<p class="tokenomics-car__target-descr">IDO</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--5" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">1,50%</p>
+								<p class="tokenomics-car__target-descr">TGE/DEX</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--6" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">10,00%</p>
+								<p class="tokenomics-car__target-descr">Team</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--7" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">2,50%</p>
+								<p class="tokenomics-car__target-descr">Advisors</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--8" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">40,30%</p>
+								<p class="tokenomics-car__target-descr">Gamepool</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--9" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">16,00%</p>
+								<p class="tokenomics-car__target-descr">Treasure</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--10" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">12,00%</p>
+								<p class="tokenomics-car__target-descr">Marketing</p>
+							</div>
+						</div>
+						<div class="tokenomics-car__target tokenomics-car__target--11" data-aos="fade-down">
+							<div class="tokenomics-car__target-circle"></div>
+	
+							<div class="tokenomics-car__target-info">
+								<p class="tokenomics-car__target-percent">5,00%</p>
+								<p class="tokenomics-car__target-descr">Community</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="nft" class="nft">
+		<div class="nft__bg">
+			<img src="./img/nft/bg.png" alt="bg">
+		</div>
+		<div class="container">
+			<div class="wrap nft__wrap">
+				<h2 class="nft__title" data-aos="fade-down">NFT</h2>
+				<!-- <p class="nft__subtitle" data-aos="fade-down">NFTs - Cars, parts, land, garages, competition tracks,
+					car dealerships, gas stations and more</p> -->
+				<p class="nft__attention" data-aos="fade-down">NFT - Cars, parts, land, garages, competition tracks,
+					car dealerships, gas stations and more</p>
+			</div>
+		</div>
+
+		<div class="nft__slider-container" data-aos="fade-down">
+			<div class="container">
+				<div class="nft__slider-wrap">
+					<div class="swiper nft__slider">
+						<div class="nft__controls controls">
+							<div class="controls__button controls__button_prev">
+								<svg width="7"><use xlink:href="./img/icons-sprite.svg#arrow-left"></use></svg>
+							</div>
+							<div class="controls__pagination"></div>
+							<div class="controls__button controls__button_next">
+								<svg width="7"><use xlink:href="./img/icons-sprite.svg#arrow-right"></use></svg>
+							</div>
+						</div>
+
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-1.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-2.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-3.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-4.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-5.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-6.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-7.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-8.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-9.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-10.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-11.png" alt="">
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="nft__card">
+									<img class="nft__card-img" src="./img/nft/nft-car-12.png" alt="">
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<p class="nft__desc" data-aos="fade-up">Hurry up to get into the FormaCar meTaverse!</p>
+		</div>
+	</section>
+
+	<section class="info">
+		<div class="container">
+			<h2 class="info__title" data-aos="fade-down">Drive-To-Earn</h2>
+			<p class="info__subtitle" data-aos="fade-down">Complete game modes daily, complete tasks and farm tokens.<br>Upgrade NFTcar or buy a more "cool" car</p>
+
+			<div class="info__cards">
+				<div class="info__card">
+					<div class="info__card-content">
+						<h3 class="info__card-title" data-aos="fade-down">Free Ride</h3>
+						<p class="info__card-tag" data-aos="fade-down">#1 Game mode</p>
+	
+						<p class="info__card-paragraph" data-aos="fade-down">The Free Ride mode has no set route to follow.<br>
+							Players have the following interaction opportunities in this mode:</p>
+						
+						<ul class="info__card-ul" data-aos="fade-down">
+							<li class="info__card-li">Pick up crates (loot boxes) randomly appearing on the map</li>
+							<li class="info__card-li">Interact with other players via chat</li>
+							<li class="info__card-li">Complete tasks received from other players, e.g. give someone a lift</li>
+							<li class="info__card-li">Complete randomly generated tasks</li>
+							<li class="info__card-li">Create Gathering (i.e., meeting) points with other players or attend existing Gathering points</li>
+							<li class="info__card-li">Farm tokens, as long as there is enough fuel</li>
+						</ul>
+					</div>
+
+					<div class="info__card-picture">
+						<img class="info__card-shadow" src="img/info/info-shadow-1.png" alt="">
+						<img class="info__card-img" src="img/info/info-1.png" alt="" data-aos="zoom-in">
+					</div>
+				</div>
+
+				<div class="info__card">
+					<div class="info__card-picture">
+						<img class="info__card-shadow" src="img/info/info-shadow-2.png" alt="">
+						<img class="info__card-img" src="img/info/info-2.png" alt="" data-aos="fade-up-right">
+					</div>
+
+					<div class="info__card-content">
+						<h3 class="info__card-title" data-aos="fade-down">Race Mode</h3>
+						<p class="info__card-tag" data-aos="fade-down">#2 Game mode</p>
+	
+						<p class="info__card-paragraph" data-aos="fade-down">Driving mode on a specific route built on the map. The goal of the player is to reach from point A to point B. Upon reaching the goal, the player will receive a reward in the form of a loot box (s), the quantity and quality depends on NFTcara.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="meta">
+		<div class="meta__bg">
+			<img class="meta__bg-img" src="./img/meta/bg.png" alt="">
+
+			<div class="meta__point meta__point--1">
+				<img class="meta__point-img" src="./img/meta/point.png" alt="">
+				<p class="meta__point-title">Track</p>
+			</div>
+			<div class="meta__point meta__point--2">
+				<img class="meta__point-img" src="./img/meta/point.png" alt="">
+				<p class="meta__point-title">car<br>dealership</p>
+			</div>
+			<div class="meta__point meta__point--3">
+				<img class="meta__point-img" src="./img/meta/point.png" alt="">
+				<p class="meta__point-title">garage</p>
+			</div>
+			<div class="meta__point meta__point--4">
+				<img class="meta__point-img" src="./img/meta/point.png" alt="">
+				<p class="meta__point-title">gas<br>station</p>
+			</div>
+			<div class="meta__point meta__point--5">
+				<img class="meta__point-img" src="./img/meta/point.png" alt="">
+				<p class="meta__point-title">Service<br>station</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="wrap meta__wrap">
+				<h2 class="meta__title" data-aos="fade-down">AutoVerse</h2>
+				<p class="meta__subtitle" data-aos="fade-down">Buy, develop, earn, communicate, enjoy!</p>
+
+				<p class="meta__text" data-aos="fade-down">
+					FormaCar MetaVerse is a virtual world where players can create, own, monetize their Assets - cars, land, garages, competition tracks, car dealerships, gas stations, bars, service stations and more.
+				</p>
+				<p class="meta__text" data-aos="fade-down">
+					Any User can walk around it, interact with other participants. And the most important thing is to watch the competitions held by other participants, cheer for someone, and place bets. And if you have your own car, then you can drive freely through the FormaCar Metaverse universe.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="roadmap" class="roadmap">
+		<div class="roadmap__bg">
+			<img src="./img/roadmap/bg-1.png" alt="">
+		</div>
+
+		<div class="container">
+			<h2 class="roadmap__title">Roadmap</h2>
+
+			<div class="roadmap__collapse">
+				<h3 class="roadmap__collapse-title">
+					<button class="roadmap__collapse-toggle" type="button">Completed</button>
+				</h3>
+				<div class="roadmap__collapse-content">
+					<ul class="roadmap__items">
+						<li class="roadmap__item">
+							<span class="roadmap__item-bg"></span>
+							<div class="roadmap__item-content">
+								<h4 class="roadmap__item-title">1Q 2020</h4>
+								<ul class="roadmap__item-list">
+									<li class="roadmap__item-item">The idea is born for the Formacar Metaverse.</li>
+									<li class="roadmap__item-item">The idea is born for a unique, large-scale crypto game with P2E and F2P models.</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="roadmap__item">
+							<span class="roadmap__item-bg"></span>
+							<div class="roadmap__item-content">
+								<h4 class="roadmap__item-title">2Q 2020</h4>
+								<ul class="roadmap__item-list">
+									<li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
+									<li class="roadmap__item-item">Recruiting the best game developers.</li>
+									<li class="roadmap__item-item">Starting the development of the Formacar Action game.</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="roadmap__item">
+							<span class="roadmap__item-bg"></span>
+							<div class="roadmap__item-content">
+								<h4 class="roadmap__item-title">3Q 2020</h4>
+								<ul class="roadmap__item-list">
+									<li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+					<div class="roadmap__collapse-collapsed">
+						<ul class="roadmap__items">
+							<li class="roadmap__item">
+								<span class="roadmap__item-bg"></span>
+								<div class="roadmap__item-content">
+									<h4 class="roadmap__item-title">1Q 2020</h4>
+									<ul class="roadmap__item-list">
+										<li class="roadmap__item-item">The idea is born for the Formacar Metaverse.</li>
+										<li class="roadmap__item-item">The idea is born for a unique, large-scale crypto game with P2E and F2P models.</li>
+									</ul>
+								</div>
+							</li>
+	
+							<li class="roadmap__item">
+								<span class="roadmap__item-bg"></span>
+								<div class="roadmap__item-content">
+									<h4 class="roadmap__item-title">2Q 2020</h4>
+									<ul class="roadmap__item-list">
+										<li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
+										<li class="roadmap__item-item">Recruiting the best game developers.</li>
+										<li class="roadmap__item-item">Starting the development of the Formacar Action game.</li>
+									</ul>
+								</div>
+							</li>
+	
+							<li class="roadmap__item">
+								<span class="roadmap__item-bg"></span>
+								<div class="roadmap__item-content">
+									<h4 class="roadmap__item-title">3Q 2020</h4>
+									<ul class="roadmap__item-list">
+										<li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="roadmap__items">
+							<li class="roadmap__item">
+								<span class="roadmap__item-bg"></span>
+								<div class="roadmap__item-content">
+									<h4 class="roadmap__item-title">1Q 2020</h4>
+									<ul class="roadmap__item-list">
+										<li class="roadmap__item-item">The idea is born for the Formacar Metaverse.</li>
+										<li class="roadmap__item-item">The idea is born for a unique, large-scale crypto game with P2E and F2P models.</li>
+									</ul>
+								</div>
+							</li>
+	
+							<li class="roadmap__item">
+								<span class="roadmap__item-bg"></span>
+								<div class="roadmap__item-content">
+									<h4 class="roadmap__item-title">2Q 2020</h4>
+									<ul class="roadmap__item-list">
+										<li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
+										<li class="roadmap__item-item">Recruiting the best game developers.</li>
+										<li class="roadmap__item-item">Starting the development of the Formacar Action game.</li>
+									</ul>
+								</div>
+							</li>
+
+							<li class="roadmap__item">
+								<span class="roadmap__item-bg"></span>
+								<div class="roadmap__item-content">
+									<h4 class="roadmap__item-title">3Q 2020</h4>
+									<ul class="roadmap__item-list">
+										<li class="roadmap__item-item">Hiring UX/UI design professionals.</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="roadmap__collapse">
+				<h3 class="roadmap__collapse-title">
+					<button class="roadmap__collapse-toggle" type="button">To do</button>
+				</h3>
+				<div class="roadmap__collapse-content">
+					<ul class="roadmap__items">
+						<li class="roadmap__item">
+							<span class="roadmap__item-bg"></span>
+							<div class="roadmap__item-content">
+								<h4 class="roadmap__item-title">1Q 2023</h4>
+								<ul class="roadmap__item-list">
+									<li class="roadmap__item-item">Develop the D2E mechanics for Formacar Action.</li>
+									<li class="roadmap__item-item">Hold a Presale Round on our own platform.</li>
+									<li class="roadmap__item-item">Launch Formacar Action Beta on iOS/Android and open access for all users.</li>
+									<li class="roadmap__item-item">Prepare for DEX token listing.</li>
+									<li class="roadmap__item-item">Implement the D2E mechanics in the game release.</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="roadmap__item">
+							<span class="roadmap__item-bg"></span>
+							<div class="roadmap__item-content">
+								<h4 class="roadmap__item-title">2Q 2023</h4>
+								<ul class="roadmap__item-list">
+									<li class="roadmap__item-item">Release the Production version of Formacar Action.</li>
+									<li class="roadmap__item-item">Release the D2E mechanics.</li>
+									<li class="roadmap__item-item">Hold a Presale Round on Launchpad.</li>
+									<li class="roadmap__item-item">List the $FCG token on DEX.</li>
+									<li class="roadmap__item-item">Open $FCG farming.</li>
+									<li class="roadmap__item-item">Open $FCG staking.</li>
+									<li class="roadmap__item-item">Start the development of the Formacar Metaverse.</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="roadmap__item">
+							<span class="roadmap__item-bg"></span>
+							<div class="roadmap__item-content">
+								<h4 class="roadmap__item-title">3Q 2023</h4>
+								<ul class="roadmap__item-list">
+									<li class="roadmap__item-item">Start offering land plots, buildings and structures for sale in the Formacar AutoVerse.</li>
+									<li class="roadmap__item-item">Get listed on 10 largest exchanges.</li>
+									<li class="roadmap__item-item">Release the Formacar Metaverse.</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="partners" class="partners">
+		<div class="container">
+			<h2 class="partners__title" data-aos="fade-down">Partners</h2>
+			<div class="partners__list swiper" data-aos="zoom-in">
+				<div class="swiper-wrapper">
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-1.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-2.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-3.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-4.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-5.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-6.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-7.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-8.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-9.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-10.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-11.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-12.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-13.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-14.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-15.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-16.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-17.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-18.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-19.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-20.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-21.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-22.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-23.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-24.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-25.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-26.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-27.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-28.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-29.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-30.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-31.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-32.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-33.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-34.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-35.png" alt=""></a>
+					<a class="partners__item swiper-slide" href="./"><img src="./img/partners/partner-item-36.png" alt=""></a>
+				</div>
+				<div class="partners__controls controls">
+					<div class="controls__button controls__button_prev">
+						<svg width="7"><use xlink:href="./img/icons-sprite.svg#arrow-left"></use></svg>
+					</div>
+					<div class="controls__pagination"></div>
+					<div class="controls__button controls__button_next">
+						<svg width="7"><use xlink:href="./img/icons-sprite.svg#arrow-right"></use></svg>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	</section>
+
+	<section id="teams" class="teams">
+		<div class="container">
+			<h2 class="teams__title">Formacar Team</h2>
+
+			<ul class="teams__list">
+				<li class="teams__item">
+					<a class="teams__item-link" href="https://www.linkedin.com/in/alexander-ivanchenko-50a236187/" target="_blank">
+						<figure class="teams__member">
+							<div class="teams__member-avatar">
+								<picture>
+									<img class="teams__member-img" src="img/teams/item-1.jpg" alt="">
+								</picture>
+								<svg class="teams__member-label" width="45" height="45">
+									<use xlink:href="./img/icons-sprite.svg#in"></use>
+								</svg>
+							</div>
+	
+							<figcaption class="teams__member-info">
+								<p class="teams__member-name">Alexander</p>
+								<p class="teams__member-job">Executive Director</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+				
+				<li class="teams__item">
+					<a class="teams__item-link" href="https://www.linkedin.com/in/formacar/" target="_blank">
+						<figure class="teams__member">
+							<div class="teams__member-avatar">
+								<picture>
+									<img class="teams__member-img" src="img/teams/item-2.jpg" alt="">
+								</picture>
+								<svg class="teams__member-label" width="45" height="45">
+									<use xlink:href="./img/icons-sprite.svg#in"></use>
+								</svg>
+							</div>
+	
+							<figcaption class="teams__member-info">
+								<p class="teams__member-name">Ilya</p>
+								<p class="teams__member-job">IT Director, Co-Founder</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<li class="teams__item">
+					<a class="teams__item-link" href="https://www.linkedin.com/in/nikita-bronnikov-951616121/" target="_blank">
+						<figure class="teams__member">
+							<div class="teams__member-avatar">
+								<picture>
+									<img class="teams__member-img" src="img/teams/item-3.jpg" alt="">
+								</picture>
+								<svg class="teams__member-label" width="45" height="45">
+									<use xlink:href="./img/icons-sprite.svg#in"></use>
+								</svg>
+							</div>
+	
+							<figcaption class="teams__member-info">
+								<p class="teams__member-name">Nick</p>
+								<p class="teams__member-job">Strategy Manager,<br>Co-Founder</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<li class="teams__item">
+					<a class="teams__item-link" href="https://www.linkedin.com/in/pavel-rachkovskiy/" target="_blank">
+						<figure class="teams__member">
+							<div class="teams__member-avatar">
+								<picture>
+									<img class="teams__member-img" src="img/teams/item-4.jpg" alt="">
+								</picture>
+								<svg class="teams__member-label" width="45" height="45">
+									<use xlink:href="./img/icons-sprite.svg#in"></use>
+								</svg>
+							</div>
+	
+							<figcaption class="teams__member-info">
+								<p class="teams__member-name">Paul</p>
+								<p class="teams__member-job">Creative Director</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<li class="teams__item">
+					<a class="teams__item-link" href="https://www.linkedin.com/in/mishinkinkv/" target="_blank">
+						<figure class="teams__member">
+							<div class="teams__member-avatar">
+								<picture>
+									<img class="teams__member-img" src="img/teams/item-5.jpg" alt="">
+								</picture>
+								<svg class="teams__member-label" width="45" height="45">
+									<use xlink:href="./img/icons-sprite.svg#in"></use>
+								</svg>
+							</div>
+	
+							<figcaption class="teams__member-info">
+								<p class="teams__member-name">Constantine</p>
+								<p class="teams__member-job">Marketing Director<br>(Formacar)</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<li class="teams__item">
+					<a class="teams__item-link" href="https://www.linkedin.com/company/formacar/about/" target="_blank">
+						<figure class="teams__member">
+							<div class="teams__member-avatar">
+								<picture>
+									<img class="teams__member-img" src="img/teams/item-6.jpg" alt="">
+								</picture>
+								<svg class="teams__member-label" width="45" height="45">
+									<use xlink:href="./img/icons-sprite.svg#in"></use>
+								</svg>
+							</div>
+	
+							<figcaption class="teams__member-info">
+								<p class="teams__member-name">Alex</p>
+								<p class="teams__member-job">Marketing Director<br>(Formacar Crypto),<br>Co-Founder</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<li class="teams__item">
+					<a class="teams__item-link" href="https://www.linkedin.com/in/david-akopyan-42974a263" target="_blank">
+						<figure class="teams__member">
+							<div class="teams__member-avatar">
+								<picture>
+									<img class="teams__member-img" src="img/teams/item-7.jpg" alt="">
+								</picture>
+								<svg class="teams__member-label" width="45" height="45">
+									<use xlink:href="./img/icons-sprite.svg#in"></use>
+								</svg>
+							</div>
+	
+							<figcaption class="teams__member-info">
+								<p class="teams__member-name">David</p>
+								<p class="teams__member-job">Web3 & Smart Contracts<br>Developer</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+
+				<li class="teams__item">
+					<a class="teams__item-link" href="https://www.linkedin.com/in/4handzmusic/" target="_blank">
+						<figure class="teams__member">
+							<div class="teams__member-avatar">
+								<picture>
+									<img class="teams__member-img" src="img/teams/item-8.jpg" alt="">
+								</picture>
+								<svg class="teams__member-label" width="45" height="45">
+									<use xlink:href="./img/icons-sprite.svg#in"></use>
+								</svg>
+							</div>
+	
+							<figcaption class="teams__member-info">
+								<p class="teams__member-name">Nick</p>
+								<p class="teams__member-job">Web3 Content & Community Manager</p>
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="contacts" class="contacts">
+		<div class="contacts__inner container">
+			<div class="contacts__circles"></div>
+			<div class="wrap contacts__wrap">
+				<h2 class="contacts__title" data-aos="fade-down">Social Networks</h2>
+				<p class="contacts__subtitle" data-aos="fade-down"><span>Subscribe to us</span> on social networks and follow the news</p>
+			</div>
+			<div class="wrap contacts__wrap2" data-aos="zoom-in">
+				<a class="contacts-item" data-modal-open="discord">
+					<svg width="46" height="33">
+						<use xlink:href="./img/icons-sprite.svg#discord"></use>
+					</svg>
+				</a>
+				<div class="contacts-item" data-modal-open="telegram">
+					<svg width="50" height="51">
+						<use xlink:href="./img/icons-sprite.svg#telegram"></use>
+					</svg>
+				</div>
+				<a class="contacts-item" href="https://twitter.com/formacar" target="_blank">
+					<svg width="50" height="51">
+						<use xlink:href="./img/icons-sprite.svg#x-twt"></use>
+					</svg>
+				</a>
+				<a class="contacts-item" href="https://medium.com/@FormaCarCrypto" target="_blank">
+					<svg width="50" height="51">
+						<use xlink:href="./img/icons-sprite.svg#medium"></use>
+					</svg>
+				</a>
+				<a class="contacts-item" href="https://instagram.com/formacar_action?igshid=YmMyMTA2M2Y=" target="_blank">
+					<svg width="46" height="45">
+						<use xlink:href="./img/icons-sprite.svg#instagram"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="contacts__desc">
+				<p>Be careful! Formacar Crypto communicates its messages solely using these official accounts. Any other communication channels or social media pages you might encounter do not belong to Formacar and do not represent our brand in any way.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-us">
+		<div class="container">
+			<div class="wrap contact-us__wrap">
+				<div class="contact-us__header">
+					<h2 class="contact-us__title" data-aos="fade-down">Contact Us</h2>
+					<p class="contact-us__desc" data-aos="fade-down">Dear friends, we are committed to improving our project together with you and are always looking for cooperation opportunities. If you have any wishes or suggestions, welcome!</p>
+				</div>
+	
+				<form class="contact-us__form form" action="/" name="contact" data-aos="zoom-in">
+					<input class="form-input" type="email" name="email" placeholder="Email" data-placeholder="Email" data-error="Email entered incorrectly" required>
+					<input class="form-input" type="text" name="name" placeholder="Name" data-placeholder="Name" data-error="Please fill out this field." required>
+					<div class="form-select">
+						<select class="form-select__input" name="representative">
+							<option value="Фонды">Фонды</option>
+							<option value="Биржи">Биржи</option>
+							<option value="Лаунчпады">Лаунчпады</option>
+							<option value="Эдвайзеры">Эдвайзеры</option>
+							<option value="Работа">Работа</option>
+							<option value="Иное">Иное</option>
+						</select>
+						<button class="form-select__toggle" type="button">You are a representative..</button>
+						<ul class="form-select__list">
+							<li>
+								<button class="form-select__btn" type="button">Фонды</button>
+							</li>
+							<li>
+								<button class="form-select__btn" type="button">Биржи</button>
+							</li>
+							<li>
+								<button class="form-select__btn" type="button">Лаунчпады</button>
+							</li>
+							<li>
+								<button class="form-select__btn" type="button">Эдвайзеры</button>
+							</li>
+							<li>
+								<button class="form-select__btn" type="button">Работа</button>
+							</li>
+							<li>
+								<button class="form-select__btn" type="button">Иное</button>
+							</li>
+						</ul>
+					</div>
+					<input class="form-input" type="url" name="social" placeholder="Link to your social networks" data-error="Please enter a URL." data-placeholder="Link to your social networks">
+					<textarea class="form-input" name="message" placeholder="Message" data-placeholder="Message" data-error="Please fill out this field." required></textarea>
+					<button class="form-submit" type="submit">SEND A MESSAGE</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="faq">
+		<div class="faq__bg">
+			<img src="./img/faq/bg-1.png" alt="bg">
+		</div>
+		<div class="container">
+			<div class="wrap faq__wrap">
+				<h2 class="faq__h2" data-aos="fade-down">FAQ</h2>
+				<div class="faq__questions-list" data-aos="zoom-in">
+
+					<div class="faq__questions-item active">
+						<div class="faq__questions-nav">
+							<div class="faq__questions-line"></div>
+							<div class="faq__questions-line"></div>
+						</div>
+						<h3 class="faq__questions-title">What is FormaCar Action?</h3>
+						<p class="faq__questions-text">FormaCar Action is a realistic crypto game - a metaverse where you can play with your friends and earn real money by competing in races.</p>
+					</div>
+
+					<div class="faq__questions-item">
+						<div class="faq__questions-nav">
+							<div class="faq__questions-line"></div>
+							<div class="faq__questions-line"></div>
+						</div>
+						<h3 class="faq__questions-title">What NFTs does FormaCar Action have?</h3>
+						<p class="faq__questions-text">NFT in FormaCar Action ' is the coolest realistic cars, parts, components, units, tuning elements, land, gas stations, service stations, team members and much more! Buy, develop and earn together with FormaCar Action!</p>
+					</div>
+
+					<div class="faq__questions-item">
+						<div class="faq__questions-nav">
+							<div class="faq__questions-line"></div>
+							<div class="faq__questions-line"></div>
+						</div>
+						<h3 class="faq__questions-title">What is $FCG token?</h3>
+						<p class="faq__questions-text">$FCG Token - This is a utility token on the FormaCar Action platform in Bep-20 (BSC) format All sales, purchases, reward payments in the FormaCar Action game and the FormaCar MetaVerse Metaverse, all for the utility token $FCG.</p>
+					</div>
+
+					<div class="faq__questions-item">
+						<div class="faq__questions-nav">
+							<div class="faq__questions-line"></div>
+							<div class="faq__questions-line"></div>
+						</div>
+						<h3 class="faq__questions-title">What blockchain does FormaCar use?</h3>
+						<p class="faq__questions-text">Binance Smart Chain is a blockchain that provides scalable, secure, and instant transactions with minimal fees.</p>
+					</div>
+
+					<div class="faq__questions-item">
+						<div class="faq__questions-nav">
+							<div class="faq__questions-line"></div>
+							<div class="faq__questions-line"></div>
+						</div>
+						<h3 class="faq__questions-title">What modes are there in FormaCar Action?</h3>
+						<div class="faq__questions-text">
+							We have several kinds of modes with different possibilities:
+							<ul>
+								<li>Ring/Sprint (Standard ride)</li>
+								<li>Drift</li>
+								<li>Free (Freeride)</li>
+								<li>Drag</li>
+								<li>Escape</li>
+							</ul>
+							Each player can earn, but your earnings depend not only on your driving skills, but also on the class of the car and its characteristics.
+						</div>
+					</div>
+
+					<div class="faq__questions-item">
+						<div class="faq__questions-nav">
+							<div class="faq__questions-line"></div>
+							<div class="faq__questions-line"></div>
+						</div>
+						<h3 class="faq__questions-title">How to get NFT?</h3>
+						<p class="faq__questions-text">In order to become a happy owner of cool NFTs, you need to get into the WhiteList, which we will open in the near future. And then you will have the opportunity to purchase the first gaming NFTs.</p>
+					</div>
+
+					<div class="faq__questions-item">
+						<div class="faq__questions-nav">
+							<div class="faq__questions-line"></div>
+							<div class="faq__questions-line"></div>
+						</div>
+						<h3 class="faq__questions-title">How can I buy $FCG token?</h3>
+						<p class="faq__questions-text">You can purchase the $FCG token at the next IDO round. And for this, also, you need to get into the WhiteList.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer footer_shift">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="/" class="footer__logo">
+					<img src="./img/logo.svg" alt="">
+				</a>
+				<a class="footer__audit" href="https://www.verichains.io/?search=formacar" target="_blank">
+					<p class="footer__audit-desc">Contract verified by</p>
+					<img class="footer__audit-img" src="img/audit.png" alt="">
+				</a>
+				<div class="footer__rights">
+					<p>2022 FormaCar. All rights reserved. 18+</p>
+					<p>United Arab Emirates, Dubai, IFZA</p>
+				</div>
+				<a href="#" class="privacy">USER AGREEMENT</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- <div class="cookie">
+		<div class="container">
+			<div class="wrap">
+				<h2 class="cookie__title">Этот веб-сайт использует файлы cookie</h2>
+				<p class="cookie__text">Нажав на кнопку “Разрешить все файлы “cookie”, вы соглашаетесь на использование файлов cookie нашим сервисом.
+					Узнать больше и изменить настройки можно в <a href="#">Политике использования файлов cookie MY.GAMES.</a>
+				</p>
+				<a href="#" id="cookie-btn" class="btn btn--cookie">Разрешить все файлы “cookie”</a>
+			</div>
+		</div>
+	</div> -->
 
 	<!-- Модальные окна -->
 	<div class="modal" id="discord">
@@ -1301,25 +1258,25 @@
 				<h2 class="modal__title">Welcome to Discord</h2>
 				<div class="modal__telegram-list">
 
-                    <a class="modal__telegram-item" href="https://t.me/formacarcrypto" target="_blank">
-                        <div class="contacts-item">
-                            <svg width="50" height="51">
-                                <use xlink:href="./img/icons-sprite.svg#discord"></use>
-                            </svg>
-                        </div>
-                        <p class="modal__telegram-name">Channel</p>
-                    </a>
+					<a class="modal__telegram-item" href="https://t.me/formacarcrypto" target="_blank">
+						<div class="contacts-item">
+							<svg width="50" height="51">
+								<use xlink:href="./img/icons-sprite.svg#discord"></use>
+							</svg>
+						</div>
+						<p class="modal__telegram-name">Channel</p>
+					</a>
 
-                    <a class="modal__telegram-item" href="https://t.me/formacarcryptoenglish" target="_blank">
-                        <div class="contacts-item">
-                            <svg width="50" height="51">
-                                <use xlink:href="./img/icons-sprite.svg#discord"></use>
-                            </svg>
-                        </div>
-                        <p class="modal__telegram-name">Admin</p>
-                    </a>
+					<a class="modal__telegram-item" href="https://t.me/formacarcryptoenglish" target="_blank">
+						<div class="contacts-item">
+							<svg width="50" height="51">
+								<use xlink:href="./img/icons-sprite.svg#discord"></use>
+							</svg>
+						</div>
+						<p class="modal__telegram-name">Admin</p>
+					</a>
 
-                </div>
+				</div>
 				<button class="modal__close">
 					<span></span>
 					<span></span>
@@ -1333,34 +1290,34 @@
 				<h2 class="modal__title">Welcome to telegram</h2>
 				<div class="modal__telegram-list">
 
-                    <a class="modal__telegram-item" href="https://t.me/formacarcrypto" target="_blank">
-                        <div class="contacts-item">
-                            <svg width="50" height="51">
-                                <use xlink:href="./img/icons-sprite.svg#telegram"></use>
-                            </svg>
-                        </div>
-                        <p class="modal__telegram-name">Channel</p>
-                    </a>
+					<a class="modal__telegram-item" href="https://t.me/formacarcrypto" target="_blank">
+						<div class="contacts-item">
+							<svg width="50" height="51">
+								<use xlink:href="./img/icons-sprite.svg#telegram"></use>
+							</svg>
+						</div>
+						<p class="modal__telegram-name">Channel</p>
+					</a>
 
-                    <a class="modal__telegram-item" href="https://t.me/formacarcryptoenglish" target="_blank">
-                        <div class="contacts-item">
-                            <svg width="50" height="51">
-                                <use xlink:href="./img/icons-sprite.svg#telegram"></use>
-                            </svg>
-                        </div>
-                        <p class="modal__telegram-name">Chat</p>
-                    </a>
+					<a class="modal__telegram-item" href="https://t.me/formacarcryptoenglish" target="_blank">
+						<div class="contacts-item">
+							<svg width="50" height="51">
+								<use xlink:href="./img/icons-sprite.svg#telegram"></use>
+							</svg>
+						</div>
+						<p class="modal__telegram-name">Chat</p>
+					</a>
 
-                    <a class="modal__telegram-item" href="https://t.me/formacarcryptorussian" target="_blank">
-                        <div class="contacts-item">
-                            <svg width="50" height="51">
-                                <use xlink:href="./img/icons-sprite.svg#telegram"></use>
-                            </svg>
-                        </div>
-                        <p class="modal__telegram-name">Admin</p>
-                    </a>
+					<a class="modal__telegram-item" href="https://t.me/formacarcryptorussian" target="_blank">
+						<div class="contacts-item">
+							<svg width="50" height="51">
+								<use xlink:href="./img/icons-sprite.svg#telegram"></use>
+							</svg>
+						</div>
+						<p class="modal__telegram-name">Admin</p>
+					</a>
 
-                </div>
+				</div>
 				<button class="modal__close">
 					<span></span>
 					<span></span>
@@ -1372,7 +1329,7 @@
 		<div class="modal__body">
 			<div class="modal__content">
 				<h2 class="modal__title">Message sent</h2>
-                <p class="modal__desc">Your message has been sent successfully!<br>We will contact you shortly.</p>
+				<p class="modal__desc">Your message has been sent successfully!<br>We will contact you shortly.</p>
 				<button class="modal__close">
 					<span></span>
 					<span></span>
@@ -1384,10 +1341,10 @@
 		<div class="modal__body">
 			<div class="modal__content">
 				<h2 class="modal__title">Join the Waitlist</h2>
-                <form class="form" action="/">
-                    <input class="form-input" type="email" name="email" placeholder="Enter your email" data-placeholder="Enter your email" data-error="Please fill out this field." required>
-                    <button class="btn btn_primary" type="submit" disabled>Subscribe now</button>
-                </form>
+				<form class="form" action="/">
+					<input class="form-input" type="email" name="email" placeholder="Enter your email" data-placeholder="Enter your email" data-error="Please fill out this field." required>
+					<button class="btn btn_primary" type="submit" disabled>Subscribe now</button>
+				</form>
 				<button class="modal__close">
 					<span></span>
 					<span></span>
@@ -1399,7 +1356,7 @@
 		<div class="modal__body">
 			<div class="modal__content">
 				<h2 class="modal__title modal__title_secondary">Email Submitted</h2>
-                <p class="modal__desc modal__desc_center">Your email has been submitted.<br>Thank you!</p>
+				<p class="modal__desc modal__desc_center">Your email has been submitted.<br>Thank you!</p>
 				<button class="modal__close">
 					<span></span>
 					<span></span>
@@ -1410,70 +1367,123 @@
 
 	<!-- Подключение скриптов -->
 	<script src="./js/libs/swiper-bundle.min.js"></script>
-    <script src="./js/libs/aos.js"></script>
+	<script src="./js/libs/aos.js"></script>
 
-    <script src="./js/libs/lightGallary/lightgallery.min.js"></script>
+	<script src="./js/libs/lightGallary/lightgallery.min.js"></script>
 	<script src="./js/libs/lightGallary/lg-thumbnails.js"></script>
 
-    <script>
+	<script>
+		lightGallery(document.querySelector('.lightgallery'));
 
-        lightGallery(document.querySelector('.lightgallery'));
+		let swiper1 = new Swiper(".gallary__slider", {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			spaceBetween: 0,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".controls__pagination",
+				bulletClass: 'controls__dot',
+				bulletActiveClass: 'active',
+				clickable: true,
+			},
+			navigation: {
+				disabledClass: 'disabled',
+				nextEl: '.controls__button_next',
+				prevEl: '.controls__button_prev',
+			}
+		});
 
+		let swiper2 = new Swiper(".nft__slider", {
+			slidesPerView: 'auto',
+			spaceBetween: 20,
+			pagination: {
+				el: ".controls__pagination",
+				bulletClass: 'controls__dot',
+				bulletActiveClass: 'active',
+				clickable: true,
+			},
+			navigation: {
+				disabledClass: 'disabled',
+				nextEl: '.controls__button_next',
+				prevEl: '.controls__button_prev',
+			},
+			breakpoints: {
+				475: {
+					slidesPerView: 'auto',
+					spaceBetween: 20,
+				},
+				767: {
+					slidesPerView: 'auto',
+					spaceBetween: 30,
+				},
+				1080: {
+					slidesPerView: 'auto',
+					spaceBetween: 50,
+				}
+			}
+		});
 
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: 0,
-            autoplay: {
-                    delay: 5000,
-                    disableOnInteraction: false,
-                },
-            loop: true,
-            pagination: {
-                el: ".gallary__swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.gallary-swiper-next',
-                prevEl: '.gallary-swiper-prev',
-            },
-        });
+		let swiper3 = new Swiper(".partners__list.swiper", {
+			slidesPerView: 4,
+			spaceBetween: 40,
+			slidesPerGroup: 2,
+			grid: {
+				rows: 3,
+				fill: "row",
+			},
+			pagination: {
+				el: ".controls__pagination",
+				bulletClass: 'controls__dot',
+				bulletActiveClass: 'active',
+				clickable: true,
+			},
+			navigation: {
+				disabledClass: 'disabled',
+				nextEl: '.controls__button_next',
+				prevEl: '.controls__button_prev',
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+					grid: {
+						rows: 4,
+					},
+				},
+				640: {
+					slidesPerView: 3,
+					spaceBetween: 40,
+					grid: {
+						rows: 3,
+					},
+				},
+				1080: {
+					slidesPerView: 4,
+					spaceBetween: 40,
+					grid: {
+						rows: 3,
+					},
+				},
+				1280: {
+					slidesPerView: 5,
+					spaceBetween: 40,
+					grid: {
+						rows: 3,
+					},
+				}
+			}
+	    });
+	</script>
 
-        var swiper2 = new Swiper(".nft__slider", {
-          slidesPerView: 'auto',
-          spaceBetween: 20,
-          pagination: {
-            el: ".nft__slider__swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-			nextEl: '.nft-swiper-next',
-			prevEl: '.nft-swiper-prev',
-		},
-          breakpoints: {
-            475: {
-                slidesPerView: 'auto',
-                spaceBetween: 20,
-            },
-            767: {
-                slidesPerView: 'auto',
-                spaceBetween: 30,
-            },
-            1080: {
-                slidesPerView: 'auto',
-                spaceBetween: 50,
-            }
-        }
-        });
-    </script>
+	<script src="./js/main.js"></script>
 
-    <script src="./js/main.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
-    <script>
-        AOS.init();
-    </script>
-
-    
 </body>
-
 </html>

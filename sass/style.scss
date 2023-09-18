@@ -1,6 +1,7 @@
 @import '_fonts'; // Шрифты
 @import '_variables'; // Переменные
 @import '_reset'; // Сброс css
+@import '_mixin'; // Миксины
 
 // Миксин для перевода px в vw
 @function vw($px) {
@@ -44,6 +45,7 @@ img{
 @import './_animation';
 
 // Компоненты
+@import './components/_controls';
 @import './components/_buttons';
 @import './components/_forms';
 @import './components/_modal';
