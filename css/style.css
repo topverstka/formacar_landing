@@ -1823,12 +1823,16 @@ textarea.form-input {
   font-size: 12px;
   padding: 10px;
   text-transform: uppercase;
-  opacity: 0.8;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
 }
-.header__nav-sub-elem:hover {
-  opacity: 1;
+@media (min-width: 1080px) {
+  .header__nav-sub-elem {
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    opacity: 0.8;
+  }
+  .header__nav-sub-elem:hover {
+    opacity: 1;
+  }
 }
 
 .header__nav-elem--has-sub:hover {
